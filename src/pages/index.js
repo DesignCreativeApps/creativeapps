@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-//import Slider from 'infinite-react-carousel';
+import Slider from 'infinite-react-carousel';
 
 import Layout from "../components/layout"
 
@@ -74,7 +74,7 @@ const IndexPage = () => (
       </section>
       <section>
         <h1 style={{ textAlign: 'center' }}>What they say about us</h1>
-        {/* <Slider dots centerMode centerPadding="0">
+        <Slider dots centerMode centerPadding="0">
           <div>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: "center" }}>
               <p style={{ textAlign: 'center', width: '80%' }}>
@@ -108,7 +108,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-        </Slider> */}
+        </Slider>
       </section>
     </div>
   </Layout>
