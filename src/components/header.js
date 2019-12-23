@@ -9,6 +9,7 @@ class Header extends React.Component {
 	}
 
 	componentDidMount() {
+		const module = typeof window !== `undefined` ? require("module") : null
 		window.addEventListener('scroll', this.handleScroll)
 	}
 
