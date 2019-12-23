@@ -28,7 +28,7 @@ class Header extends React.Component {
 
 	render() {
 		let headerClasses;
-		const path = typeof window !== 'undefined' ? window.location.pathname : '';
+		const path = typeof window !== 'undefined' ? window.location.pathname : 'Header HeaderNormal';
 		if (path != "/") {
 			headerClasses = "Header HeaderNormal"
 		}
