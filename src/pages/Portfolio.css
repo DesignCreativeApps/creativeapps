@@ -1,0 +1,59 @@
+.timeline ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.timelineElement {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.timelineDate {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px 15px;
+    width: 130px;
+    color: #999;
+    text-align: right;
+    font-style: italic; 
+    line-height: 30px;
+    border-right: 1px solid #ddd;
+}
+
+.timelineDate:after {
+    content: " ";
+    position: absolute;
+    top: 40px;
+    right: -5px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:#6BB1F1;
+}
+
+.timelineDateText {
+    margin-top: -3px;
+    display: block;
+}
+
+.timelineContent {
+    margin-left: 200px;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+}
+
+.projectDescription {
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.projectImages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}

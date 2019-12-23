@@ -1,0 +1,71 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled {
+    background: rgba(0,0,0, 0.8);
+    padding: 15px 0;
+    backdrop-filter: blur(20px);
+}
+
+.HeaderNormal {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, 0.8);
+    padding: 15px 0;
+    backdrop-filter: blur(20px);
+}
+
+.HeaderGroup {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Header a {
+    color: white;
+    font-weight: 900;
+}
+
+.Header button {
+    padding: 8px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    background: rgba(107, 177, 241, 0.5);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Header button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.25);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 15px 0;
+    }
+
+    .HeaderGroup {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .Header a:nth-child(4) {
+        display: none;
+    }
+}

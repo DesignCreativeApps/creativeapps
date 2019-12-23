@@ -1,0 +1,41 @@
+.Media-figure {
+  margin: 1.5rem;
+}
+
+.Media-body {
+  margin: 1.5rem;
+}
+
+.Media {
+  display: flex;
+  align-items: flex-start;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.Media p {
+  line-height: 40px;
+}
+
+.Media-body {
+  flex: 1;
+}
+.Media-body,
+.Media-body :last-child {
+  margin-bottom: 0;
+}
+
+.Media-title {
+  margin: 0 0 0;
+}
+
+.Media--center {
+  align-items: center;
+}
+
+.Image {
+  display: block;
+  width: 180px;
+  height: auto;
+}
