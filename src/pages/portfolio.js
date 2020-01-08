@@ -38,9 +38,9 @@ const PortfolioPage = () => (
 							<div>
 								<h3>Technologies</h3>
 								<ul style={{ display: 'flex' }}>
-									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Laravel</li>
-									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Mysql</li>
-									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>React Native</li>
+									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Laravel</li>
+									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Mysql</li>
+									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>React Native</li>
 								</ul>
 							</div>
 						</div>
@@ -64,9 +64,9 @@ const PortfolioPage = () => (
 							<div>
 								<h3>Technologies</h3>
 								<ul style={{ display: 'flex' }}>
-									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Django</li>
-									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Mysql</li>
-									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Angular</li>
+									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>Django</li>
+									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>Mysql</li>
+									<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>Angular</li>
 								</ul>
 							</div>
 						</div>

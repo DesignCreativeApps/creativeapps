@@ -37,5 +37,6 @@
 .Image {
   display: block;
   width: 180px;
+  border-radius: 50%;
   height: auto;
 }

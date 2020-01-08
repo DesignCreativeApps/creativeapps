@@ -1,0 +1,41 @@
+.footerContainer {
+    display: flex; 
+    font-size: 16px; 
+    justify-content: space-between 
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.media {
+    display: flex;
+    padding: 15px 
+}
+
+.image {
+    margin-right: 15px;
+}
+
+.footerLogo {
+    display: flex; 
+    font-weight: bold;
+    padding: 15px;
+}
+
+.copyright {
+    text-align: center; 
+    font-size: 16px; 
+}
+
+@media (max-width: 640px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+    .infoContainer {
+        margin-bottom: 50px;
+    }
+  
+}

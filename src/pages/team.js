@@ -26,19 +26,19 @@ const TeamPage = () => (
                     <div>
                         <h3>Skills</h3>
                         <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>Html</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>CSS</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>Javascript</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>Python</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Html</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10  }}>CSS</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10  }}>Javascript</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Python</li>
                         </ul>
                     </div>
                     <div>
                         <h3>Technologies</h3>
                         <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Django</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Flask</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>React</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>React Native</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>Django</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>Flask</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>React</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>React Native</li>
                         </ul>
                     </div>
                     <div style={{marginBottom: '1.5rem'}}>
@@ -46,7 +46,7 @@ const TeamPage = () => (
                         <ul style={{paddingLeft: '1.4rem'}}>
                             <li>
                                 <p>“When Tech Meets Culture: Perpectives from Africa.”</p>  
-                                <a href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa" style={{ padding: 10, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500}}>Slides</a>
+                                <a href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa" style={{ padding: 11, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500, borderRadius: 10}}>Slides</a>
                             </li>
                         </ul>
                     </div>
@@ -69,18 +69,18 @@ const TeamPage = () => (
                     <div>
                         <h3>Skills</h3>
                         <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>Php</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>Python</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>Mysql</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white' }}>Postgresql</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Php</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Python</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Mysql</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Postgresql</li>
                         </ul>
                     </div>
                     <div>
                         <h3>Technologies</h3>
                         <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Django</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Flask</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white' }}>Laravel</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Django</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Flask</li>
+                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Laravel</li>
                         </ul>
                     </div>
                     <div style={{marginBottom: '1.5rem'}}>
@@ -88,7 +88,7 @@ const TeamPage = () => (
                         <ul style={{paddingLeft: '1.4rem'}}>
                             <li>
                                 <p>“AWS DeepRacer - A workshop about ReInforcement Learning.”</p>  
-                                <a style={{ padding: 10, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500}}>Slides</a>
+                                <a style={{ padding: 11, borderRadius: 10, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500}}>Slides</a>
                             </li>
                         </ul>
                     </div>
