@@ -112,42 +112,24 @@ const IndexPage = () => (
 					<div>
 						<div className="sliderContainer">
 							<p>
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua."
+								"The guys did a great job in migrating our platform to the new version of Redhat Openshift. 
+								They were always available for support and always handled our issues in a timely manner."
               				</p>
 							  <img
-									src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg"
+									src="/images/jacopo-romani.png"
 									width="50"
-									style={{ marginRight: 15, marginBottom: 10, borderRadius: '50%',  border: '3px solid gray' }}
+									style={{ marginRight: 15, marginBottom: 10, border: '3px solid gray', borderRadius: '50%' }}
 							/>
 							<div className="reviewerContainer">
 								<img
-									src="/images/germany.svg"
+									src="/images/italy.svg"
 									width="30"
-									style={{ marginRight: 15 }}
+									style={{ marginRight: 10 }}
 								/>
-								<span><strong>Jurgen Strunz</strong></span>
+								<span><strong>Jacopo Romani</strong></span>
 							</div>
-						</div>
-					</div>
-					<div>
-						<div className="sliderContainer">
-							<p>
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              				</p>
-							<img
-									src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"
-									width="50"
-									style={{ marginRight: 15, marginBottom: 10, borderRadius: '50%',  border: '3px solid gray' }}
-							/>
-							<div className="reviewerContainer">
-								<img
-									src="/images/sweden.svg"
-									width="30"
-									style={{ marginRight: 15 }}
-								/>
-								<span><strong>Andre Myhrer</strong></span>
+							<div>
+								<span>Needius</span>
 							</div>
 						</div>
 					</div>
