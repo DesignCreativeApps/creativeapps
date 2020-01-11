@@ -29,7 +29,7 @@ class Header extends React.Component {
 
 	render() {
 		let headerClasses;
-		if (!exists(window) || window.location.pathname != "/") {
+		if (exists(window) || window.location.pathname != "/") {
 			headerClasses = "Header HeaderNormal"
 			console.log('normal header');
 		}
