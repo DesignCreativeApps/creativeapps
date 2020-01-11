@@ -97,7 +97,7 @@ const IndexPage = () => (
 						<h3>Consultancy</h3>
 						<p>
 							We provide general IT consultancy to agencies and startups that need to create digital products 
-							for their business from the initial prototype to completion. 
+							for their businesses from the initial prototype to completion. 
             			</p>
 					</div>
 				</div>
