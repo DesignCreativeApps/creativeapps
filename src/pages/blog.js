@@ -9,7 +9,8 @@ const SecondPage = () => (
     <Layout>
         <section style={{ maxWidth: 900, marginRight: 'auto', marginLeft: 'auto' }}>
             <h1 style={{ fontSize: 60 }}>Blog</h1>
-            <div>
+            <p>No posts yet! We will be live soon!</p>
+            {/* <div>
                 <article className="post-item">
                     <figure className="post-item__info">
                         <img alt="Machine learning business value" className="post-item__img" src='/images/machine.jpeg'/>
@@ -70,7 +71,7 @@ const SecondPage = () => (
                     </div>
                 </article>
                 
-            </div>
+            </div> */}
         </section>
     </Layout>
 )
