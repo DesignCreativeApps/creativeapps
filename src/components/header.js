@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { ReactTypeformEmbed } from 'react-typeform-embed';
+import { window} from 'browser-monads';
 import './Header.css'
 
 class Header extends React.Component {
