@@ -29,12 +29,13 @@ class Header extends React.Component {
 
 	render() {
 		let headerClasses;
-		console.log(exists(window));
 		if (!exists(window) || window.location.pathname != "/") {
 			headerClasses = "Header HeaderNormal"
+			console.log('normal header');
 		}
 		else {
 			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'
+			console.log('scrolled header');
 		}
 
 		return (
