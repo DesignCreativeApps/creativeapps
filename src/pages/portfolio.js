@@ -67,6 +67,19 @@ const PortfolioPage = () => {
 		setCurrentImage(0);
 		setViewerIsOpen(false);
 	};
+
+	const [currentImageBlue, setCurrentImageBlue] = useState(0);
+	const [viewerIsOpenBlue, setViewerIsOpenBlue] = useState(false);
+
+	const openLightboxBlue = useCallback((event, { photo, index }) => {
+		setCurrentImageBlue(index);
+		setViewerIsOpenBlue(true);
+	}, []);
+
+	const closeLightboxBlue = () => {
+		setCurrentImageBlue(0);
+		setViewerIsOpenBlue(false);
+	};
 	return (
 		<Layout>
 			<section className="portfolio-app">
@@ -91,7 +104,7 @@ const PortfolioPage = () => {
 									<strong>Project management application that allows to plan and organise maintenance and consultancy activities keeping a complete history.</strong>
 								</p>
 								<p className="projectDescription">
-								From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app.The app has full offline capabilities.
+								From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities.
 							</p>
 								<Gallery photos={gesinterventi} onClick={openLightbox} />
 								<ModalGateway>
@@ -134,12 +147,12 @@ const PortfolioPage = () => {
 								<p className="projectDescription">
 									Responsible for the migration of the <strong>Blue2</strong> (Android application for Samsung tablets) backend from <strong>Red Hat Openshift</strong> v.2 to v.3 and the release of the <strong>Android</strong> application. Platform maintenance and bug fixing.
 								</p>
-								<Gallery photos={photos} onClick={openLightbox} />
+								<Gallery photos={photos} onClick={openLightboxBlue} />
 								<ModalGateway>
-									{viewerIsOpen ? (
-										<Modal onClose={closeLightbox}>
+									{viewerIsOpenBlue ? (
+										<Modal onClose={closeLightboxBlue}>
 											<Carousel
-												currentIndex={currentImage}
+												currentIndex={currentImageBlue}
 												views={photos.map(x => ({
 													...x,
 													srcset: x.srcSet,

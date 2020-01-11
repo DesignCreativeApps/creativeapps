@@ -33,8 +33,9 @@ const IndexPage = () => (
 				<div className="services">
 					<h1>Software development for web and mobile</h1>
 					<p>
-						At <strong>CREATIVE APPS</strong> we focus on collaboration and understanding your project needs to create <strong>custom software</strong>,
-						apps and websites that add <strong>real value</strong> to your business.
+						At <strong>CREATIVE APPS</strong> we bring ideas to life. We are focused on collaboration
+						and understanding your project's needs. We create <strong>custom software</strong>,
+						apps and websites that add <strong>real value </strong> to your business. We can also do <strong>remote work</strong> and <strong>IT consultancy</strong> for agencies and startups for the creation of <strong>digital products.</strong>
           			</p>
 				</div>
 				<div className="cards">
@@ -44,9 +45,8 @@ const IndexPage = () => (
             			</div>
 						<h3>Web Development</h3>
 						<p>
-							Massa tempor nec feugiat nisl pretium fusce. Ipsum a arcu cursus
-							vitae. Sed lectus vestibulum mattis ullamcorper velit sed
-							ullamcorper morbi.
+							Whether you have an idea of how your website should look,
+							or a detailed specifications, we use our technical expertise to help you bring it to life.
             			</p>
 					</div>
 					<div className="card">
@@ -55,9 +55,8 @@ const IndexPage = () => (
             			</div>
 						<h3>Mobile Development</h3>
 						<p>
-							Massa tempor nec feugiat nisl pretium fusce. Ipsum a arcu cursus
-							vitae. Sed lectus vestibulum mattis ullamcorper velit sed
-							ullamcorper morbi.
+							We build awesome custom mobile application for IOS and Android using native technologies.
+							We also develop backend sytems and API's for mobile apps.
             			</p>
 					</div>
 					<div className="card">
@@ -66,10 +65,10 @@ const IndexPage = () => (
             			</div>
 						<h3>Design</h3>
 						<p>
-							Massa tempor nec feugiat nisl pretium fusce. Ipsum a arcu cursus
-							vitae. Sed lectus vestibulum mattis ullamcorper velit sed
-							ullamcorper morbi.
-            			</p>
+							We craft clean and elegant UI's with great user experience. 
+							We value simple content structures, clean design 
+							patterns and thoughtful interactions.
+						</p>
 					</div>
 					<div className="card">
 						<div className="cardIcon" style={{ color: "#4A90E2" }}>
@@ -77,9 +76,8 @@ const IndexPage = () => (
             			</div>
 						<h3>Integration</h3>
 						<p>
-							Massa tempor nec feugiat nisl pretium fusce. Ipsum a arcu cursus
-							vitae. Sed lectus vestibulum mattis ullamcorper velit sed
-							ullamcorper morbi.
+							We can deal with software integrations to build scalable 
+							and solid architectures to guarantee long-lasting competitive advantages.
             			</p>
 					</div>
 					<div className="card">
@@ -88,9 +86,8 @@ const IndexPage = () => (
             			</div>
 						<h3>Migration</h3>
 						<p>
-							Massa tempor nec feugiat nisl pretium fusce. Ipsum a arcu cursus
-							vitae. Sed lectus vestibulum mattis ullamcorper velit sed
-							ullamcorper morbi.
+							We can deal with legacy systems and migrate them to new platforms. We will make sure to
+							safely backup your data to assure a smooth and easy migration.
             			</p>
 					</div>
 					<div className="card">
@@ -99,9 +96,8 @@ const IndexPage = () => (
             			</div>
 						<h3>Consultancy</h3>
 						<p>
-							Massa tempor nec feugiat nisl pretium fusce. Ipsum a arcu cursus
-							vitae. Sed lectus vestibulum mattis ullamcorper velit sed
-							ullamcorper morbi.
+							We provide general IT consultancy to agencies and startups that need to create digital products 
+							for their business from the initial prototype to completion. 
             			</p>
 					</div>
 				</div>
@@ -112,13 +108,13 @@ const IndexPage = () => (
 					<div>
 						<div className="sliderContainer">
 							<p>
-								"The guys did a great job in migrating our platform to the new version of Redhat Openshift. 
+								"The guys did a great job in migrating our platform to the new version of Redhat Openshift.
 								They were always available for support and always handled our issues in a timely manner."
               				</p>
-							  <img
-									src="/images/jacopo-romani.png"
-									width="50"
-									style={{ marginRight: 15, marginBottom: 10, border: '3px solid gray', borderRadius: '50%' }}
+							<img
+								src="/images/jacopo-romani.png"
+								width="50"
+								style={{ marginRight: 15, marginBottom: 10, border: '3px solid gray', borderRadius: '50%' }}
 							/>
 							<div className="reviewerContainer">
 								<img
