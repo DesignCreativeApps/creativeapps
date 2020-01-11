@@ -1,3 +1,13 @@
+.portfolio-app {
+    max-width: 950px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.portfolio-app h1  {
+    font-size: 60px;
+}
+
 .timeline ul{
     margin: 0;
     padding: 0;
@@ -52,8 +62,37 @@
     margin-bottom: 30px;
 }
 
-.projectImages {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
+@media only screen and (max-width: 1025px) {
+    .portfolio-app {
+        padding: 30px 20px;
+        margin: 0 auto;   
+    }
+    .timelineContent {
+        margin-left: 100px;
+    }
+    .timelineDate {
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .portfolio-app h1  {
+        font-size: 36px;
+    }
+    .portfolio-app p {
+        line-height: 25px;
+    }
+  
+    .timelineDate {
+        position: relative;
+        border-right: none;
+        padding: 0;
+        width: 0;
+    }
+    .timelineDate::after {
+        display: none;
+    }
+    .timelineContent {
+        margin-left: 0;
+    } 
 }

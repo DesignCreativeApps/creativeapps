@@ -7,46 +7,49 @@ import './Team.css';
 
 const TeamPage = () => (
     <Layout>
-        <section style={{ maxWidth: 900, marginRight: 'auto', marginLeft: 'auto' }}>
-            <h1 style={{ fontSize: 60 }}>Team</h1>
+        <section className="portfolio-app">
+            <h1>Team</h1>
             <div className="Media">
                 <img className="Media-figure Image" src="/images/luca-cimonetti.jpg" alt="" />
                 <div className="Media-body">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                    <div className="Media-titleContainer">
                         <h3 className="Media-title">Luca Cimonetti</h3>
                         <span>Full Stack Developer</span>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='/images/envelope.svg' width="20" style={{ marginRight: 15 }} />
+                    <div className="contactContainer">
+                        <img src='/images/envelope.svg' width="20" style={{ marginRight: 10 }} />
                         <span>luca@creativeapps.design</span>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum at tempor. Ornare quam viverra orci sagittis eu volutpat. Sodales ut etiam sit amet nisl purus.
-                    </p>
+                    <div className="bioContainer">
+                        <h3>Bio</h3>
+                        <p>
+                            Enthusiast, passionate and competent software engineer with 8+ years of experience designing, coding and testing software across different platforms. Self learner with a quality oriented attitude I always keep high quality standards in my coding. I regularly refresh my skills to ensure I keep up with ongoing developments.
+                        </p>
+                    </div>
                     <div>
                         <h3>Skills</h3>
-                        <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Html</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10  }}>CSS</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10  }}>Javascript</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Python</li>
+                        <ul className="skillsContainer">
+                            <li className="skillItem">Html</li>
+                            <li className="skillItem">CSS</li>
+                            <li className="skillItem">Javascript</li>
+                            <li className="skillItem">Python</li>
                         </ul>
                     </div>
                     <div>
                         <h3>Technologies</h3>
-                        <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>Django</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>Flask</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>React</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10}}>React Native</li>
+                        <ul className="skillsContainer">
+                            <li className="techItem">Django</li>
+                            <li className="techItem">Flask</li>
+                            <li className="techItem">React</li>
+                            <li className="techItem">React Native</li>
                         </ul>
                     </div>
-                    <div style={{marginBottom: '1.5rem'}}>
+                    <div style={{ marginBottom: '1.5rem' }}>
                         <h3>Tech Talks</h3>
-                        <ul style={{paddingLeft: '1.4rem'}}>
+                        <ul style={{ paddingLeft: '1.4rem' }}>
                             <li>
-                                <p>“When Tech Meets Culture: Perpectives from Africa.”</p>  
-                                <a href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa" style={{ padding: 11, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500, borderRadius: 10}}>Slides</a>
+                                <p>“When Tech Meets Culture: Perpectives from Africa.”</p>
+                                <a href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa" style={{ padding: 11, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500, borderRadius: 10 }}>Slides</a>
                             </li>
                         </ul>
                     </div>
@@ -55,40 +58,43 @@ const TeamPage = () => (
             <div className="Media">
                 <img className="Media-figure Image" src="/images/elia.jpg" alt="" />
                 <div className="Media-body">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                    <div className="Media-titleContainer">
                         <h3 className="Media-title">Elia Rigo</h3>
                         <span>Backend Developer</span>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src='/images/envelope.svg' width="20" style={{ marginRight: 15 }} />
+                    <div className="contactContainer">
+                        <img src='/images/envelope.svg' width="20" style={{ marginRight: 10 }} />
                         <span>elia@creativeapps.design</span>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum at tempor. Ornare quam viverra orci sagittis eu volutpat. Sodales ut etiam sit amet nisl purus.
-                    </p>
+                    <div className="bioContainer">
+                        <h3>Bio</h3>
+                        <p>
+                            I was born in 1994. I’ve always been interested in IT since I was a child. I’m currently a student at the University of Trento attending a Master in Computer Sciences. Simultaneously, in 2011, I set up my own business and from 2017 to 2019 I collaborated with the Bruno Kessler Foundation in the Embedded System division.
+                        </p>
+                    </div>
                     <div>
                         <h3>Skills</h3>
-                        <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Php</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Python</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Mysql</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#2a6592', color: 'white', borderRadius: 10 }}>Postgresql</li>
+                        <ul className="skillsContainer">
+                            <li className="skillItem">Php</li>
+                            <li className="skillItem">Python</li>
+                            <li className="skillItem">Mysql</li>
+                            <li className="skillItem">Postgresql</li>
                         </ul>
                     </div>
                     <div>
                         <h3>Technologies</h3>
-                        <ul style={{ display: 'flex', margin: 0, padding: 0, listStyleType: 'none'}}>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Django</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Flask</li>
-                            <li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Laravel</li>
+                        <ul className="skillsContainer">
+                            <li className="techItem">Django</li>
+                            <li className="techItem">Flask</li>
+                            <li className="techItem">Laravel</li>
                         </ul>
                     </div>
-                    <div style={{marginBottom: '1.5rem'}}>
+                    <div style={{ marginBottom: '1.5rem' }}>
                         <h3>Tech Talks</h3>
-                        <ul style={{paddingLeft: '1.4rem'}}>
+                        <ul style={{ paddingLeft: '1.4rem' }}>
                             <li>
-                                <p>“AWS DeepRacer - A workshop about ReInforcement Learning.”</p>  
-                                <a style={{ padding: 11, borderRadius: 10, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500}}>Slides</a>
+                                <p>“AWS DeepRacer - A workshop about ReInforcement Learning.”</p>
+                                <a style={{ padding: 11, borderRadius: 10, background: '#0099ff', color: 'white', marginLeft: '-1.4rem', fontWeight: 500 }}>Slides</a>
                             </li>
                         </ul>
                     </div>

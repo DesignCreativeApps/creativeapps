@@ -1,9 +1,9 @@
 .Media-figure {
-  margin: 1.5rem;
+  padding: 1.5rem;
 }
 
 .Media-body {
-  margin: 1.5rem;
+  padding: 1.5rem;
 }
 
 .Media {
@@ -12,6 +12,7 @@
   border: 2px solid #e7e7e7;
   border-radius: 5px;
   margin-bottom: 50px;
+  border-bottom: 1px solid #ddd;
 }
 
 .Media p {
@@ -26,6 +27,54 @@
   margin-bottom: 0;
 }
 
+.Media-titleContainer {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 10px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;  
+  list-style-type: none;
+}
+
+.skillItem:last-child {
+  margin-bottom: 5px;
+}
+
+.skillItem {
+  background-color: #2a6592; 
+  color: white; 
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.techItem {
+  padding: 10px;
+  margin-right: 10; 
+  background: #6BB1F1; 
+  color: white; 
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.techItem:last-child {
+  margin-bottom: 5px;
+}
+
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+}
+
 .Media-title {
   margin: 0 0 0;
 }
@@ -35,8 +84,51 @@
 }
 
 .Image {
-  display: block;
   width: 180px;
   border-radius: 50%;
   height: auto;
+  filter: brightness(95%);
+}
+
+@media (max-width: 720px) {
+  .Media-figure {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .Media-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Media {
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0px;
+  }
+  .bioContainer {
+    border-top: 1px solid #ddd;
+  }
+  .Image {
+    align-self: center;
+  }
+  .Media-titleContainer{
+    flex-direction: column;
+    align-items: center; 
+  }
+  .contactContainer {
+    justify-content: center;
+    margin-bottom: 30px; 
+  }
+  .Media-title {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .Media p {
+    line-height: 25px;
+  }
 }

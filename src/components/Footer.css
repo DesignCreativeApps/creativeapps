@@ -1,7 +1,8 @@
 .footerContainer {
-    display: flex; 
-    font-size: 16px; 
-    justify-content: space-between 
+    display: flex;
+    padding-top: 40px; 
+    font-size: 14px; 
+    justify-content: space-between; 
 }
 
 .infoContainer {
@@ -10,7 +11,7 @@
     justify-content: space-evenly;
 }
 
-.media {
+.test {
     display: flex;
     padding: 15px 
 }
@@ -36,6 +37,20 @@
     }
     .infoContainer {
         margin-bottom: 50px;
+        align-self: center;
+    }
+    .test {
+        flex-direction: column;
+        align-self: center;
+        padding: 10px;
+    }
+    .image {
+        align-self: center;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    .footerLogo {
+        padding: 10px;
     }
   
 }
