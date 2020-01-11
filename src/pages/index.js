@@ -46,7 +46,7 @@ const IndexPage = () => (
 						<h3>Web Development</h3>
 						<p>
 							Whether you have an idea of how your website should look,
-							or a detailed specifications, we use our technical expertise to help you bring it to life.
+							or detailed specifications, we use our technical expertise to help you bring it to life.
             			</p>
 					</div>
 					<div className="card">
