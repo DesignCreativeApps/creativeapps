@@ -113,6 +113,7 @@
   }
   .Image {
     align-self: center;
+    width: 150px;
   }
   .Media-titleContainer{
     flex-direction: column;
