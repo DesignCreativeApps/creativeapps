@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import { globalHistory } from "@reach/router";
 import { ReactTypeformEmbed } from 'react-typeform-embed';
-import { window, exists} from 'browser-monads';
 import './Header.css'
 
 class Header extends React.Component {
@@ -29,7 +29,7 @@ class Header extends React.Component {
 
 	render() {
 		let headerClasses;
-		if(exists(window) && window.location.pathname != "/") {
+		if(globalHistory.location.pathname != '/') {
 			headerClasses = "Header HeaderNormal";
 		}
 		else {
