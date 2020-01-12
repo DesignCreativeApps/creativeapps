@@ -36,13 +36,13 @@ class Header extends React.Component {
 			headerClasses = "Header";
 		}
 
-		if(exists(window) && window.location.pathname != "/") {
-			headerClasses = "Header HeaderNormal";
+		// if(exists(window) && window.location.pathname != "/") {
+		// 	headerClasses = "Header HeaderNormal";
 
-		}
-		else if(exists(window) && window.location.pathname == "/") {
-			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
-		}
+		// }
+		// else if(exists(window) && window.location.pathname == "/") {
+		// 	headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
+		// }
 
 		return (
 			<nav className={headerClasses}>
