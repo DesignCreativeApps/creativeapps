@@ -12,16 +12,6 @@ class Header extends React.Component {
 
 	componentDidMount() {
 		window.addEventListener('scroll', this.handleScroll);
-		let headerClasses;
-		if(globalHistory.location.pathname != '/') {
-			headerClasses = "Header HeaderNormal";
-		}
-		else {
-			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
-		}
-		this.setState({
-			headerClasses: headerClasses
-		})
 	}
 
 	openForm = () => {
@@ -39,6 +29,13 @@ class Header extends React.Component {
 	}
 
 	render() {
+		let headerClasses;
+		if(globalHistory.location.pathname != '/') {
+			headerClasses = "Header HeaderNormal";
+		}
+		else {
+			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
+		}
 		return (	
 			<nav className={this.state.headerClasses}>
 				<div className="HeaderGroup">
