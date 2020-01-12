@@ -38,8 +38,9 @@ class Header extends React.Component {
 			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
 			console.log('other header');
 		}
-
+		console.log(headerClasses);
 		return (
+			
 			<nav className={headerClasses}>
 				<div className="HeaderGroup">
 					<Link to="/"><img src='/images/logo-designcode.svg' width="30" /></Link>
