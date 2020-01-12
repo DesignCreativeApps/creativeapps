@@ -6,11 +6,22 @@ import './Header.css'
 
 class Header extends React.Component {
 	state = {
-		hasScrolled: false
+		hasScrolled: false,
+		headerClasses: ""
 	}
 
 	componentDidMount() {
-		window.addEventListener('scroll', this.handleScroll)
+		window.addEventListener('scroll', this.handleScroll);
+		let headerClasses;
+		if(globalHistory.location.pathname != '/') {
+			headerClasses = "Header HeaderNormal";
+		}
+		else {
+			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
+		}
+		this.setState({
+			headerClasses: headerClasses
+		})
 	}
 
 	openForm = () => {
@@ -28,14 +39,6 @@ class Header extends React.Component {
 	}
 
 	render() {
-		let headerClasses;
-		if(globalHistory.location.pathname != '/') {
-			headerClasses = "Header HeaderNormal";
-		}
-		else {
-			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
-		}
-		console.log(headerClasses);
 		return (	
 			<nav className={headerClasses}>
 				<div className="HeaderGroup">
