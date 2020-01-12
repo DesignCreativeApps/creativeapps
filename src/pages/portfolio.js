@@ -131,7 +131,7 @@ const PortfolioPage = () => {
 								</div>
 								<div>
 									<h3>Website</h3>
-									<Link href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display:'inline-block' }}>GesInterventi</Link>
+									<a href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display:'inline-block' }}>GesInterventi</a>
 								</div>
 							</div>
 						</li>
@@ -172,7 +172,7 @@ const PortfolioPage = () => {
 								</div>
 								<div>
 									<h3>Website</h3>
-									<Link href="http://tabletautismo.it" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display:'inline-block' }}>Tablet Autismo</Link>
+										<a href="http://tabletautismo.it" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display:'inline-block' }}>Tablet Autismo</a>
 								</div>
 							</div>
 						</li>
