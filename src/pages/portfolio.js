@@ -123,10 +123,10 @@ const PortfolioPage = () => {
 								</ModalGateway>
 								<div>
 									<h3>Technologies</h3>
-									<ul style={{ display: 'flex' }}>
-										<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Laravel</li>
-										<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Mysql</li>
-										<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>React Native</li>
+									<ul className="skillsContainer">
+										<li className="techItem">Laravel</li>
+										<li className="techItem">Mysql</li>
+										<li className="techItem">React Native</li>
 									</ul>
 								</div>
 								<div>
@@ -164,10 +164,10 @@ const PortfolioPage = () => {
 								</ModalGateway>
 								<div>
 									<h3>Technologies</h3>
-									<ul style={{ display: 'flex' }}>
-										<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Django</li>
-										<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Mysql</li>
-										<li style={{ padding: 10, marginRight: 10, background: '#6BB1F1', color: 'white', borderRadius: 10 }}>Angular</li>
+									<ul className="skillsContainer">
+										<li className="techItem">Django</li>
+										<li className="techItem">Mysql</li>
+										<li className="techItem">Angular</li>
 									</ul>
 								</div>
 								<div>
