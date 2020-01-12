@@ -28,6 +28,7 @@ class Header extends React.Component {
 	}
 
 	render() {
+		console.log(this.props.location);
 		let headerClasses= !exists(window) && window.location.pathname == "/" ? "Header" : 'HeaderNormal';
 		if(exists(window) && window.location.pathname != "/") {
 			headerClasses = "Header HeaderNormal";
