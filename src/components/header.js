@@ -40,7 +40,7 @@ class Header extends React.Component {
 
 	render() {
 		return (	
-			<nav className={headerClasses}>
+			<nav className={this.state.headerClasses}>
 				<div className="HeaderGroup">
 					<Link to="/"><img src='/images/logo-designcode.svg' width="30" /></Link>
 					<Link to="/portfolio">Portfolio</Link>
