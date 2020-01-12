@@ -2,7 +2,7 @@ import React from 'react';
 import "./Footer.css"
 
 const Footer = () => (
-    <div style={{ background: '#F6F6F6' }}>
+    <div style={{ background: '#F6F6F6'}}>
         <section>
             <div className="footerContainer">
                 <div className="infoContainer">

@@ -1,8 +1,8 @@
 .footerContainer {
     display: flex;
-    padding-top: 40px; 
     font-size: 14px; 
     justify-content: space-between; 
+    padding-top: 30px;
 }
 
 .infoContainer {
@@ -13,6 +13,7 @@
 
 .test {
     display: flex;
+    align-items: center;
     padding: 15px 
 }
 
@@ -21,7 +22,8 @@
 }
 
 .footerLogo {
-    display: flex; 
+    display: flex;
+    align-items: center; 
     font-weight: bold;
     padding: 15px;
 }
