@@ -142,7 +142,7 @@ const PortfolioPage = () => {
 							<div className="timelineContent">
 								<h2>Blue</h2>
 								<p className="projectDescription">
-									<strong>Blue 2 is an Android application for Samsung tablets. It was designed to facilitate the learning process for kids with special needs like autism.</strong>
+									<strong>Blue 2 is an Android application for Samsung tablets designed to facilitate the learning process for kids with special needs like autism.</strong>
 								</p>
 								<p className="projectDescription">
 									Responsible for the migration of the backend from <strong>Red Hat Openshift</strong> v.2 to v.3 and the release of the <strong>Android</strong> application. Platform maintenance and bug fixing.
