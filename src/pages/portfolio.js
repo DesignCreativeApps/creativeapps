@@ -168,6 +168,7 @@ const PortfolioPage = () => {
 										<li className="techItem">Django</li>
 										<li className="techItem">Mysql</li>
 										<li className="techItem">AngularJs</li>
+										<li className="techItem">Kubernetes</li>
 									</ul>
 								</div>
 								<div>
