@@ -13,7 +13,7 @@ import Header from "./header";
 import Footer from "./footer";
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

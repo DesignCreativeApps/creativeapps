@@ -4,6 +4,15 @@ import { globalHistory } from "@reach/router";
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 import './Header.css'
 
+
+const test = {
+	position: 'sticky',
+    top: 0,
+    left: 0,
+    background: 'rgba(0,0,0, 0.8)',
+    padding: '15px 0',
+    backdropFilter: 'blur(20px)'
+}
 class Header extends React.Component {
 	state = {
 		hasScrolled: false,
@@ -30,14 +39,9 @@ class Header extends React.Component {
 
 	render() {
 		let headerClasses;
-		if(globalHistory.location.pathname != '/') {
-			headerClasses = "Header HeaderNormal";
-		}
-		else {
-			headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
-		}
+		headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
 		return (	
-			<nav className={headerClasses}>
+			<nav style={globalHistory.location.pathname != '/' ? test: {}} className={headerClasses}>
 				<div className="HeaderGroup">
 					<Link to="/"><img src='/images/logo-designcode.svg' width="30" /></Link>
 					<Link to="/portfolio">Portfolio</Link>
