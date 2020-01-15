@@ -8,7 +8,6 @@ import './Header.css'
 class Header extends React.Component {
 	state = {
 		hasScrolled: false,
-		headerClasses: ""
 	}
 
 	componentDidMount() {
@@ -30,8 +29,9 @@ class Header extends React.Component {
 	}
 
 	render() {
+		let headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
 		return (	
-			<nav className="Header">
+			<nav className={headerClasses}>
 				<div className="HeaderGroup">
 					<Link to="/"><img src='/images/logo-designcode.svg' width="30" /></Link>
 					<Link to="/portfolio">Portfolio</Link>

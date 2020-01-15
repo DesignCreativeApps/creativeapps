@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Helmet } from 'react-helmet';
 import './Team.css';
 
 const TeamPage = () => (
     <Layout>
+        <Helmet bodyAttributes={{ class: 'portfolio' }} />
         <section className="portfolio-app">
             <h1>Team</h1>
             <div className="Media">

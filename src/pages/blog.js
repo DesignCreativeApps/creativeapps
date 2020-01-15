@@ -1,12 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { Helmet } from 'react-helmet';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./Blog.css"
 
 const SecondPage = () => (
     <Layout>
+        <Helmet bodyAttributes={{ class: 'portfolio' }} />
         <section style={{ maxWidth: 900, marginRight: 'auto', marginLeft: 'auto' }}>
             <h1 style={{ fontSize: 60 }}>Blog</h1>
             <p>No posts yet! We will be live soon!</p>
