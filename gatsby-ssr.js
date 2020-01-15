@@ -5,3 +5,10 @@
  */
 
 // You can delete this file if you're not using it
+import { globalHistory } from "@reach/router";
+exports.onRenderBody = (
+  { setHeadComponents, setHtmlAttributes, setBodyAttributes },
+  pluginOptions
+) => {
+    console.log(globalHistory.location.pathname);
+}
