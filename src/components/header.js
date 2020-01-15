@@ -29,7 +29,7 @@ class Header extends React.Component {
 	}
 
 	render() {
-		let headerClasses = this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header';
+		let headerClasses = this.state.hasScrolled && globalHistory.location.pathname =='/' ? 'Header HeaderScrolled' : 'Header';
 		return (	
 			<nav className={headerClasses}>
 				<div className="HeaderGroup">
