@@ -30,9 +30,8 @@ class Header extends React.Component {
 	}
 
 	render() {
-		let headerClasses = this.state.hasScrolled && globalHistory.location.pathname == "/" ? 'Header HeaderScrolled' : 'Header';
 		return (	
-			<nav className={headerClasses}>
+			<nav className="Header">
 				<div className="HeaderGroup">
 					<Link to="/"><img src='/images/logo-designcode.svg' width="30" /></Link>
 					<Link to="/portfolio">Portfolio</Link>

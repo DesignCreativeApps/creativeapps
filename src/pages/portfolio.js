@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Helmet } from 'react-helmet';
 import './Portfolio.css'
 
 const photos = [
@@ -82,6 +83,7 @@ const PortfolioPage = () => {
 	};
 	return (
 		<Layout>
+			<Helmet bodyAttributes={{ class: 'portfolio' }} />
 			<section className="portfolio-app">
 				<h1>Portfolio</h1>
 				<div className="timeline">

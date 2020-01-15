@@ -1,9 +1,9 @@
-.Header {
+.home .Header {
     position: fixed;
     width: 100%;
     padding: 50px 0;
     z-index: 1;
-    /* transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); */
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .HeaderScrolled {
@@ -12,7 +12,7 @@
     backdrop-filter: blur(20px);
 }
 
-.HeaderNormal {
+.portfolio .Header{
     position: sticky;
     top: 0;
     left: 0;

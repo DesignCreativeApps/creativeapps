@@ -1,5 +1,6 @@
 import React, { Component, useRef, useEffect } from "react";
 import { Link } from "gatsby"
+import { Helmet } from 'react-helmet'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -23,6 +24,7 @@ const IndexPage = () => {
 	const myRef = useRef(null);
 	return (
 		<Layout>
+			<Helmet bodyAttributes={{ class: 'home' }} />
 			<div>
 				<div className="Hero">
 					<div className="HeroGroup">
