@@ -1,4 +1,4 @@
-.home .Header {
+.home .header {
     position: fixed;
     width: 100%;
     padding: 50px 0;
@@ -6,23 +6,23 @@
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.home .HeaderScrolled {
+.home .headerScrolled {
     background: rgba(0,0,0, 0.8);
     padding: 15px 0;
     backdrop-filter: blur(20px);
 }
 
-.portfolio .Header{
+.others .header{
     position: sticky;
     top: 0;
     left: 0;
     background: rgba(0,0,0, 0.8);
     padding: 15px 0;
     backdrop-filter: blur(20px);
-    z-index: 100;
+    z-index: 1;
 }
 
-.HeaderGroup {
+.headerGroup {
     max-width: 800px;
     margin: 0 auto;
     display: grid;
@@ -31,49 +31,31 @@
     justify-items: center;
 }
 
-.Header a {
+.header a {
     color: white;
     font-weight: 900;
-}
-
-.Header button {
-    padding: 8px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    color: white;
-    background: rgba(107, 177, 241, 0.5);
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
-    outline: none;
-    cursor: pointer;
-    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.Header button:hover {
-    background: white;
-    color: black;
-    box-shadow: 0 10px 20px rgba(0,0,0, 0.25);
-    transform: translateY(-3px);
 }
 
 @media (max-width: 640px) {
-    .Header {
+    .home .header {
         padding: 15px 0;
     }
-    .Header a {
+    .header {
+        padding: 15px 0;
+    }
+    .header a {
         font-size: 18px;
     }
-    .Header button {
+    .header button {
         font-size: 18px;
         padding: 5px 12px;
     }
 
-    .HeaderGroup {
+    .headerGroup {
         grid-template-columns: repeat(4, auto);
     }
 
-    .Header a:nth-child(4) {
+    .header a:nth-child(4) {
         display: none;
     }
 }

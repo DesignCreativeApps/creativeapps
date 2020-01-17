@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { globalHistory } from "@reach/router";
 import { ReactTypeformEmbed } from 'react-typeform-embed';
-import './Header.css'
+import headerStyles from './header.module.css'
 
 
 class Header extends React.Component {
@@ -29,16 +29,16 @@ class Header extends React.Component {
 	}
 
 	render() {
-		let headerClasses = this.state.hasScrolled && globalHistory.location.pathname =='/' ? 'Header HeaderScrolled' : 'Header';
+		let headerClasses = this.state.hasScrolled && globalHistory.location.pathname =='/' ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
 		return (	
 			<nav className={headerClasses}>
-				<div className="HeaderGroup">
+				<div className={headerStyles.headerGroup}>
 					<Link to="/"><img src='/images/logo-designcode.svg' width="30" /></Link>
 					<Link to="/portfolio">Portfolio</Link>
 					<Link to="/team">Team</Link>
 					<Link to="/blog">Blog</Link>
 
-					<button onClick={this.openForm}>Contact Us</button>
+					<button className="button" onClick={this.openForm}>Contact Us</button>
 				</div>
 				<ReactTypeformEmbed
 					popup

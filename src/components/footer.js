@@ -1,38 +1,40 @@
 import React from 'react';
-import "./Footer.css"
+import footerStyles from "./footer.module.css"
 
 const Footer = () => (
-    <div style={{ background: '#F6F6F6'}}>
+    <div className={footerStyles.container}>
         <section>
-            <div className="footerContainer">
-                <div className="infoContainer">
-                    <div className="test">
-                        <img src='/images/envelope.svg' width="20" className="image" />
+            <div className={footerStyles.footerContainer}>
+                <div className={footerStyles.infoContainer}>
+                    <div className={footerStyles.footerItem}>
+                        <img src='/images/envelope.svg' width="20" className={footerStyles.image}/>
                         <span>info@creativeapps.design</span>
                     </div>
-                    <div className="test">
-                        <img src='/images/github.svg' width="20" className="image" />
+                    <div className={footerStyles.footerItem}>
+                        <img src='/images/github.svg' width="20" className={footerStyles.image}/>
                         <span>Github</span>
                     </div>
-                    <div className="test">
-                        <img src='/images/bitbucket.svg' width="20" className="image" />
+                    <div className={footerStyles.footerItem}>
+                        <img src='/images/bitbucket.svg' width="20" className={footerStyles.image}/>
                         <span>Bitbucket</span>
                     </div>
                 </div>
-                <div className="infoContainer">
-                    <div className="footerLogo">
-                        <img src='/images/logo-designcode.svg' width="20" className="image" />
+                <div className={footerStyles.infoContainer}>
+                    <div className={footerStyles.footerItem}>
+                        <img src='/images/logo-designcode.svg' width="20" className={footerStyles.image}/>
                         <span>CREATIVE APPS</span>
                     </div>
-                    <div className="test">
+                    <div className={footerStyles.footerItem}>
                         <span>Trento (TN), Italy</span>
                     </div>
-                    <div className="test">
+                    <div className={footerStyles.footerItem}>
                         <span>Partita Iva IT20XXXXXX</span>
                     </div>
                 </div>
             </div>
-            <p className="copyright">© 2019 Creative Apps</p>
+            <p className={footerStyles.copyright}>
+                <span>© 2019 Creative Apps</span>
+            </p>
         </section>
     </div>
 )

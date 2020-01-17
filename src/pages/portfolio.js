@@ -1,12 +1,11 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Helmet } from 'react-helmet';
-import './Portfolio.css'
+import portfolioStyles from './portfolio.module.css';
+import headerStyles from '../components/header.module.css';
 
 const photos = [
 	{
@@ -83,30 +82,39 @@ const PortfolioPage = () => {
 	};
 	return (
 		<Layout>
-			<Helmet bodyAttributes={{ class: 'portfolio' }} />
-			<section className="portfolio-app">
-				<h1>Portfolio</h1>
-				<div className="timeline">
+			<Helmet bodyAttributes={{ class: headerStyles.others }} />
+			<section className="othersSection">
+			<div style={{ marginBottom: 50 }}>
+                <h1>Portfolio</h1>
+                {/* <p style={{ fontWeight: 700, lineHeight: 1.636363, fontSize: '1rem', marginBottom:'1rem'}}>
+                    Lorem Ipsum è un testo segnaposto utilizzato nel settore della
+                    tipografia e della stampa. Lorem Ipsum è considerato il testo
+                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
+                    tipografo prese una cassetta di caratteri e li assemblò per preparare
+                    un testo campione.
+                </p> */}
+            </div>
+				<div className={portfolioStyles.timeline}>
 					<ul>
-						<li className="timelineElement">
-							<div className="timelineDate">
-								<time className="timelineDateText">Now</time>
+						<li className={portfolioStyles.timelineElement}>
+							<div className={portfolioStyles.timelineDate}>
+								<time className={portfolioStyles.timelineDateText}>Now</time>
 							</div>
-							<div className="timelineContent">
+							<div className={portfolioStyles.timelineContent}>
 								<h4>We are currently open for collaborations on new and existing projects. Contact us!</h4>
 							</div>
 						</li>
-						<li className="timelineElement">
-							<div className="timelineDate">
-								<span className="timelineDateText">2019</span>
+						<li className={portfolioStyles.timelineElement}>
+							<div className={portfolioStyles.timelineDate}>
+								<span className={portfolioStyles.timelineDateText}>2019</span>
 							</div>
-							<div className="timelineContent">
+							<div className={portfolioStyles.timelineContent}>
 								<h2>Gestione Interventi</h2>
-								<p className="projectDescription">
+								<p className={portfolioStyles.projectDescription}>
 									<strong>Project management application that allows to plan and organise maintenance and consultancy activities keeping a complete history.</strong>
 								</p>
-								<p className="projectDescription">
-								From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities.
+								<p className={portfolioStyles.projectDescription}>
+									From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities.
 							</p>
 								<Gallery photos={gesinterventi} onClick={openLightbox} />
 								<ModalGateway>
@@ -125,28 +133,28 @@ const PortfolioPage = () => {
 								</ModalGateway>
 								<div>
 									<h3>Technologies</h3>
-									<ul className="skillsContainer">
-										<li className="techItem">Laravel</li>
-										<li className="techItem">Mysql</li>
-										<li className="techItem">React Native</li>
+									<ul className="tagsContainer">
+										<li className="techTag">#Laravel</li>
+										<li className="techTag">#Mysql</li>
+										<li className="techTag">#React Native</li>
 									</ul>
 								</div>
 								<div>
 									<h3>Website</h3>
-									<a href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display:'inline-block' }}>GesInterventi</a>
+									<a href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>GesInterventi</a>
 								</div>
 							</div>
 						</li>
-						<li className="timelineElement">
-							<div className="timelineDate">
-								<time className="timelineDateText">2018</time>
+						<li className={portfolioStyles.timelineElement}>
+							<div className={portfolioStyles.timelineDate}>
+								<time className={portfolioStyles.timelineDateText}>2018</time>
 							</div>
-							<div className="timelineContent">
+							<div className={portfolioStyles.timelineContent}>
 								<h2>Blue</h2>
-								<p className="projectDescription">
+								<p className={portfolioStyles.projectDescription}>
 									<strong>Blue 2 is an Android application for Samsung tablets designed to facilitate the learning process for kids with special needs like autism.</strong>
 								</p>
-								<p className="projectDescription">
+								<p className={portfolioStyles.projectDescription}>
 									Responsible for the migration of the backend from <strong>Red Hat Openshift</strong> v.2 to v.3 and the release of the <strong>Android</strong> application. Platform maintenance and bug fixing.
 								</p>
 								<Gallery photos={photos} onClick={openLightboxBlue} />
@@ -166,17 +174,17 @@ const PortfolioPage = () => {
 								</ModalGateway>
 								<div>
 									<h3>Technologies</h3>
-									<ul className="skillsContainer">
-										<li className="techItem">Django</li>
-										<li className="techItem">Mysql</li>
-										<li className="techItem">AngularJs</li>
-										<li className="techItem">Android</li>
-										<li className="techItem">Kubernetes</li>
+									<ul className="tagsContainer">
+										<li className="techTag">#Django</li>
+										<li className="techTag">#Mysql</li>
+										<li className="techTag">#AngularJs</li>
+										<li className="techTag">#Android</li>
+										<li className="techTag">#Kubernetes</li>
 									</ul>
 								</div>
 								<div>
 									<h3>Website</h3>
-										<a href="http://tabletautismo.it" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display:'inline-block' }}>Tablet Autismo</a>
+									<a href="http://tabletautismo.it" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>Tablet Autismo</a>
 								</div>
 							</div>
 						</li>

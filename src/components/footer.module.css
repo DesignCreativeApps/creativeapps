@@ -1,3 +1,7 @@
+.container {
+    background:linear-gradient(135deg, #f8f8f8 0%,#efefef 100%);
+}
+
 .footerContainer {
     display: flex;
     font-size: 14px; 
@@ -11,13 +15,14 @@
     justify-content: space-evenly;
 }
 
-.test {
+.footerItem {
     display: flex;
     align-items: center;
     padding: 15px 
 }
 
 .image {
+    width: 20px;
     margin-right: 15px;
 }
 
@@ -30,7 +35,9 @@
 
 .copyright {
     text-align: center; 
-    font-size: 16px; 
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 14px; 
 }
 
 @media (max-width: 640px) {
@@ -41,7 +48,7 @@
         margin-bottom: 50px;
         align-self: center;
     }
-    .test {
+    .footerItem {
         flex-direction: column;
         align-self: center;
         padding: 10px;
