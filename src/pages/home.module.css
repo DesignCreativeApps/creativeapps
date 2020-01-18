@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     content: "";
-    background-image: url(/images/wallpaper1.jpg);
+    background-image: url(/images/wallpaper1.webp);
     background-size: cover;
     background-position: center;
     filter: brightness(70%);
