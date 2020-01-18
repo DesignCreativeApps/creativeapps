@@ -84,15 +84,11 @@ const PortfolioPage = () => {
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.others }} />
 			<section className="othersSection">
-			<div style={{ marginBottom: 50 }}>
+			<div>
                 <h1>Portfolio</h1>
-                {/* <p style={{ fontWeight: 700, lineHeight: 1.636363, fontSize: '1rem', marginBottom:'1rem'}}>
-                    Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione.
-                </p> */}
+                <p className={portfolioStyles.projectDescription}>
+					<strong>Here you can find a list of our recent projects. </strong>
+                </p>
             </div>
 				<div className={portfolioStyles.timeline}>
 					<ul>
@@ -131,6 +127,13 @@ const PortfolioPage = () => {
 										</Modal>
 									) : null}
 								</ModalGateway>
+								<div>
+									<h3>Type</h3>
+									<ul className="tagsContainer">
+										<li className="typeTag">#Mobile</li>
+										<li className="typeTag">#Backend</li>
+									</ul>
+								</div>
 								<div>
 									<h3>Technologies</h3>
 									<ul className="tagsContainer">
@@ -172,6 +175,14 @@ const PortfolioPage = () => {
 										</Modal>
 									) : null}
 								</ModalGateway>
+								<div>
+									<h3>Type</h3>
+									<ul className="tagsContainer">
+										<li className="typeTag">#Web</li>
+										<li className="typeTag">#Mobile</li>
+										<li className="typeTag">#Backend</li>
+									</ul>
+								</div>
 								<div>
 									<h3>Technologies</h3>
 									<ul className="tagsContainer">

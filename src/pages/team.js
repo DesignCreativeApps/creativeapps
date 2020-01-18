@@ -12,15 +12,24 @@ const TeamPage = () => (
     <Layout>
         <Helmet bodyAttributes={{ class: headerStyles.others }} />
         <section className="othersSection">
-            <div>
+            <div className={teamStyles.companyMissionContainer}>
                 <h1>Team</h1>
-                {/* <p style={{ fontWeight: 700, lineHeight: 1.636363, fontSize: '1rem', marginBottom:'1rem'}}>
-                    Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione.
-                </p> */}
+                <p className={headerStyles.companyMission}>
+                    <strong>Dedicated.</strong> We are a small team and we thrive for quality.
+                    We will focus exclusively on your project.
+                </p>
+                <p className={headerStyles.companyMission}>
+                    <strong>Client control.</strong> As client you will become part of our team throughout
+                    the whole software development lifecycle.
+                </p>
+                <p className={headerStyles.companyMission}>
+                    <strong>Development process.</strong> We have a well organized development process and we adopt
+                    agile methodologies.
+                </p>
+                <p className={headerStyles.companyMission}>
+                    <strong>Mobile and Web.</strong> We provide custom development for web and mobile apps and
+                    backend systems. We build software tailored to satisfy company's indivudual needs.
+                </p>
             </div>
             <div className={teamStyles.media}>
                 <img
@@ -30,15 +39,22 @@ const TeamPage = () => (
                 />
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
-                        <h3 className={teamStyles.mediaTitle}>Luca Cimonetti</h3>
+                        <h2 className={teamStyles.mediaTitle}>Luca Cimonetti</h2>
                         <span>Full Stack Developer</span>
                     </div>
                     <div className={teamStyles.contactContainer}>
                         <img
                             className={teamStyles.contactImage}
+                            src="/images/linkedin.svg"
+                        />
+                        <img
+                            className={teamStyles.contactImage}
+                            src="/images/github.svg"
+                        />
+                        <img
+                            className={teamStyles.contactImage}
                             src="/images/envelope.svg"
                         />
-                        <span>luca@creativeapps.design</span>
                     </div>
                     <div className={teamStyles.bioContainer}>
                         <h3>Bio</h3>
@@ -68,23 +84,16 @@ const TeamPage = () => (
                             <li className="techTag">#React Native</li>
                         </ul>
                     </div>
-                    <div style={{ marginBottom: "1.5rem" }}>
+                    <div className={teamStyles.talksContainer}>
                         <h3>Tech Talks</h3>
-                        <ul style={{ paddingLeft: "1.4rem" }}>
+                        <ul className={teamStyles.talksList}>
                             <li>
                                 <p>“When Tech Meets Culture: Perpectives from Africa.”</p>
                                 <a
+                                    className={teamStyles.slidesLink}
                                     href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa"
-                                    style={{
-                                        padding: 11,
-                                        background: "#0099ff",
-                                        color: "white",
-                                        marginLeft: "-1.4rem",
-                                        fontWeight: 500,
-                                        borderRadius: 10,
-                                    }}
                                 >
-                                    Slides
+                                    #Slides
                                 </a>
                             </li>
                         </ul>
@@ -99,17 +108,25 @@ const TeamPage = () => (
                 />
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
-                        <h3 className={teamStyles.mediaTitle}>Elia Rigo</h3>
+                        <h2 className={teamStyles.mediaTitle}>Elia Rigo</h2>
                         <span>Backend Developer</span>
                     </div>
+
                     <div className={teamStyles.contactContainer}>
                         <img
-                            src="/images/envelope.svg"
-                            width="20"
-                            style={{ marginRight: 10 }}
+                            className={teamStyles.contactImage}
+                            src="/images/linkedin.svg"
                         />
-                        <span>elia@creativeapps.design</span>
+                        <img
+                            className={teamStyles.contactImage}
+                            src="/images/github.svg"
+                        />
+                        <img
+                            className={teamStyles.contactImage}
+                            src="/images/envelope.svg"
+                        />
                     </div>
+
                     <div className={teamStyles.bioContainer}>
                         <h3>Bio</h3>
                         <p>
@@ -137,24 +154,15 @@ const TeamPage = () => (
                             <li className="techTag">#Laravel</li>
                         </ul>
                     </div>
-                    <div style={{ marginBottom: "1.5rem" }}>
+                    <div className={teamStyles.talksContainer}>
                         <h3>Tech Talks</h3>
-                        <ul style={{ paddingLeft: "1.4rem", margin: 0 }}>
+                        <ul className={teamStyles.talksList}>
                             <li>
                                 <p>
                                     “AWS DeepRacer - A workshop about ReInforcement Learning.”
                                 </p>
-                                <a
-                                    style={{
-                                        padding: 11,
-                                        borderRadius: 10,
-                                        background: "#0099ff",
-                                        color: "white",
-                                        marginLeft: "-1.4rem",
-                                        fontWeight: 500,
-                                    }}
-                                >
-                                    Slides
+                                <a className={teamStyles.slidesLink}>
+                                    #Slides
                                 </a>
                             </li>
                         </ul>

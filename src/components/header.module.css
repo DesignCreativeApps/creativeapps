@@ -20,6 +20,7 @@
     padding: 15px 0;
     backdrop-filter: blur(20px);
     z-index: 1;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .headerGroup {
@@ -37,7 +38,7 @@
 }
 
 .headerLogo {
-    width: 50px;
+    width: 40px;
 }
 
 @media (max-width: 640px) {

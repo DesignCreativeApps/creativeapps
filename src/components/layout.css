@@ -63,7 +63,7 @@ section {
   margin-bottom: 5px;
 }
 
-.tag, .techTag, .skillTag {
+.tag, .techTag, .skillTag, .typeTag {
   color: white; 
   border-radius: 10px;
   padding: 10px;
@@ -77,6 +77,10 @@ section {
 
 .skillTag {
   background-color: #2a6592; 
+}
+
+.typeTag {
+  background-color: #32A9DB;
 }
 
 @media (max-width: 1060px) {
