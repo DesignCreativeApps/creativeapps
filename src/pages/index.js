@@ -130,7 +130,7 @@ const IndexPage = () => {
                 				</p>
 								<img
 									className={homeStyles.sliderAvatar}
-									src="/images/jacopo-romani.png"
+									src="/images/jacopo-romani.webp"
 								/>
 								<div className={homeStyles.reviewerContainer}>
 									<img
