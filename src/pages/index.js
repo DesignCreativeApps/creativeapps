@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
+import Image from '../components/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Layout from "../components/layout";
@@ -24,7 +25,7 @@ const IndexPage = () => {
 	const myRef = useRef(null);
 	return (
 		<Layout>
-			<Helmet bodyAttributes={{ class: headerStyles.home}} />
+			<Helmet bodyAttributes={{ class: headerStyles.home }} />
 			<div>
 				<div className={homeStyles.hero}>
 					<div className={homeStyles.heroGroup}>
@@ -33,7 +34,7 @@ const IndexPage = () => {
 							We create hand crafted software for your business from the initial
 							prototype to completion
             			</p>
-						<button className="button" onClick={()=>scrollToRef(myRef)}>Learn More</button>
+						<button className="button" onClick={() => scrollToRef(myRef)}>Learn More</button>
 					</div>
 				</div>
 				<section>
@@ -128,10 +129,11 @@ const IndexPage = () => {
 									version of Redhat Openshift. They were always available for
 									support and always handled our issues in a timely manner."
                 				</p>
-								<img
+								{/* <img
 									className={homeStyles.sliderAvatar}
 									src="/images/jacopo-romani.webp"
-								/>
+								/> */}
+								<Image test={homeStyles.sliderAvatar}/>	
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
@@ -147,7 +149,6 @@ const IndexPage = () => {
 							</div>
 						</div>
 					</Slider>
-
 					{/* <Slider dots centerMode centerPadding="0" arrows={false}>
 					<div>
 						<div className="sliderContainer">
