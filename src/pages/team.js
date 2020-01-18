@@ -39,7 +39,7 @@ const TeamPage = () => (
                 />
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
-                        <h2 className={teamStyles.mediaTitle}>Luca Cimonetti</h2>
+                        <h3 className={teamStyles.mediaTitle}>Luca Cimonetti</h3>
                         <span>Full Stack Developer</span>
                     </div>
                     <div className={teamStyles.contactContainer}>
@@ -84,11 +84,11 @@ const TeamPage = () => (
                             <li className="techTag">#React Native</li>
                         </ul>
                     </div>
-                    <div className={teamStyles.talksContainer}>
+                    <div>
                         <h3>Tech Talks</h3>
                         <ul className={teamStyles.talksList}>
                             <li>
-                                <p>“When Tech Meets Culture: Perpectives from Africa.”</p>
+                                <p>“-When Tech Meets Culture: Perpectives from Africa.”</p>
                                 <a
                                     className={teamStyles.slidesLink}
                                     href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa"
@@ -108,7 +108,7 @@ const TeamPage = () => (
                 />
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
-                        <h2 className={teamStyles.mediaTitle}>Elia Rigo</h2>
+                        <h3 className={teamStyles.mediaTitle}>Elia Rigo</h3>
                         <span>Backend Developer</span>
                     </div>
 
@@ -154,12 +154,12 @@ const TeamPage = () => (
                             <li className="techTag">#Laravel</li>
                         </ul>
                     </div>
-                    <div className={teamStyles.talksContainer}>
+                    <div>
                         <h3>Tech Talks</h3>
                         <ul className={teamStyles.talksList}>
                             <li>
                                 <p>
-                                    “AWS DeepRacer - A workshop about ReInforcement Learning.”
+                                    “-AWS DeepRacer - A workshop about ReInforcement Learning.”
                                 </p>
                                 <a className={teamStyles.slidesLink}>
                                     #Slides
