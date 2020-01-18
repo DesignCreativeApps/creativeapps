@@ -34,7 +34,7 @@ const TeamPage = () => (
             <div className={teamStyles.media}>
                 <img
                     className={teamStyles.mediaFigureImage}
-                    src="/images/luca-cimonetti.jpg"
+                    src="/images/luca-cimonetti.webp"
                     alt=""
                 />
                 <div className={teamStyles.mediaBody}>
@@ -103,7 +103,7 @@ const TeamPage = () => (
             <div className={teamStyles.media}>
                 <img
                     className={teamStyles.mediaFigureImage}
-                    src="/images/elia.jpg"
+                    src="/images/elia.webp"
                     alt=""
                 />
                 <div className={teamStyles.mediaBody}>

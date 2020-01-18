@@ -9,22 +9,22 @@ import headerStyles from '../components/header.module.css';
 
 const photos = [
 	{
-		src: "/images/mockup-blue-copia-768x576.png",
+		src: "/images/blue1.webp",
 		width: 4,
 		height: 3
 	},
 	{
-		src: "/images/ezgif.com-video-to-gif1.gif",
+		src: "/images/blue2.webp",
 		width: 4,
 		height: 3
 	},
 	{
-		src: "/images/ezgif.com-video-to-gif2.gif",
+		src: "/images/blue3.webp",
 		width: 4,
 		height: 3
 	},
 	{
-		src: "/images/ezgif.com-video-to-gif.gif",
+		src: "/images/blue4.webp",
 		width: 4,
 		height: 3
 	}
@@ -32,22 +32,22 @@ const photos = [
 
 const gesinterventi = [
 	{
-		src: "/images/0x0ss-P3.jpg",
+		src: "/images/iphone1.webp",
 		width: 1,
 		height: 2
 	},
 	{
-		src: "/images/0x0ss-P3 (1).jpg",
+		src: "/images/iphone2.webp",
 		width: 1,
 		height: 2
 	},
 	{
-		src: "/images/0x0ss-P3 (2).jpg",
+		src: "/images/iphone3.webp",
 		width: 1,
 		height: 2
 	},
 	{
-		src: "/images/0x0ss-P3 (3).jpg",
+		src: "/images/iphone4.webp",
 		width: 1,
 		height: 2
 	}
