@@ -21,7 +21,7 @@ const Footer = () => (
                 </div>
                 <div className={footerStyles.infoContainer}>
                     <div className={footerStyles.footerItem}>
-                        <img src='/images/logo-designcode.svg' width="20" className={footerStyles.image}/>
+                        <img src='/images/logo.svg' className={footerStyles.image}/>
                         <span>CREATIVE APPS</span>
                     </div>
                     <div className={footerStyles.footerItem}>

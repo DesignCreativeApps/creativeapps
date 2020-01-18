@@ -36,6 +36,10 @@
     font-weight: 900;
 }
 
+.headerLogo {
+    width: 50px;
+}
+
 @media (max-width: 640px) {
     .home .header {
         padding: 15px 0;
@@ -57,5 +61,9 @@
 
     .header a:nth-child(4) {
         display: none;
+    }
+
+    .headerLogo {
+        width: 30px;
     }
 }

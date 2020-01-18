@@ -33,7 +33,7 @@ class Header extends React.Component {
 		return (	
 			<nav className={headerClasses}>
 				<div className={headerStyles.headerGroup}>
-					<Link to="/"><img src='/images/logo-designcode.svg' width="30" /></Link>
+					<Link to="/"><img className={headerStyles.headerLogo} src='/images/logo.svg'/></Link>
 					<Link to="/portfolio">Portfolio</Link>
 					<Link to="/team">Team</Link>
 					<Link to="/blog">Blog</Link>
