@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Image from '../components/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,7 +22,7 @@ const settings = {
 
 
 
-const IndexPage = () => {
+const IndexPage = (props) => {
 	const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100)
 	const myRef = useRef(null);
 	return (
@@ -133,7 +135,8 @@ const IndexPage = () => {
 									className={homeStyles.sliderAvatar}
 									src="/images/jacopo-romani.webp"
 								/> */}
-								<Image test={homeStyles.sliderAvatar}/>	
+								{/* <Image test={homeStyles.sliderAvatar}/> */}
+								<Img fixed={props.data.file.childImageSharp.fixed} />	
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
@@ -207,3 +210,17 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "jacopo-romani.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
