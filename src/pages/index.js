@@ -131,7 +131,7 @@ const IndexPage = (props) => {
 									version of Redhat Openshift. They were always available for
 									support and always handled our issues in a timely manner."
                 				</p>
-								<Img style={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	
+								<Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
