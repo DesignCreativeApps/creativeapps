@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Image from '../components/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Layout from "../components/layout";
