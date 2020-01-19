@@ -9,22 +9,22 @@ import headerStyles from '../components/header.module.css';
 
 const photos = [
 	{
-		src: "/images/blue1.webp",
+		src: "/images/blue1.jpg",
 		width: 4,
 		height: 3
 	},
 	{
-		src: "/images/blue2.webp",
+		src: "/images/blue2.jpg",
 		width: 4,
 		height: 3
 	},
 	{
-		src: "/images/blue3.webp",
+		src: "/images/blue3.jpg",
 		width: 4,
 		height: 3
 	},
 	{
-		src: "/images/blue4.webp",
+		src: "/images/blue4.jpg",
 		width: 4,
 		height: 3
 	}
@@ -32,22 +32,22 @@ const photos = [
 
 const gesinterventi = [
 	{
-		src: "/images/iphone1.webp",
+		src: "/images/iphone1.jpg",
 		width: 1,
 		height: 2
 	},
 	{
-		src: "/images/iphone2.webp",
+		src: "/images/iphone2.jpg",
 		width: 1,
 		height: 2
 	},
 	{
-		src: "/images/iphone3.webp",
+		src: "/images/iphone3.jpg",
 		width: 1,
 		height: 2
 	},
 	{
-		src: "/images/iphone4.webp",
+		src: "/images/iphone4.jpg",
 		width: 1,
 		height: 2
 	}
@@ -127,6 +127,7 @@ const PortfolioPage = () => {
 										</Modal>
 									) : null}
 								</ModalGateway>
+								<button onclick={openLightbox}></button>
 								<div>
 									<h3>Type</h3>
 									<ul className="tagsContainer">
