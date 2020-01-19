@@ -131,12 +131,7 @@ const IndexPage = (props) => {
 									version of Redhat Openshift. They were always available for
 									support and always handled our issues in a timely manner."
                 				</p>
-								{/* <img
-									className={homeStyles.sliderAvatar}
-									src="/images/jacopo-romani.webp"
-								/> */}
-								{/* <Image test={homeStyles.sliderAvatar}/> */}
-								<Img fixed={props.data.file.childImageSharp.fixed} />	
+								<Img style={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
@@ -213,7 +208,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "jacopo-romani.png" }) {
+    file(relativePath: { eq: "jacopo-romani.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
