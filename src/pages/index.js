@@ -77,9 +77,9 @@ const IndexPage = (props) => {
 	return (
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.home }} />
-			{/* <StyledBackgroundSection /> */}
+			<StyledBackgroundSection />
 			<div>
-				<div className={homeStyles.hero}>
+				{/* <div className={homeStyles.hero}>
 					<div className={homeStyles.heroGroup}>
 						<h1>CREATIVE APPS</h1>
 						<p>
@@ -88,7 +88,7 @@ const IndexPage = (props) => {
             			</p>
 						<button className="button" onClick={() => scrollToRef(myRef)}>Learn More</button>
 					</div>
-				</div>
+				</div> */}
 				<section>
 					<div className={homeStyles.services}>
 						<h1>Software development for web and mobile</h1>
