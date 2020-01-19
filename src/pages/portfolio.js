@@ -112,7 +112,7 @@ const PortfolioPage = () => {
 								<p className={portfolioStyles.projectDescription}>
 									From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities.
 							</p>
-								<Gallery photos={gesinterventi} onClick={openLightbox} />
+								<Gallery photos={gesinterventi} onClick={openLightbox}/>
 								<ModalGateway>
 									{viewerIsOpen ? (
 										<Modal onClose={closeLightbox}>
