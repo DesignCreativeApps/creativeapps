@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link } from "gatsby";
+import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
@@ -8,7 +9,7 @@ import teamStyles from "./team.module.css"
 import headerStyles from "../components/header.module.css"
 
 
-const TeamPage = () => (
+const TeamPage = (props) => (
     <Layout>
         <Helmet bodyAttributes={{ class: headerStyles.others }} />
         <section className="othersSection">
@@ -32,11 +33,9 @@ const TeamPage = () => (
                 </p>
             </div>
             <div className={teamStyles.media}>
-                <img
-                    className={teamStyles.mediaFigureImage}
-                    src="/images/luca.jpg"
-                    alt=""
-                />
+                <div className={teamStyles.mediaFigureContainer}>
+                     <Img className={teamStyles.mediaFigureImage} fluid={props.data.luca.childImageSharp.fluid} />
+                </div>
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
                         <h3 className={teamStyles.mediaTitle}>Luca Cimonetti</h3>
@@ -101,11 +100,14 @@ const TeamPage = () => (
                 </div>
             </div>
             <div className={teamStyles.media}>
-                <img
+                {/* <img
                     className={teamStyles.mediaFigureImage}
                     src="/images/elia.jpg"
                     alt=""
-                />
+                /> */}
+                  <div className={teamStyles.mediaFigureContainer}>
+                     <Img className={teamStyles.mediaFigureImage} fluid={props.data.elia.childImageSharp.fluid} />
+                </div>
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
                         <h3 className={teamStyles.mediaTitle}>Elia Rigo</h3>
@@ -173,4 +175,28 @@ const TeamPage = () => (
     </Layout>
 )
 
-export default TeamPage
+export default TeamPage;
+
+export const query = graphql`
+  query {
+    luca: file(relativePath: { eq: "luca.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    elia: file(relativePath: { eq: "elia.jpg" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+  }
+`
+

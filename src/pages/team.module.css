@@ -3,8 +3,8 @@
 }
 
 .mediaBody {
+  flex-grow: 3;
   margin-left: 1.5rem;
-  flex: 1;
 }
 
 .media {
@@ -52,11 +52,13 @@
   align-items: center;
 }
 
+.mediaFigureContainer {
+  width: 100%;
+}
+
 .mediaFigureImage {
-  width: 180px;
   border: 3px solid grey;
   border-radius: 50%;
-  height: auto;
   filter: brightness(95%);
 }
 
@@ -107,11 +109,13 @@
   .bioContainer {
     border-top: 1px solid #ddd;
   }
-  .mediaFigureImage  {
+
+  .mediaFigureContainer {
     align-self: center;
-    width: 120px;
     margin-bottom: 1rem;
+    width: 25%;
   }
+
   .mediaTitleContainer{
     flex-direction: column;
     align-items: center; 
