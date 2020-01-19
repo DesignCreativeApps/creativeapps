@@ -147,57 +147,6 @@ const IndexPage = (props) => {
 							</div>
 						</div>
 					</Slider>
-					{/* <Slider dots centerMode centerPadding="0" arrows={false}>
-					<div>
-						<div className="sliderContainer">
-							<p>
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								Lacinia quis vel eros donec ac odio tempor orci."
-              				</p>
-							<div className="reviewerContainer">
-								<img
-									src="/images/italy.svg"
-									width="30"
-									style={{ marginRight: 15 }}
-								/>
-								<span><strong>Pippo Franco</strong></span>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div className="sliderContainer">
-							<p>
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              				</p>
-							<div className="reviewerContainer">
-								<img
-									src="/images/germany.svg"
-									width="30"
-									style={{ marginRight: 15 }}
-								/>
-								<span><strong>Jurgen Strunz</strong></span>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div className="sliderContainer">
-							<p>
-								"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              				</p>
-							<div className="reviewerContainer">
-								<img
-									src="/images/sweden.svg"
-									width="30"
-									style={{ marginRight: 15 }}
-								/>
-								<span><strong>Andre Myhrer</strong></span>
-							</div>
-						</div>
-					</div>
-				</Slider> */}
 				</section>
 			</div>
 		</Layout>
