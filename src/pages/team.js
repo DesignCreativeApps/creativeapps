@@ -100,11 +100,6 @@ const TeamPage = (props) => (
                 </div>
             </div>
             <div className={teamStyles.media}>
-                {/* <img
-                    className={teamStyles.mediaFigureImage}
-                    src="/images/elia.jpg"
-                    alt=""
-                /> */}
                   <div className={teamStyles.mediaFigureContainer}>
                      <Img className={teamStyles.mediaFigureImage} fluid={props.data.elia.childImageSharp.fluid} />
                 </div>
