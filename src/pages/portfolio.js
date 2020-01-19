@@ -127,7 +127,6 @@ const PortfolioPage = () => {
 										</Modal>
 									) : null}
 								</ModalGateway>
-								<button onclick={openLightbox}></button>
 								<div>
 									<h3>Type</h3>
 									<ul className="tagsContainer">

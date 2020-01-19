@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
-import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { graphql, StaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image'
+import styled from 'styled-components'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Layout from "../components/layout";
@@ -19,7 +21,55 @@ const settings = {
 	className: "slides",
 }
 
-
+const BackgroundSection = ({ className }) => (
+	<StaticQuery
+		query={graphql`
+		query {
+		  desktop: file(relativePath: { eq: "wallpaper.jpg" }) {
+			childImageSharp {
+			  fluid(quality: 100, maxWidth: 1920) {
+				...GatsbyImageSharpFluid_withWebp
+			  }
+			}
+		  }
+		}
+	  `}
+		render={data => {
+			// Set ImageData.
+			const imageData = data.desktop.childImageSharp.fluid
+			return (
+				<BackgroundImage
+					Tag="section"
+					className={className}
+					fluid={imageData}
+				>
+					<div style={{alignSelf: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
+					<div className={homeStyles.heroGroup}>
+						<h1>CREATIVE APPS</h1>
+						<p>
+							We create hand crafted software for your business from the initial
+							prototype to completion
+            			</p>
+						<button className="button">Learn More</button>
+					</div>
+					</div>
+					
+				</BackgroundImage>
+			)
+		}}
+	/>
+)
+const StyledBackgroundSection = styled(BackgroundSection)`
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-size: cover;
+    background-position: center;
+	filter: brightness(70%);
+`
 
 const IndexPage = (props) => {
 	const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100)
@@ -27,6 +77,7 @@ const IndexPage = (props) => {
 	return (
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.home }} />
+			{/* <StyledBackgroundSection /> */}
 			<div>
 				<div className={homeStyles.hero}>
 					<div className={homeStyles.heroGroup}>
@@ -130,7 +181,7 @@ const IndexPage = (props) => {
 									version of Redhat Openshift. They were always available for
 									support and always handled our issues in a timely manner."
                 				</p>
-								<Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	
+								{/* <Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	 */}
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
@@ -154,16 +205,16 @@ const IndexPage = (props) => {
 
 export default IndexPage
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "jacopo-romani.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     file(relativePath: { eq: "jacopo-romani.jpg" }) {
+//       childImageSharp {
+//         # Specify the image processing specifications right in the query.
+//         # Makes it trivial to update as your page's design changes.
+//         fixed(width: 50, height: 50) {
+//           ...GatsbyImageSharpFixed_withWebp
+//         }
+//       }
+//     }
+//   }
+// `

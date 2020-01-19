@@ -1,3 +1,9 @@
+.test {
+  width: 100%;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
 .hero {
     position: relative;
     height: 100vh;
