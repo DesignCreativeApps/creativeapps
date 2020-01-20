@@ -4,14 +4,14 @@ import { Helmet } from 'react-helmet';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./Blog.css"
+import headerStyles from '../components/header.module.css';
 
 const SecondPage = () => (
     <Layout>
-        <Helmet bodyAttributes={{ class: 'portfolio' }} />
-        <section style={{ maxWidth: 900, marginRight: 'auto', marginLeft: 'auto' }}>
-            <h1 style={{ fontSize: 60 }}>Blog</h1>
-            <p>No posts yet! We will be live soon!</p>
-            {/* <div>
+        <Helmet bodyAttributes={{ class: headerStyles.others }} />
+        <section className="othersSection">
+            <h1>Blog</h1>
+            <div>
                 <article className="post-item">
                     <figure className="post-item__info">
                         <img alt="Machine learning business value" className="post-item__img" src='/images/machine.jpeg'/>
@@ -72,7 +72,7 @@ const SecondPage = () => (
                     </div>
                 </article>
                 
-            </div> */}
+            </div>
         </section>
     </Layout>
 )
