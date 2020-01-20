@@ -20,62 +20,27 @@ const settings = {
 	className: "slides",
 }
 
-// const BackgroundSection = () => (
-// 	<StaticQuery
-// 		query={graphql`
-// 		query {
-// 		  desktop: file(relativePath: { eq: "wallpaper.jpg" }) {
-// 			childImageSharp {
-// 			  fluid(quality: 100, maxWidth: 1920) {
-// 				...GatsbyImageSharpFluid_withWebp
-// 			  }
-// 			}
-// 		  }
-// 		}
-// 	  `}
-// 		render={data => {
-// 			// Set ImageData.
-// 			const imageData = data.desktop.childImageSharp.fluid
-// 			return (
-// 				<BackgroundImage
-// 					Tag="div"
-// 					className={homeStyles.hero}
-// 					fluid={imageData}
-// 				>
-					
-// 					<div className={homeStyles.heroGroup}>
-// 						<h1>CREATIVE APPS</h1>
-// 						<p>
-// 							We create hand crafted software for your business from the initial
-// 							prototype to completion
-//             			</p>
-// 						<button className="button">Learn More</button>
-// 					</div>
-					
-					
-// 				</BackgroundImage>
-// 			)
-// 		}}
-// 	/>
-// )
-
 const IndexPage = (props) => {
 	const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100)
 	const myRef = useRef(null);
 	return (
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.home }} />
-				{/* <BackgroundSection/> */}
-				<div className={homeStyles.hero}>
+				<BackgroundImage
+					Tag="div"
+					className={homeStyles.hero}
+					fluid={props.data.wallpaper.childImageSharp.fluid}
+				>
+					
 					<div className={homeStyles.heroGroup}>
 						<h1>CREATIVE APPS</h1>
 						<p>
 							We create hand crafted software for your business from the initial
 							prototype to completion
             			</p>
-						<button className="button" onClick={() => scrollToRef(myRef)}>Learn More</button>
-					</div>
-				</div>
+						<button className="button">Learn More</button>
+					</div>	
+				</BackgroundImage>
 				<section>
 					<div className={homeStyles.services}>
 						<h1>Software development for web and mobile</h1>
@@ -168,7 +133,7 @@ const IndexPage = (props) => {
 									version of Redhat Openshift. They were always available for
 									support and always handled our issues in a timely manner."
                 				</p>
-								<Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	
+								<Img className={homeStyles.sliderAvatar} fixed={props.data.jacopo.childImageSharp.fixed} />	
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
@@ -191,16 +156,23 @@ const IndexPage = (props) => {
 
 export default IndexPage
 
-export const AvatarQuery = graphql`
+export const query = graphql`
   query {
-    file(relativePath: { eq: "jacopo-romani.jpg" }) {
+    jacopo: file(relativePath: { eq: "jacopo-romani.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
         fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed_withWebp
+        	...GatsbyImageSharpFixed_withWebp
         }
       }
     }
+	wallpaper: file(relativePath: { eq: "wallpaper.jpg" }) {
+		childImageSharp {
+		  fluid(quality: 100, maxWidth: 1920) {
+			...GatsbyImageSharpFluid_withWebp
+		  }
+		}
+	  }
   }
 `
