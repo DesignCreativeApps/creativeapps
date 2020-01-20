@@ -65,8 +65,8 @@ const IndexPage = (props) => {
 	return (
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.home }} />
-				<BackgroundSection/>
-				{/* <div className={homeStyles.hero}>
+				{/* <BackgroundSection/> */}
+				<div className={homeStyles.hero}>
 					<div className={homeStyles.heroGroup}>
 						<h1>CREATIVE APPS</h1>
 						<p>
@@ -75,7 +75,7 @@ const IndexPage = (props) => {
             			</p>
 						<button className="button" onClick={() => scrollToRef(myRef)}>Learn More</button>
 					</div>
-				</div> */}
+				</div>
 				<section>
 					<div className={homeStyles.services}>
 						<h1>Software development for web and mobile</h1>
@@ -168,7 +168,7 @@ const IndexPage = (props) => {
 									version of Redhat Openshift. They were always available for
 									support and always handled our issues in a timely manner."
                 				</p>
-								{/* <Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	 */}
+								<Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
@@ -191,16 +191,16 @@ const IndexPage = (props) => {
 
 export default IndexPage
 
-// export const AvatarQuery = graphql`
-//   query {
-//     file(relativePath: { eq: "jacopo-romani.jpg" }) {
-//       childImageSharp {
-//         # Specify the image processing specifications right in the query.
-//         # Makes it trivial to update as your page's design changes.
-//         fixed(width: 50, height: 50) {
-//           ...GatsbyImageSharpFixed_withWebp
-//         }
-//       }
-//     }
-//   }
-// `
+export const AvatarQuery = graphql`
+  query {
+    file(relativePath: { eq: "jacopo-romani.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+  }
+`
