@@ -57,7 +57,7 @@
     }
 
     .headerGroup {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(3, auto);
     }
 
     .header a:nth-child(4) {
