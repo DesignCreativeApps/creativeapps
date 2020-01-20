@@ -27,7 +27,7 @@
     max-width: 800px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-items: center;
 }
@@ -57,7 +57,7 @@
     }
 
     .headerGroup {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(4, auto);
     }
 
     .header a:nth-child(4) {
