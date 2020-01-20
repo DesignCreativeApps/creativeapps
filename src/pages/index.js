@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
 import Img from 'gatsby-image';
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -38,7 +38,7 @@ const IndexPage = (props) => {
 							We create hand crafted software for your business from the initial
 							prototype to completion
             			</p>
-						<button className="button">Learn More</button>
+						<button onClick={() => scrollToRef(myRef)} className="button">Learn More</button>
 					</div>	
 				</BackgroundImage>
 				<section>
