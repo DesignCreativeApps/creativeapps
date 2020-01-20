@@ -168,7 +168,7 @@ const IndexPage = (props) => {
 									version of Redhat Openshift. They were always available for
 									support and always handled our issues in a timely manner."
                 				</p>
-								<Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	
+								{/* <Img className={homeStyles.sliderAvatar} fixed={props.data.file.childImageSharp.fixed} />	 */}
 								<div className={homeStyles.reviewerContainer}>
 									<img
 										src="/images/italy.svg"
@@ -191,16 +191,16 @@ const IndexPage = (props) => {
 
 export default IndexPage
 
-export const AvatarQuery = graphql`
-  query {
-    file(relativePath: { eq: "jacopo-romani.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-  }
-`
+// export const AvatarQuery = graphql`
+//   query {
+//     file(relativePath: { eq: "jacopo-romani.jpg" }) {
+//       childImageSharp {
+//         # Specify the image processing specifications right in the query.
+//         # Makes it trivial to update as your page's design changes.
+//         fixed(width: 50, height: 50) {
+//           ...GatsbyImageSharpFixed_withWebp
+//         }
+//       }
+//     }
+//   }
+// `
