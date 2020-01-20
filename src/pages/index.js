@@ -20,44 +20,44 @@ const settings = {
 	className: "slides",
 }
 
-const BackgroundSection = () => (
-	<StaticQuery
-		query={graphql`
-		query {
-		  desktop: file(relativePath: { eq: "wallpaper.jpg" }) {
-			childImageSharp {
-			  fluid(quality: 100, maxWidth: 1920) {
-				...GatsbyImageSharpFluid_withWebp
-			  }
-			}
-		  }
-		}
-	  `}
-		render={data => {
-			// Set ImageData.
-			const imageData = data.desktop.childImageSharp.fluid
-			return (
-				<BackgroundImage
-					Tag="div"
-					className={homeStyles.hero}
-					fluid={imageData}
-				>
+// const BackgroundSection = () => (
+// 	<StaticQuery
+// 		query={graphql`
+// 		query {
+// 		  desktop: file(relativePath: { eq: "wallpaper.jpg" }) {
+// 			childImageSharp {
+// 			  fluid(quality: 100, maxWidth: 1920) {
+// 				...GatsbyImageSharpFluid_withWebp
+// 			  }
+// 			}
+// 		  }
+// 		}
+// 	  `}
+// 		render={data => {
+// 			// Set ImageData.
+// 			const imageData = data.desktop.childImageSharp.fluid
+// 			return (
+// 				<BackgroundImage
+// 					Tag="div"
+// 					className={homeStyles.hero}
+// 					fluid={imageData}
+// 				>
 					
-					<div className={homeStyles.heroGroup}>
-						<h1>CREATIVE APPS</h1>
-						<p>
-							We create hand crafted software for your business from the initial
-							prototype to completion
-            			</p>
-						<button className="button">Learn More</button>
-					</div>
+// 					<div className={homeStyles.heroGroup}>
+// 						<h1>CREATIVE APPS</h1>
+// 						<p>
+// 							We create hand crafted software for your business from the initial
+// 							prototype to completion
+//             			</p>
+// 						<button className="button">Learn More</button>
+// 					</div>
 					
 					
-				</BackgroundImage>
-			)
-		}}
-	/>
-)
+// 				</BackgroundImage>
+// 			)
+// 		}}
+// 	/>
+// )
 
 const IndexPage = (props) => {
 	const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 100)
