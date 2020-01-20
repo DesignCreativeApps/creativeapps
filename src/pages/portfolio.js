@@ -80,6 +80,13 @@ const PortfolioPage = () => {
 		setCurrentImageBlue(0);
 		setViewerIsOpenBlue(false);
 	};
+
+	const [selectAll, setSelectAll] = useState(false);
+
+	const toggleSelectAll = () => {
+	  setSelectAll(!selectAll);
+	};
+
 	return (
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.others }} />
@@ -160,7 +167,7 @@ const PortfolioPage = () => {
 								<p className={portfolioStyles.projectDescription}>
 									Responsible for the migration of the backend from <strong>Red Hat Openshift</strong> v.2 to v.3 and the release of the <strong>Android</strong> application. Platform maintenance and bug fixing.
 								</p>
-								<Gallery photos={photos} onClick={openLightboxBlue} />
+								<Gallery photos={photos} onClick={openLightboxBlue}/>
 								<ModalGateway>
 									{viewerIsOpenBlue ? (
 										<Modal onClose={closeLightboxBlue}>
