@@ -11,7 +11,6 @@ const Image = ({
   selected,
   onClick
 }) => {
-  console.log(onClick);
   return (
       <img
         onClick={onClick}

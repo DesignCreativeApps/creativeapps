@@ -34,7 +34,7 @@ class Header extends React.Component {
 			<nav className={headerClasses}>
 				<div className={headerStyles.headerGroup}>
 					<Link to="/"><img className={headerStyles.headerLogo} src='/images/logo.svg'/></Link>
-					<Link to="/team">Team</Link>
+					<Link to="/team">About</Link>
 					<Link to="/portfolio">Portfolio</Link>
 					{/* <Link to="/blog">Blog</Link> */}
 

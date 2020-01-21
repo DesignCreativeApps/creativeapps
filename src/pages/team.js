@@ -14,7 +14,7 @@ const TeamPage = (props) => (
         <Helmet bodyAttributes={{ class: headerStyles.others }} />
         <section className="othersSection">
             <div className={teamStyles.companyMissionContainer}>
-                <h1>Team</h1>
+                <h1>About</h1>
                 <p className={headerStyles.companyMission}>
                     <strong>Dedicated.</strong> We are a small team and we thrive for quality.
                     We will focus exclusively on your project.
