@@ -1,0 +1,18 @@
+.image {    
+    border: 1px solid #06befa;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    transition: padding 2s;
+    transform: scale(0.95);
+    transition: transform 0.4s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1);
+}
+
+@media (max-width: 720px) {
+    .image:hover {
+      transform: none;
+    }
+  }

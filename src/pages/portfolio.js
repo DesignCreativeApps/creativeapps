@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import Image from '../components/image';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Helmet } from 'react-helmet';
@@ -10,22 +11,22 @@ import headerStyles from '../components/header.module.css';
 const photos = [
 	{
 		src: "/images/blue1.jpg",
-		width: 4,
+		width: 5,
 		height: 3
 	},
 	{
 		src: "/images/blue2.jpg",
-		width: 4,
+		width: 5,
 		height: 3
 	},
 	{
 		src: "/images/blue3.jpg",
-		width: 4,
+		width: 5,
 		height: 3
 	},
 	{
 		src: "/images/blue4.jpg",
-		width: 4,
+		width: 5,
 		height: 3
 	}
 ];
@@ -33,23 +34,23 @@ const photos = [
 const gesinterventi = [
 	{
 		src: "/images/iphone1.jpg",
-		width: 1,
-		height: 2
+		width: 150,
+		height: 326
 	},
 	{
 		src: "/images/iphone2.jpg",
 		width: 1,
-		height: 2
+		height: 2.17
 	},
 	{
 		src: "/images/iphone3.jpg",
 		width: 1,
-		height: 2
+		height: 2.17
 	},
 	{
 		src: "/images/iphone4.jpg",
 		width: 1,
-		height: 2
+		height: 2.17
 	}
 ];
 
@@ -87,6 +88,22 @@ const PortfolioPage = () => {
 	  setSelectAll(!selectAll);
 	};
 
+	const imageRenderer = useCallback(
+		({ index, left, top, key, photo, onClick}) => {
+			console.log(onClick);
+			return(<Image
+			selected={selectAll ? true : false}
+			key={key}
+			margin={"2px"}
+			index={index}
+			photo={photo}
+			left={left}
+			top={top}
+			onClick={onClick}
+		  />
+		  )},
+	  );
+
 	return (
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.others }} />
@@ -119,7 +136,7 @@ const PortfolioPage = () => {
 								<p className={portfolioStyles.projectDescription}>
 									From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities.
 							</p>
-								<Gallery photos={gesinterventi} onClick={openLightbox}/>
+								<Gallery photos={gesinterventi} onClick={console.log} renderImage={imageRenderer}/>
 								<ModalGateway>
 									{viewerIsOpen ? (
 										<Modal onClose={closeLightbox}>
@@ -138,6 +155,7 @@ const PortfolioPage = () => {
 									<h3>Type</h3>
 									<ul className="tagsContainer">
 										<li className="typeTag">#Mobile</li>
+										<li className="typeTag">#IOS</li>
 										<li className="typeTag">#Backend</li>
 									</ul>
 								</div>
@@ -165,9 +183,9 @@ const PortfolioPage = () => {
 									<strong>Blue 2 is an Android application for Samsung tablets designed to facilitate the learning process for kids with special needs like autism.</strong>
 								</p>
 								<p className={portfolioStyles.projectDescription}>
-									Responsible for the migration of the backend from <strong>Red Hat Openshift</strong> v.2 to v.3 and the release of the <strong>Android</strong> application. Platform maintenance and bug fixing.
+									Responsible for the migration of the backend from Red Hat Openshift v.2 to v.3 and the release of the Android application. Platform maintenance and bug fixing.
 								</p>
-								<Gallery photos={photos} onClick={openLightboxBlue}/>
+								<Gallery photos={photos} onClick={openLightboxBlue} renderImage={imageRenderer}/>
 								<ModalGateway>
 									{viewerIsOpenBlue ? (
 										<Modal onClose={closeLightboxBlue}>
