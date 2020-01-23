@@ -30,7 +30,7 @@ class Header extends React.Component {
 
 	render() {
 		const isHome = globalHistory.location.pathname =='/en/' || globalHistory.location.pathname =='/it/'
-		let headerClasses = this.state.hasScrolled &&
+		let headerClasses = this.state.hasScrolled && 
 		isHome ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
 		return (	
 			<nav className={headerClasses}>
@@ -38,8 +38,6 @@ class Header extends React.Component {
 					<Link to="/"><img className={headerStyles.headerLogo} src='/images/logo.svg'/></Link>
 					<Link to="/team">About</Link>
 					<Link to="/portfolio">Portfolio</Link>
-					{/* <Link to="/blog">Blog</Link> */}
-
 					<button className="button" onClick={this.openForm}>Contact Us</button>
 				</div>
 				<ReactTypeformEmbed
