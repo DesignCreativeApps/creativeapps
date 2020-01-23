@@ -26,13 +26,7 @@ const IndexPage = (props) => {
 	const myRef = useRef(null);
 	return (
 		<Layout>
-			<SEO
-				title='home'
-			/>
-			<Helmet bodyAttributes={{ class: headerStyles.home }} >
-				<meta charSet="utf-8" />
-          		<title>Home</title>
-			</Helmet>
+			<Helmet bodyAttributes={{ class: headerStyles.home }} />
 			<BackgroundImage
 				Tag="div"
 				className={homeStyles.hero}
