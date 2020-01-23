@@ -29,9 +29,9 @@ class Header extends React.Component {
 	}
 
 	render() {
+		const isHome = globalHistory.location.pathname =='/en/' || globalHistory.location.pathname =='/it/'
 		let headerClasses = this.state.hasScrolled &&
-		document.title =='Home | CreativeApps' ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
-		console.log(document.title);
+		isHome ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
 		return (	
 			<nav className={headerClasses}>
 				<div className={headerStyles.headerGroup}>
