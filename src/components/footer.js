@@ -17,7 +17,7 @@ const Footer = () => (
                         </a>
                     </div>
                     <div className={footerStyles.footerItem}>
-                        <a href="https://bitbucket.com">
+                        <a href="https://bitbucket.org">
                             <img src='/images/bitbucket.svg' width="20" className={footerStyles.image} />
                             <span>Bitbucket</span>
                         </a>
