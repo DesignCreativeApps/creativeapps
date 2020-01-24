@@ -1,10 +1,9 @@
 import React from "react"
-import { Link } from "gatsby";
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import { FormattedMessage } from "gatsby-plugin-intl"
+import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
 import teamStyles from "./team.module.css"
 import headerStyles from "../components/header.module.css"
@@ -12,6 +11,7 @@ import headerStyles from "../components/header.module.css"
 
 const TeamPage = (props) => (
     <Layout>
+        <SEO title="Portfolio"/>
         <Helmet bodyAttributes={{ class: headerStyles.others }} />
         <section className="othersSection">
             <div className={teamStyles.companyMissionContainer}>
@@ -41,18 +41,21 @@ const TeamPage = (props) => (
                     <div className={teamStyles.contactContainer}>
                         <a href="https://www.linkedin.com/in/luca-cimonetti/">
                             <img
+                                alt="linkedin"
                                 className={teamStyles.contactImage}
                                 src="/images/linkedin.svg"
                             />
                         </a>
                         <a href="https://github.com/lucacimo">
                             <img
+                                alt="github"
                                 className={teamStyles.contactImage}
                                 src="/images/github.svg"
                             />
                         </a>
                         <a href="mailto:luca@creativeapps.design">
                             <img
+                                alt="envelope"
                                 className={teamStyles.contactImage}
                                 src="/images/envelope.svg"
                             />
@@ -109,18 +112,21 @@ const TeamPage = (props) => (
                     <div className={teamStyles.contactContainer}>
                         <a href="https://www.linkedin.com/in/elia-rigo/">
                             <img
+                                alt="linkedin"
                                 className={teamStyles.contactImage}
                                 src="/images/linkedin.svg"
                             />
                         </a>
                         <a href="https://github.com/EliaRigo">
                             <img
+                                alt="github"
                                 className={teamStyles.contactImage}
                                 src="/images/github.svg"
                             />
                         </a>
                         <a href="mailto:elia@creativeapps.design">
                             <img
+                                alt="envelope"
                                 className={teamStyles.contactImage}
                                 src="/images/envelope.svg"
                             />

@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Helmet } from 'react-helmet';
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import "./Blog.css"
 import headerStyles from '../components/header.module.css';
 

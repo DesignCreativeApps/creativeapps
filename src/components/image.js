@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import imageStyles from './image.module.css';
 
 const Image = ({

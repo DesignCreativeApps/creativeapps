@@ -8,7 +8,7 @@
 
 exports.onRouteUpdate = ({ location, prevLocation }) => {
     let nav = document.getElementsByTagName("nav");
-    const isHome = location.pathname == "/en/" || location.pathname == "/it/";
+    const isHome = location.pathname === "/en/" || location.pathname === "/it/";
     if(isHome &&  window.pageYOffset > 50){
         nav[0].classList.add("header-module--headerScrolled--2I3xA");
     }

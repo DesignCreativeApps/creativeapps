@@ -1,32 +1,36 @@
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
 import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+// import Carousel, { Modal, ModalGateway } from "react-images";
 import Image from '../components/image';
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import { FormattedMessage } from "gatsby-plugin-intl"
 import { Helmet } from 'react-helmet';
+import SEO from "../components/seo"
 import portfolioStyles from './portfolio.module.css';
 import headerStyles from '../components/header.module.css';
 
 const photos = [
 	{
 		src: "/images/blue1.jpg",
+		alt: 'blue1',
 		width: 5,
 		height: 3
 	},
 	{
 		src: "/images/blue2.jpg",
+		alt: 'blue2',
 		width: 5,
 		height: 3
 	},
 	{
 		src: "/images/blue3.jpg",
+		alt: 'blue3',
 		width: 5,
 		height: 3
 	},
 	{
 		src: "/images/blue4.jpg",
+		alt: 'blue4',
 		width: 5,
 		height: 3
 	}
@@ -35,21 +39,25 @@ const photos = [
 const gesinterventi = [
 	{
 		src: "/images/iphone1.jpg",
+		alt: 'iphone1',
 		width: 150,
 		height: 326
 	},
 	{
 		src: "/images/iphone2.jpg",
+		alt: 'iphone1',
 		width: 1,
 		height: 2.17
 	},
 	{
 		src: "/images/iphone3.jpg",
+		alt: 'iphone1',
 		width: 1,
 		height: 2.17
 	},
 	{
 		src: "/images/iphone4.jpg",
+		alt: 'iphone1',
 		width: 1,
 		height: 2.17
 	}
@@ -57,42 +65,41 @@ const gesinterventi = [
 
 
 const PortfolioPage = () => {
-	const [currentImage, setCurrentImage] = useState(0);
-	const [viewerIsOpen, setViewerIsOpen] = useState(false);
+	// const [currentImage, setCurrentImage] = useState(0);
+	// const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-	const openLightbox = useCallback((event, { photo, index }) => {
-		setCurrentImage(index);
-		setViewerIsOpen(true);
-	}, []);
+	// const openLightbox = useCallback((event, { photo, index }) => {
+	// 	setCurrentImage(index);
+	// 	setViewerIsOpen(true);
+	// }, []);
 
-	const closeLightbox = () => {
-		setCurrentImage(0);
-		setViewerIsOpen(false);
-	};
+	// const closeLightbox = () => {
+	// 	setCurrentImage(0);
+	// 	setViewerIsOpen(false);
+	// };
 
-	const [currentImageBlue, setCurrentImageBlue] = useState(0);
-	const [viewerIsOpenBlue, setViewerIsOpenBlue] = useState(false);
+	// const [currentImageBlue, setCurrentImageBlue] = useState(0);
+	// const [viewerIsOpenBlue, setViewerIsOpenBlue] = useState(false);
 
-	const openLightboxBlue = useCallback((event, { photo, index }) => {
-		setCurrentImageBlue(index);
-		setViewerIsOpenBlue(true);
-	}, []);
+	// const openLightboxBlue = useCallback((event, { photo, index }) => {
+	// 	setCurrentImageBlue(index);
+	// 	setViewerIsOpenBlue(true);
+	// }, []);
 
-	const closeLightboxBlue = () => {
-		setCurrentImageBlue(0);
-		setViewerIsOpenBlue(false);
-	};
+	// const closeLightboxBlue = () => {
+	// 	setCurrentImageBlue(0);
+	// 	setViewerIsOpenBlue(false);
+	// };
 
-	const [selectAll, setSelectAll] = useState(false);
+	// const [selectAll, setSelectAll] = useState(false);
 
-	const toggleSelectAll = () => {
-		setSelectAll(!selectAll);
-	};
+	// const toggleSelectAll = () => {
+	// 	setSelectAll(!selectAll);
+	// };
 
 	const imageRenderer = useCallback(
 		({ index, left, top, key, photo, onClick }) => {
 			return (<Image
-				selected={selectAll ? true : false}
 				key={key}
 				margin={"2px"}
 				index={index}
@@ -107,6 +114,7 @@ const PortfolioPage = () => {
 
 	return (
 		<Layout>
+			<SEO title="Portfolio"/>
 			<Helmet bodyAttributes={{ class: headerStyles.others }} />
 			<section className="othersSection">
 				<div>
@@ -137,8 +145,8 @@ const PortfolioPage = () => {
 								<p className={portfolioStyles.projectDescription}>
 									<FormattedMessage id="portfolio.project1.paragraph" />
 								</p>
-								<Gallery photos={gesinterventi} onClick={console.log} renderImage={imageRenderer} />
-								<ModalGateway>
+								<Gallery photos={gesinterventi} renderImage={imageRenderer} />
+								{/* <ModalGateway>
 									{viewerIsOpen ? (
 										<Modal onClose={closeLightbox}>
 											<Carousel
@@ -151,7 +159,7 @@ const PortfolioPage = () => {
 											/>
 										</Modal>
 									) : null}
-								</ModalGateway>
+								</ModalGateway> */}
 								<div>
 									<h3><FormattedMessage id="type" /></h3>
 									<ul className="tagsContainer">
@@ -186,8 +194,8 @@ const PortfolioPage = () => {
 								<p className={portfolioStyles.projectDescription}>
 									<FormattedMessage id="portfolio.project2.paragraph" />
 								</p>
-								<Gallery photos={photos} onClick={openLightboxBlue} renderImage={imageRenderer} />
-								<ModalGateway>
+								<Gallery photos={photos} renderImage={imageRenderer} />
+								{/* <ModalGateway>
 									{viewerIsOpenBlue ? (
 										<Modal onClose={closeLightboxBlue}>
 											<Carousel
@@ -200,7 +208,7 @@ const PortfolioPage = () => {
 											/>
 										</Modal>
 									) : null}
-								</ModalGateway>
+								</ModalGateway> */}
 								<div>
 									<h3><FormattedMessage id="skills" /></h3>
 									<ul className="tagsContainer">

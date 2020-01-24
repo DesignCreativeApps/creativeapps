@@ -4,9 +4,9 @@ import Slider from "react-slick";
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image'
-import SEO from '../components/seo'
 import Language from '../components/language';
-import { FormattedMessage, IntlProvider } from "gatsby-plugin-intl"
+import SEO from "../components/seo"
+import { FormattedMessage } from "gatsby-plugin-intl"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Layout from "../components/layout";
@@ -28,6 +28,7 @@ const IndexPage = (props) => {
 	const myRef = useRef(null);
 	return (
 		<Layout>
+			<SEO title="Homepage"/>
 			<Helmet bodyAttributes={{ class: headerStyles.home }} />
 			<BackgroundImage
 				Tag="div"
@@ -116,6 +117,7 @@ const IndexPage = (props) => {
 							<Img className={homeStyles.sliderAvatar} fixed={props.data.jacopo.childImageSharp.fixed} />
 							<div className={homeStyles.reviewerContainer}>
 								<img
+									alt="italy"
 									src="/images/italy.svg"
 									className={homeStyles.sliderCountryFlag}
 								/>

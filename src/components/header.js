@@ -29,13 +29,13 @@ class Header extends React.Component {
 	}
 
 	render() {
-		const isHome = globalHistory.location.pathname =='/en/' || globalHistory.location.pathname =='/it/'
+		const isHome = globalHistory.location.pathname ==='/en/' || globalHistory.location.pathname ==='/it/'
 		let headerClasses = this.state.hasScrolled && 
 		isHome ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
 		return (	
 			<nav className={headerClasses}>
 				<div className={headerStyles.headerGroup}>
-					<Link to="/"><img className={headerStyles.headerLogo} src='/images/logo.svg'/></Link>
+					<Link to="/"><img alt="logo" className={headerStyles.headerLogo} src='/images/logo.svg'/></Link>
 					<Link to="/team"><FormattedMessage id="nav.about"/></Link>
 					<Link to="/portfolio"><FormattedMessage id="nav.portfolio"/></Link>
 					<button className="button" onClick={this.openForm}><FormattedMessage id="nav.contact"/></button>

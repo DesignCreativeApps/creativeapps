@@ -12,13 +12,13 @@ const Footer = () => (
                     </div>
                     <div className={footerStyles.footerItem}>
                         <a href="https://github.com">
-                            <img src='/images/github.svg' width="20" className={footerStyles.image} />
+                            <img alt="github" src='/images/github.svg' width="20" className={footerStyles.image} />
                             <span>Github</span>
                         </a>
                     </div>
                     <div className={footerStyles.footerItem}>
                         <a href="https://bitbucket.org">
-                            <img src='/images/bitbucket.svg' width="20" className={footerStyles.image} />
+                            <img alt="bitbucket" src='/images/bitbucket.svg' width="20" className={footerStyles.image} />
                             <span>Bitbucket</span>
                         </a>
                     </div>
@@ -26,12 +26,12 @@ const Footer = () => (
                 <div className={footerStyles.infoContainer}>
                     <div className={footerStyles.footerItem}>
                         <a href="mailto:info@creativeapps.design">
-                            <img src='/images/envelope.svg' width="20" className={footerStyles.image} />
+                            <img alt="envelope" src='/images/envelope.svg' width="20" className={footerStyles.image} />
                             <span>info@creativeapps.design</span>
                         </a>
                     </div>
                     <div className={footerStyles.footerItem}>
-                        <img src='/images/logo.svg' className={footerStyles.image} />
+                        <img alt="logo" src='/images/logo.svg' className={footerStyles.image} />
                         <span>CREATIVE APPS</span>
                     </div>
                     <div className={footerStyles.footerItem}>
