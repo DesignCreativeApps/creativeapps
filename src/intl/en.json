@@ -70,7 +70,7 @@
         "project1":{
             "title":"Gestione interventi",
             "subtitle": "Project management application that allows to plan and organise maintenance and consultancy activities keeping a complete history.",
-            "paragraph": "From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities."
+            "paragraph": "From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report with a summary of the performed activities and the client can sign it on the app. The app has full offline capabilities."
         },
         "project2":{
             "title":"Blue",
