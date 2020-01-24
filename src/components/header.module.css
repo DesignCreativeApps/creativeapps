@@ -51,11 +51,6 @@
     .header a {
         font-size: 18px;
     }
-    .header button {
-        font-size: 18px;
-        padding: 5px 12px;
-    }
-
     .headerGroup {
         grid-template-columns: repeat(4, auto);
     }
