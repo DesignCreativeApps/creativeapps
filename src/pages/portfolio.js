@@ -210,7 +210,7 @@ const PortfolioPage = () => {
 									) : null}
 								</ModalGateway> */}
 								<div>
-									<h3><FormattedMessage id="skills" /></h3>
+									<h3><FormattedMessage id="type" /></h3>
 									<ul className="tagsContainer">
 										<li className="typeTag">#Web</li>
 										<li className="typeTag">#Mobile</li>
