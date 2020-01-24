@@ -80,6 +80,7 @@ const TeamPage = (props) => (
                             <li className="techTag">#Django</li>
                             <li className="techTag">#Flask</li>
                             <li className="techTag">#React</li>
+                            <li className="techTag">#GatsbyJs</li>
                             <li className="techTag">#React Native</li>
                         </ul>
                     </div>
