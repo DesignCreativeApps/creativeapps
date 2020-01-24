@@ -86,43 +86,43 @@ const PortfolioPage = () => {
 	const [selectAll, setSelectAll] = useState(false);
 
 	const toggleSelectAll = () => {
-	  setSelectAll(!selectAll);
+		setSelectAll(!selectAll);
 	};
 
 	const imageRenderer = useCallback(
-		({ index, left, top, key, photo, onClick}) => {
-			console.log(onClick);
-			return(<Image
-			selected={selectAll ? true : false}
-			key={key}
-			margin={"2px"}
-			index={index}
-			photo={photo}
-			left={left}
-			top={top}
-			onClick={onClick}
-		  />
-		  )},
-	  );
+		({ index, left, top, key, photo, onClick }) => {
+			return (<Image
+				selected={selectAll ? true : false}
+				key={key}
+				margin={"2px"}
+				index={index}
+				photo={photo}
+				left={left}
+				top={top}
+				onClick={onClick}
+			/>
+			)
+		},
+	);
 
 	return (
 		<Layout>
 			<Helmet bodyAttributes={{ class: headerStyles.others }} />
 			<section className="othersSection">
-			<div>
-                <h1>Portfolio</h1>
-                <p className={portfolioStyles.projectDescription}>
-					<strong><FormattedMessage id="portfolio.subtitle"/></strong>
-                </p>
-            </div>
+				<div>
+					<h1>Portfolio</h1>
+					<p className={portfolioStyles.projectDescription}>
+						<strong><FormattedMessage id="portfolio.subtitle" /></strong>
+					</p>
+				</div>
 				<div className={portfolioStyles.timeline}>
 					<ul>
 						<li className={portfolioStyles.timelineElement}>
 							<div className={portfolioStyles.timelineDate}>
-								<time className={portfolioStyles.timelineDateText}><FormattedMessage id="portfolio.now.title"/></time>
+								<time className={portfolioStyles.timelineDateText}><FormattedMessage id="portfolio.now.title" /></time>
 							</div>
 							<div className={portfolioStyles.timelineContent}>
-								<h4><FormattedMessage id="portfolio.now.subtitle"/></h4>
+								<h4><FormattedMessage id="portfolio.now.subtitle" /></h4>
 							</div>
 						</li>
 						<li className={portfolioStyles.timelineElement}>
@@ -130,14 +130,14 @@ const PortfolioPage = () => {
 								<span className={portfolioStyles.timelineDateText}>2019</span>
 							</div>
 							<div className={portfolioStyles.timelineContent}>
-								<h2><FormattedMessage id="portfolio.project1.title"/></h2>
+								<h2><FormattedMessage id="portfolio.project1.title" /></h2>
 								<p className={portfolioStyles.projectDescription}>
-									<strong><FormattedMessage id="portfolio.project1.subtitle"/></strong>
+									<strong><FormattedMessage id="portfolio.project1.subtitle" /></strong>
 								</p>
 								<p className={portfolioStyles.projectDescription}>
-									<FormattedMessage id="portfolio.project1.paragraph"/>
+									<FormattedMessage id="portfolio.project1.paragraph" />
 								</p>
-								<Gallery photos={gesinterventi} onClick={console.log} renderImage={imageRenderer}/>
+								<Gallery photos={gesinterventi} onClick={console.log} renderImage={imageRenderer} />
 								<ModalGateway>
 									{viewerIsOpen ? (
 										<Modal onClose={closeLightbox}>
@@ -153,7 +153,7 @@ const PortfolioPage = () => {
 									) : null}
 								</ModalGateway>
 								<div>
-									<h3><FormattedMessage id="type"/></h3>
+									<h3><FormattedMessage id="type" /></h3>
 									<ul className="tagsContainer">
 										<li className="typeTag">#Mobile</li>
 										<li className="typeTag">#IOS</li>
@@ -161,7 +161,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3><FormattedMessage id="technologies"/></h3>
+									<h3><FormattedMessage id="technologies" /></h3>
 									<ul className="tagsContainer">
 										<li className="techTag">#Laravel</li>
 										<li className="techTag">#Mysql</li>
@@ -169,7 +169,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3><FormattedMessage id="website"/></h3>
+									<h3><FormattedMessage id="website" /></h3>
 									<a href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>GesInterventi</a>
 								</div>
 							</div>
@@ -181,12 +181,12 @@ const PortfolioPage = () => {
 							<div className={portfolioStyles.timelineContent}>
 								<h2>Blue</h2>
 								<p className={portfolioStyles.projectDescription}>
-									<strong><FormattedMessage id="portfolio.project2.subtitle"/></strong>
+									<strong><FormattedMessage id="portfolio.project2.subtitle" /></strong>
 								</p>
 								<p className={portfolioStyles.projectDescription}>
-									<FormattedMessage id="portfolio.project2.paragraph"/>
+									<FormattedMessage id="portfolio.project2.paragraph" />
 								</p>
-								<Gallery photos={photos} onClick={openLightboxBlue} renderImage={imageRenderer}/>
+								<Gallery photos={photos} onClick={openLightboxBlue} renderImage={imageRenderer} />
 								<ModalGateway>
 									{viewerIsOpenBlue ? (
 										<Modal onClose={closeLightboxBlue}>
@@ -202,7 +202,7 @@ const PortfolioPage = () => {
 									) : null}
 								</ModalGateway>
 								<div>
-									<h3><FormattedMessage id="skills"/></h3>
+									<h3><FormattedMessage id="skills" /></h3>
 									<ul className="tagsContainer">
 										<li className="typeTag">#Web</li>
 										<li className="typeTag">#Mobile</li>
@@ -210,7 +210,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3><FormattedMessage id="technologies"/></h3>
+									<h3><FormattedMessage id="technologies" /></h3>
 									<ul className="tagsContainer">
 										<li className="techTag">#Django</li>
 										<li className="techTag">#Mysql</li>
@@ -220,7 +220,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3><FormattedMessage id="website"/></h3>
+									<h3><FormattedMessage id="website" /></h3>
 									<a href="http://tabletautismo.it" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>Tablet Autismo</a>
 								</div>
 							</div>

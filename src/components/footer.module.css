@@ -52,6 +52,9 @@
     .footerContainer {
         flex-direction: column;
     }
+    .footerItem a {
+        flex-direction: column;
+    }
     .infoContainer {
         margin-bottom: 50px;
         align-self: center;
