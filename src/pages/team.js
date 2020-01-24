@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { FormattedMessage } from "gatsby-plugin-intl"
 import { Helmet } from "react-helmet"
 import teamStyles from "./team.module.css"
 import headerStyles from "../components/header.module.css"
@@ -14,27 +15,23 @@ const TeamPage = (props) => (
         <Helmet bodyAttributes={{ class: headerStyles.others }} />
         <section className="othersSection">
             <div className={teamStyles.companyMissionContainer}>
-                <h1>About</h1>
-                <p className={headerStyles.companyMission}>
-                    <strong>Dedicated.</strong> We are a small team and we thrive for quality.
-                    We will focus exclusively on your project.
+                <h1><FormattedMessage id="about.title" /></h1>
+                <p className={teamStyles.companyMission}>
+                    <strong><FormattedMessage id="about.dedicated.title" /></strong> <FormattedMessage id="about.dedicated.paragraph" />
                 </p>
-                <p className={headerStyles.companyMission}>
-                    <strong>Client control.</strong> As client you will become part of our team throughout
-                    the whole software development lifecycle.
+                <p className={teamStyles.companyMission}>
+                    <strong><FormattedMessage id="about.client.title" /></strong> <FormattedMessage id="about.client.paragraph" />
                 </p>
-                <p className={headerStyles.companyMission}>
-                    <strong>Development process.</strong> We have a well organized development process and we adopt
-                    agile methodologies.
+                <p className={teamStyles.companyMission}>
+                    <strong><FormattedMessage id="about.process.title" /></strong> <FormattedMessage id="about.process.paragraph" />
                 </p>
-                <p className={headerStyles.companyMission}>
-                    <strong>Mobile and Web.</strong> We provide custom development for web and mobile apps and
-                    backend systems. We build software tailored to satisfy company's indivudual needs.
+                <p className={teamStyles.companyMission}>
+                    <strong><FormattedMessage id="about.development.title" /></strong> <FormattedMessage id="about.development.paragraph" />
                 </p>
             </div>
             <div className={teamStyles.media}>
                 <div className={teamStyles.mediaFigureContainer}>
-                     <Img className={teamStyles.mediaFigureImage} fluid={props.data.luca.childImageSharp.fluid} />
+                    <Img className={teamStyles.mediaFigureImage} fluid={props.data.luca.childImageSharp.fluid} />
                 </div>
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
@@ -42,31 +39,31 @@ const TeamPage = (props) => (
                         <span>Full Stack Developer</span>
                     </div>
                     <div className={teamStyles.contactContainer}>
-                        <img
-                            className={teamStyles.contactImage}
-                            src="/images/linkedin.svg"
-                        />
-                        <img
-                            className={teamStyles.contactImage}
-                            src="/images/github.svg"
-                        />
-                        <img
-                            className={teamStyles.contactImage}
-                            src="/images/envelope.svg"
-                        />
+                        <a href="https://www.linkedin.com/in/luca-cimonetti/">
+                            <img
+                                className={teamStyles.contactImage}
+                                src="/images/linkedin.svg"
+                            />
+                        </a>
+                        <a href="https://github.com/lucacimo">
+                            <img
+                                className={teamStyles.contactImage}
+                                src="/images/github.svg"
+                            />
+                        </a>
+                        <a href="mailto:luca@creativeapps.design">
+                            <img
+                                className={teamStyles.contactImage}
+                                src="/images/envelope.svg"
+                            />
+                        </a>
                     </div>
                     <div className={teamStyles.bioContainer}>
                         <h3>Bio</h3>
-                        <p>
-                            Enthusiast, passionate and competent software engineer with 8+
-                            years of experience designing, coding and testing software across
-                            different platforms. Self learner with a quality oriented attitude
-                            I always keep high quality standards in my coding. I regularly
-                            refresh my skills to ensure I keep up with ongoing developments.
-                        </p>
+                        <p><FormattedMessage id="about.luca" /></p>
                     </div>
                     <div>
-                        <h3>Skills</h3>
+                        <h3><FormattedMessage id="skills" /></h3>
                         <ul className="tagsContainer">
                             <li className="skillTag">#Html</li>
                             <li className="skillTag">#CSS</li>
@@ -75,7 +72,7 @@ const TeamPage = (props) => (
                         </ul>
                     </div>
                     <div>
-                        <h3>Technologies</h3>
+                        <h3><FormattedMessage id="technologies" /></h3>
                         <ul className="tagsContainer">
                             <li className="techTag">#Django</li>
                             <li className="techTag">#Flask</li>
@@ -100,8 +97,8 @@ const TeamPage = (props) => (
                 </div>
             </div>
             <div className={teamStyles.media}>
-                  <div className={teamStyles.mediaFigureContainer}>
-                     <Img className={teamStyles.mediaFigureImage} fluid={props.data.elia.childImageSharp.fluid} />
+                <div className={teamStyles.mediaFigureContainer}>
+                    <Img className={teamStyles.mediaFigureImage} fluid={props.data.elia.childImageSharp.fluid} />
                 </div>
                 <div className={teamStyles.mediaBody}>
                     <div className={teamStyles.mediaTitleContainer}>
@@ -110,32 +107,32 @@ const TeamPage = (props) => (
                     </div>
 
                     <div className={teamStyles.contactContainer}>
-                        <img
-                            className={teamStyles.contactImage}
-                            src="/images/linkedin.svg"
-                        />
-                        <img
-                            className={teamStyles.contactImage}
-                            src="/images/github.svg"
-                        />
-                        <img
-                            className={teamStyles.contactImage}
-                            src="/images/envelope.svg"
-                        />
+                        <a href="https://www.linkedin.com/in/elia-rigo/">
+                            <img
+                                className={teamStyles.contactImage}
+                                src="/images/linkedin.svg"
+                            />
+                        </a>
+                        <a href="https://github.com/EliaRigo">
+                            <img
+                                className={teamStyles.contactImage}
+                                src="/images/github.svg"
+                            />
+                        </a>
+                        <a href="mailto:elia@creativeapps.design">
+                            <img
+                                className={teamStyles.contactImage}
+                                src="/images/envelope.svg"
+                            />
+                        </a>
                     </div>
 
                     <div className={teamStyles.bioContainer}>
                         <h3>Bio</h3>
-                        <p>
-                            I was born in 1994. I’ve always been interested in IT since I was
-                            a child. I’m currently a student at the University of Trento
-                            attending a Master in Computer Sciences. Simultaneously, in 2011,
-                            I set up my own business and from 2017 to 2019 I collaborated with
-                            the Bruno Kessler Foundation in the Embedded System division.
-                        </p>
+                        <p><FormattedMessage id="about.elia" /></p>
                     </div>
                     <div>
-                        <h3>Skills</h3>
+                        <h3><FormattedMessage id="skills" /></h3>
                         <ul className="tagsContainer">
                             <li className="skillTag">#Php</li>
                             <li className="skillTag">#Python</li>
@@ -144,7 +141,7 @@ const TeamPage = (props) => (
                         </ul>
                     </div>
                     <div>
-                        <h3>Technologies</h3>
+                        <h3><FormattedMessage id="technologies" /></h3>
                         <ul className="tagsContainer">
                             <li className="techTag">#Django</li>
                             <li className="techTag">#Flask</li>
@@ -158,7 +155,15 @@ const TeamPage = (props) => (
                                 <p>
                                     “-AWS DeepRacer - A workshop about ReInforcement Learning.”
                                 </p>
-                                <a className={teamStyles.slidesLink}>
+                                <a href="https://drive.google.com/open?id=1HJLFA5NfnRw-i2Vb_0m4xoabCtuOs83H" className={teamStyles.slidesLink}>
+                                    #Slides
+                                </a>
+                            </li>
+                            <li>
+                                <p>
+                                    “-Image Recognition with TensorFlow using Deep Learning”
+                                </p>
+                                <a href="https://drive.google.com/open?id=1HbnMWIpNuG5TLNDd-UmTnaDRMDhZhxZy" className={teamStyles.slidesLink}>
                                     #Slides
                                 </a>
                             </li>

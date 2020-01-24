@@ -4,6 +4,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import Image from '../components/image';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { FormattedMessage } from "gatsby-plugin-intl"
 import { Helmet } from 'react-helmet';
 import portfolioStyles from './portfolio.module.css';
 import headerStyles from '../components/header.module.css';
@@ -111,17 +112,17 @@ const PortfolioPage = () => {
 			<div>
                 <h1>Portfolio</h1>
                 <p className={portfolioStyles.projectDescription}>
-					<strong>Here you can find a list of our recent projects. </strong>
+					<strong><FormattedMessage id="portfolio.subtitle"/></strong>
                 </p>
             </div>
 				<div className={portfolioStyles.timeline}>
 					<ul>
 						<li className={portfolioStyles.timelineElement}>
 							<div className={portfolioStyles.timelineDate}>
-								<time className={portfolioStyles.timelineDateText}>Now</time>
+								<time className={portfolioStyles.timelineDateText}><FormattedMessage id="portfolio.now.title"/></time>
 							</div>
 							<div className={portfolioStyles.timelineContent}>
-								<h4>We are currently open for collaborations on new and existing projects. Contact us!</h4>
+								<h4><FormattedMessage id="portfolio.now.subtitle"/></h4>
 							</div>
 						</li>
 						<li className={portfolioStyles.timelineElement}>
@@ -129,13 +130,13 @@ const PortfolioPage = () => {
 								<span className={portfolioStyles.timelineDateText}>2019</span>
 							</div>
 							<div className={portfolioStyles.timelineContent}>
-								<h2>Gestione Interventi</h2>
+								<h2><FormattedMessage id="portfolio.project1.title"/></h2>
 								<p className={portfolioStyles.projectDescription}>
-									<strong>Project management application that allows to plan and organise maintenance and consultancy activities keeping a complete history.</strong>
+									<strong><FormattedMessage id="portfolio.project1.subtitle"/></strong>
 								</p>
 								<p className={portfolioStyles.projectDescription}>
-									From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities.
-							</p>
+									<FormattedMessage id="portfolio.project1.paragraph"/>
+								</p>
 								<Gallery photos={gesinterventi} onClick={console.log} renderImage={imageRenderer}/>
 								<ModalGateway>
 									{viewerIsOpen ? (
@@ -152,7 +153,7 @@ const PortfolioPage = () => {
 									) : null}
 								</ModalGateway>
 								<div>
-									<h3>Type</h3>
+									<h3><FormattedMessage id="type"/></h3>
 									<ul className="tagsContainer">
 										<li className="typeTag">#Mobile</li>
 										<li className="typeTag">#IOS</li>
@@ -160,7 +161,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3>Technologies</h3>
+									<h3><FormattedMessage id="technologies"/></h3>
 									<ul className="tagsContainer">
 										<li className="techTag">#Laravel</li>
 										<li className="techTag">#Mysql</li>
@@ -168,7 +169,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3>Website</h3>
+									<h3><FormattedMessage id="website"/></h3>
 									<a href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>GesInterventi</a>
 								</div>
 							</div>
@@ -180,10 +181,10 @@ const PortfolioPage = () => {
 							<div className={portfolioStyles.timelineContent}>
 								<h2>Blue</h2>
 								<p className={portfolioStyles.projectDescription}>
-									<strong>Blue 2 is an Android application for Samsung tablets designed to facilitate the learning process for kids with special needs like autism.</strong>
+									<strong><FormattedMessage id="portfolio.project2.subtitle"/></strong>
 								</p>
 								<p className={portfolioStyles.projectDescription}>
-									Responsible for the migration of the backend from Red Hat Openshift v.2 to v.3 and the release of the Android application. Platform maintenance and bug fixing.
+									<FormattedMessage id="portfolio.project2.paragraph"/>
 								</p>
 								<Gallery photos={photos} onClick={openLightboxBlue} renderImage={imageRenderer}/>
 								<ModalGateway>
@@ -201,7 +202,7 @@ const PortfolioPage = () => {
 									) : null}
 								</ModalGateway>
 								<div>
-									<h3>Type</h3>
+									<h3><FormattedMessage id="skills"/></h3>
 									<ul className="tagsContainer">
 										<li className="typeTag">#Web</li>
 										<li className="typeTag">#Mobile</li>
@@ -209,7 +210,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3>Technologies</h3>
+									<h3><FormattedMessage id="technologies"/></h3>
 									<ul className="tagsContainer">
 										<li className="techTag">#Django</li>
 										<li className="techTag">#Mysql</li>
@@ -219,7 +220,7 @@ const PortfolioPage = () => {
 									</ul>
 								</div>
 								<div>
-									<h3>Website</h3>
+									<h3><FormattedMessage id="website"/></h3>
 									<a href="http://tabletautismo.it" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>Tablet Autismo</a>
 								</div>
 							</div>

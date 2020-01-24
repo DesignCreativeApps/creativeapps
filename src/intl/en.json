@@ -1,17 +1,85 @@
 {
-    "title": "Gatsby English",
-    "description": "Kick off your next, great Gatsby project with this default-starter-intl. This barebones starter ships with the main Gatsby configuration files you might need.",
-    "author": "@wiziple",
-    "hello": "Hi people",
-    "welcome": "Welcome to your new Gatsby site.",
-    "title_page2": "Page two",
-    "hello_page2": "Hi from the second page",
-    "go_page2": "Go to page 2",
-    "build": "Now go build something great.",
-    "welcome_page2": "Welcome to page 2",
-    "go_back": "Go back to the homepage",
-    "notfound": {
-      "header": "NOT FOUND",
-      "description": "You just hit a route that doesn't exist... the sadness."
-    }
-  }
+    "nav": {
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contact": "Contact us"
+    },
+    "home": {
+        "headline": "We create hand-crafted software for your business from the initial prototype to completion",
+        "learn": "Learn more",
+        "description": {
+            "title": "Software development for web and mobile",
+            "paragraph": "At <company>CREATIVE APPS</company> we bring ideas to life. We are focused on collaboration and understanding your project's <needs>needs</needs>. We create <custom>custom software</custom>, apps and websites that add <value>real value</value> to your business. We can also do remote work and <consultancy>IT consultancy</consultancy> for agencies and startups for the creation of digital <product>products.</product>"
+        },
+        "web": {
+            "title": "Web Development",
+            "paragraph": "Whether you have an idea of how your website should look, or detailed specifications, we use our technical expertise to help you bring it to life."
+        },
+        "mobile": {
+            "title": "Mobile development",
+            "paragraph": "We build awesome custom mobile application for IOS and Android using native technologies. We also develop backend systems and API's for mobile apps."
+        },
+        "design": {
+            "title": "Design",
+            "paragraph": "We craft clean and elegant UI's with great user experience. We value simple content structures, clean design patterns and thoughtful interactions."
+        },
+        "integration": {
+            "title": "Integration",
+            "paragraph": "Progettiamo UI semplici e funzionali con l’obiettivo principale di fornire all’utente la migliore UX. Crediamo in un approccio minimale con interazioni dell’utente chiare e semplici."
+        },
+        "migration": {
+            "title": "Migration",
+            "paragraph": "We can deal with legacy systems and migrate them to new platforms. We will make sure to safely backup your data to assure a smooth and easy migration."
+        },
+        "consultancy": {
+            "title": "Consultancy",
+            "paragraph": "We provide general IT consultancy to agencies and startups that need to create digital products for their businesses from the initial prototype to completion."
+        },
+        "whattheysay": {
+            "title": "What they say about us",
+            "paragraph": "\"The guys did a great job in migrating our platform to the new version of Redhat Openshift. They were always available for support and always handled our issues in a timely manner.\""
+        }
+    },
+    "about":{
+        "title": "About",
+        "dedicated": {
+            "title": "Dedicated.",
+            "paragraph": "We are a small team and we thrive for quality. We will focus exclusively on your project"
+        },
+        "client":{
+            "title": "Client control.",
+            "paragraph": "As client you will become part of our team throughout the whole software development lifecycle."
+        },
+        "process":{
+            "title": "Development process.",
+            "paragraph": "We have a well organized development process and we adopt agile methodologies."
+        },
+        "development":{
+            "title": "Mobile and Web.",
+            "paragraph": "We provide custom development for web and mobile apps and backend systems. We build software tailored to satisfy company's indivudual needs."
+        },
+        "luca": "Enthusiast, passionate and competent software engineer with 8+ years of experience designing, coding and testing software across different platforms. Self learner with a quality oriented attitude I always keep high quality standards in my coding. I regularly refresh my skills to ensure I keep up with ongoing developments.",
+        "elia": "I was born in 1994. I’ve always been interested in IT since I was a child. I’m currently a student at the University of Trento attending a Master in Computer Sciences. Simultaneously, in 2011, I set up my own business and from 2017 to 2019 I collaborated with the Bruno Kessler Foundation in the Embedded System division."
+    },
+    "portfolio": {
+        "subtitle": "Here you can find a list of our recent projects.",
+        "now": {
+            "title": "Now",
+            "subtitle": "We are currently open for collaborations on new and existing projects. Contact us!"
+        },
+        "project1":{
+            "title":"Gestione interventi",
+            "subtitle": "Project management application that allows to plan and organise maintenance and consultancy activities keeping a complete history.",
+            "paragraph": "From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report regarding the performed activities and the client can sign it directly on the app. The app has full offline capabilities."
+        },
+        "project2":{
+            "title":"Blue",
+            "subtitle": "Blue 2 is an Android application for Samsung tablets designed to facilitate the learning process for kids with special needs like autism.",
+            "paragraph": "Responsible for the migration of the backend from Red Hat Openshift v.2 to v.3 and the release of the Android application. Platform maintenance and bug fixing."
+        }
+    },
+    "skills": "Skills",
+    "technologies": "Technologies",
+    "type": "Type",
+    "website": "Website"
+}

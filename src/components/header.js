@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import { globalHistory } from "@reach/router";
 import { ReactTypeformEmbed } from 'react-typeform-embed';
+import { FormattedMessage, Link } from "gatsby-plugin-intl";
 import headerStyles from './header.module.css'
 
 
@@ -36,9 +36,9 @@ class Header extends React.Component {
 			<nav className={headerClasses}>
 				<div className={headerStyles.headerGroup}>
 					<Link to="/"><img className={headerStyles.headerLogo} src='/images/logo.svg'/></Link>
-					<Link to="/team">About</Link>
-					<Link to="/portfolio">Portfolio</Link>
-					<button className="button" onClick={this.openForm}>Contact Us</button>
+					<Link to="/team"><FormattedMessage id="nav.about"/></Link>
+					<Link to="/portfolio"><FormattedMessage id="nav.portfolio"/></Link>
+					<button className="button" onClick={this.openForm}><FormattedMessage id="nav.contact"/></button>
 				</div>
 				<ReactTypeformEmbed
 					popup

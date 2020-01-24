@@ -5,6 +5,8 @@ import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image'
 import SEO from '../components/seo'
+import Language from '../components/language';
+import { FormattedMessage, IntlProvider } from "gatsby-plugin-intl"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Layout from "../components/layout";
@@ -32,27 +34,32 @@ const IndexPage = (props) => {
 				className={homeStyles.hero}
 				fluid={props.data.wallpaper.childImageSharp.fluid}
 			>
-
 				<div className={homeStyles.heroGroup}>
 					<h1>CREATIVE APPS</h1>
-					<p>
-						We create hand crafted software for your business from the initial
-						prototype to completion
-            			</p>
-					<button onClick={() => scrollToRef(myRef)} className="button">Learn More</button>
+					<p><FormattedMessage id="home.headline" /></p>
+					<button onClick={() => scrollToRef(myRef)} className="button"><FormattedMessage id="home.learn" /></button>
+				</div>
+				<div className={homeStyles.languageContainer}>
+					<Language/>
 				</div>
 			</BackgroundImage>
 			<section>
 				<div className={homeStyles.services}>
-					<h1>Software development for web and mobile</h1>
+					<h1><FormattedMessage id="home.description.title" /></h1>
 					<p>
-						At <strong>CREATIVE APPS</strong> we bring ideas to life. We are
-						focused on collaboration and understanding your project's needs.
-              				We create <strong>custom software</strong>, apps and websites that
-              				add <strong>real value </strong> to your business. We can also do{" "}
-						<strong>remote work</strong> and <strong>IT consultancy</strong>{" "}
-						for agencies and startups for the creation of{" "}
-						<strong>digital products.</strong>
+						<FormattedMessage
+							id="home.description.paragraph"
+							defaultMessage="A <company>CREATIVE APPS</company> diamo vita alle tue idee. Il nostro obiettivo principale è quello di capire le <needs>esigenze</needs> del cliente attraverso una collaborazione una diretta. Sviluppiamo <custom>software personalizzato</custom>, applicazioni e siti web che aggiungono vero <value>valore</value> al business dei nostri clienti. Forniamo anche attività di <consultancy>consulenza</consultancy> da remoto per agenzie e startup per la creazione dei loro <product>prodotti digitali.</product>"
+							values={{
+								company: msg => (<strong>{msg}</strong>),
+								needs: msg => <strong>{msg}</strong>,
+								custom: msg => <strong>{msg}</strong>,
+								value: msg => <strong>{msg}</strong>,
+								consultancy: msg => <strong>{msg}</strong>,
+								product: msg => <strong>{msg}</strong>,
+
+						}}
+					/>
 					</p>
 				</div>
 				<div ref={myRef} className={homeStyles.cards}>
@@ -60,80 +67,52 @@ const IndexPage = (props) => {
 						<div className={homeStyles.cardIcon} style={{ color: "#66CD93" }}>
 							W
               			</div>
-						<h3>Web Development</h3>
-						<p>
-							Whether you have an idea of how your website should look, or
-							detailed specifications, we use our technical expertise to help
-							you bring it to life.
-              				</p>
+						<h3><FormattedMessage id="home.web.title" /></h3>
+						<p><FormattedMessage id="home.web.paragraph" /></p>
 					</div>
 					<div className={homeStyles.card}>
 						<div className={homeStyles.cardIcon} style={{ color: "#8F4EC9" }}>
 							M
-              				</div>
-						<h3>Mobile Development</h3>
-						<p>
-							We build awesome custom mobile application for IOS and Android
-							using native technologies. We also develop backend sytems and
-							API's for mobile apps.
-              				</p>
+              			</div>
+						<h3><FormattedMessage id="home.mobile.title" /></h3>
+						<p><FormattedMessage id="home.mobile.paragraph" /></p>
 					</div>
 					<div className={homeStyles.card}>
 						<div className={homeStyles.cardIcon} style={{ color: "#F5A623" }}>
 							D
-              				</div>
-						<h3>Design</h3>
-						<p>
-							We craft clean and elegant UI's with great user experience. We
-							value simple content structures, clean design patterns and
-							thoughtful interactions.
-             				 </p>
+              			</div>
+						<h3><FormattedMessage id="home.design.title" /></h3>
+						<p><FormattedMessage id="home.design.paragraph" /></p>
 					</div>
 					<div className={homeStyles.card}>
 						<div className={homeStyles.cardIcon} style={{ color: "#4A90E2" }}>
 							I
-              				</div>
-						<h3>Integration</h3>
-						<p>
-							We can deal with software integrations to build scalable and
-							solid architectures to guarantee long-lasting competitive
-							advantages.
-              				</p>
+              			</div>
+						<h3><FormattedMessage id="home.integration.title" /></h3>
+						<p><FormattedMessage id="home.integration.paragraph" /></p>
 					</div>
 					<div className={homeStyles.card}>
 						<div className={homeStyles.cardIcon} style={{ color: "#E24A4A" }}>
 							M
-              				</div>
-						<h3>Migration</h3>
-						<p>
-							We can deal with legacy systems and migrate them to new
-							platforms. We will make sure to safely backup your data to
-							assure a smooth and easy migration.
-              				</p>
+              			</div>
+						<h3><FormattedMessage id="home.migration.title" /></h3>
+						<p><FormattedMessage id="home.migration.paragraph" /></p>
 					</div>
 					<div className={homeStyles.card}>
 						<div className={homeStyles.cardIcon} style={{ color: "#66CD93" }}>
 							C
-              				</div>
-						<h3>Consultancy</h3>
-						<p>
-							We provide general IT consultancy to agencies and startups that
-							need to create digital products for their businesses from the
-							initial prototype to completion.
-              				</p>
+              			</div>
+						<h3><FormattedMessage id="home.consultancy.title" /></h3>
+						<p><FormattedMessage id="home.consultancy.paragraph" /></p>
 					</div>
 				</div>
 			</section>
 			<section>
-				<h2 style={{ textAlign: "center" }}>What they say about us</h2>
+				<h2 style={{ textAlign: "center" }}><FormattedMessage id="home.whattheysay.title" /></h2>
 				<Slider {...settings}>
 					<div>
 						<div className={homeStyles.sliderContainer}>
-							<p>
-								"The guys did a great job in migrating our platform to the new
-								version of Redhat Openshift. They were always available for
-								support and always handled our issues in a timely manner."
-                				</p>
+							<p><FormattedMessage id="home.whattheysay.paragraph" /></p>
 							<Img className={homeStyles.sliderAvatar} fixed={props.data.jacopo.childImageSharp.fixed} />
 							<div className={homeStyles.reviewerContainer}>
 								<img

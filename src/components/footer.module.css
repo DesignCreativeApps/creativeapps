@@ -18,7 +18,15 @@
 .footerItem {
     display: flex;
     align-items: center;
-    padding: 15px 
+    padding: 15px;
+}
+.footerItem a {
+    color: inherit;
+    display: flex; 
+    align-items: center;
+}
+.languageContainer {
+    padding: 15px;
 }
 
 .image {
