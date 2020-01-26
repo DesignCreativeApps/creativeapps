@@ -14,7 +14,6 @@
   border: 2px solid #e7e7e7;
   border-radius: 5px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #ddd;
 }
 
 .media p {
@@ -97,7 +96,6 @@
   }
   .media {
     flex-direction: column;
-    border-bottom: 1px solid #ddd;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -107,7 +105,7 @@
     padding-right: 0;
   }
   .bioContainer {
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #e7e7e7;
   }
 
   .mediaFigureContainer {
