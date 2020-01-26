@@ -172,12 +172,19 @@
     .card:hover {
       transform: none;
     }
-  
     .card {
       padding: 1rem;
     }
     .cardIcon {
       margin-bottom: 0;
+    }
+    .card h3{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .card p{
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
   
