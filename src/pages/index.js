@@ -187,7 +187,7 @@ export const query = graphql`
         }
       }
     }
-    wallpaper: file(relativePath: { eq: "wallpaper2.jpg" }) {
+    wallpaper: file(relativePath: { eq: "wallpaper.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp
