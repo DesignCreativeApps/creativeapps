@@ -5,20 +5,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
   
   .hero::before {
-    filter: brightness(70%);
+    filter: brightness(75%);
   }
   
   .slick-prev::before { color: black !important; } 
   .slick-next::before { color: black !important; }
   
   .heroGroup {
-    max-width: 600px;
-    padding: 150px 50px;
+    max-width: 750px;
+    opacity: 0;
     text-align: center;
+    animation: HeroAnimation;
+    animation-duration: 1.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
   }
   
   .hero h1 {
@@ -26,19 +31,13 @@
     color: white;
     font-size: 60px;
     line-height: 1.2;
-    opacity: 0;
-    animation: HeroAnimation;
-    animation-duration: 3s;
-    animation-delay: 0.1s;
-    animation-fill-mode: forwards;
   }
   
   .hero p {
     color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
     font-size: 24px;
     line-height: 1.5;
-    animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-    opacity: 0;
   }
 
   .services {
@@ -95,7 +94,6 @@
     border-radius: 6px;
     padding: 6px 4px 2px;
     display: inline-block;
-    margin-bottom: 30px;
   }
   
   .sliderContainer {
@@ -137,7 +135,7 @@
   @keyframes HeroAnimation {
     0% {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(100px);
     }
     100% {
       opacity: 1;
@@ -162,7 +160,7 @@
     .services h1 {
       font-size: 26px;
       margin-top: 0.67rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       text-align: center;
     }
   
@@ -174,9 +172,6 @@
     }
     .card {
       padding: 1rem;
-    }
-    .cardIcon {
-      margin-bottom: 0;
     }
     .card h3{
       margin-top: 5px;
@@ -217,3 +212,7 @@
         
     }
   
+    img {
+      max-width: 100%;
+    }
+    

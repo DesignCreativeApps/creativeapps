@@ -1,65 +1,78 @@
 .home .header {
-    position: fixed;
-    width: 100%;
-    padding: 50px 0;
-    z-index: 1;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: fixed;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .home .headerScrolled {
-    background: rgba(0,0,0, 0.8);
-    padding: 15px 0;
-    backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  backdrop-filter: blur(20px);
 }
 
-.others .header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0, 0.8);
-    padding: 15px 0;
-    backdrop-filter: blur(20px);
-    z-index: 1;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+.others .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .headerGroup {
-    max-width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    align-items: center;
-    justify-items: center;
+  max-width: 800px;
+  list-style-type: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
 }
 
 .header a {
-    color: white;
-    font-weight: 900;
+  color: white;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.header a:hover:first-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.headerGroup a:hover{
+    border-bottom: 2px solid  #488CCA;
+    margin-bottom: -2px;
 }
 
 .headerLogo {
-    width: 40px;
+  width: 40px;
 }
 
 @media (max-width: 640px) {
-    .home .header {
-        padding: 15px 0;
-    }
-    .header {
-        padding: 15px 0;
-    }
-    .header a {
-        font-size: 18px;
-    }
-    .headerGroup {
-        grid-template-columns: repeat(4, auto);
-    }
+  .home .header {
+    padding: 15px 0;
+  }
+  .header {
+    padding: 15px 0;
+  }
+  .header a {
+    padding: 5px 5px;
+    font-size: 18px;
+  }
+  .headerGroup {
+    grid-template-columns: repeat(4, auto);
+  }
 
-    .header a:nth-child(4) {
-        display: none;
-    }
+  .header a:nth-child(4) {
+    display: none;
+  }
 
-    .headerLogo {
-        width: 30px;
-    }
+  .headerLogo {
+    width: 30px;
+  }
 }
