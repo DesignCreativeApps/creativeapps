@@ -16,7 +16,7 @@
     bottom: 0;
     left: 0;
     padding: 30px 15px;
-    width: 130px;
+    width: 50px;
     color: #999;
     text-align: right;
     font-style: italic; 
@@ -41,7 +41,7 @@
 }
 
 .timelineContent {
-    margin-left: 200px;
+    margin-left: 150px;
     overflow: hidden;
     border-top: 1px solid #ddd;
 }
