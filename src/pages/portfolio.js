@@ -1,68 +1,67 @@
-import React, { useCallback } from "react";
-import Gallery from "react-photo-gallery";
+import React, { useCallback } from "react"
+import Gallery from "react-photo-gallery"
 // import Carousel, { Modal, ModalGateway } from "react-images";
-import Image from '../components/image';
+import Image from "../components/image"
 import Layout from "../components/layout"
 import { FormattedMessage } from "gatsby-plugin-intl"
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet"
 import SEO from "../components/seo"
-import portfolioStyles from './portfolio.module.css';
-import headerStyles from '../components/header.module.css';
+import portfolioStyles from "./portfolio.module.css"
+import headerStyles from "../components/header.module.css"
 
 const photos = [
 	{
 		src: "/images/blue1.jpg",
-		alt: 'blue1',
+		alt: "blue1",
 		width: 5,
-		height: 3
+		height: 3,
 	},
 	{
 		src: "/images/blue2.jpg",
-		alt: 'blue2',
+		alt: "blue2",
 		width: 5,
-		height: 3
+		height: 3,
 	},
 	{
 		src: "/images/blue3.jpg",
-		alt: 'blue3',
+		alt: "blue3",
 		width: 5,
-		height: 3
+		height: 3,
 	},
 	{
 		src: "/images/blue4.jpg",
-		alt: 'blue4',
+		alt: "blue4",
 		width: 5,
-		height: 3
-	}
-];
+		height: 3,
+	},
+]
 
 const gesinterventi = [
 	{
 		src: "/images/iphone1.jpg",
-		alt: 'iphone1',
+		alt: "iphone1",
 		width: 150,
-		height: 326
+		height: 326,
 	},
 	{
 		src: "/images/iphone2.jpg",
-		alt: 'iphone1',
+		alt: "iphone1",
 		width: 1,
-		height: 2.17
+		height: 2.17,
 	},
 	{
 		src: "/images/iphone3.jpg",
-		alt: 'iphone1',
+		alt: "iphone1",
 		width: 1,
-		height: 2.17
+		height: 2.17,
 	},
 	{
 		src: "/images/iphone4.jpg",
-		alt: 'iphone1',
+		alt: "iphone1",
 		width: 1,
-		height: 2.17
-	}
-];
-
+		height: 2.17,
+	},
+]
 
 const PortfolioPage = () => {
 	// const [currentImage, setCurrentImage] = useState(0);
@@ -99,143 +98,201 @@ const PortfolioPage = () => {
 
 	const imageRenderer = useCallback(
 		({ index, left, top, key, photo, onClick }) => {
-			return (<Image
-				key={key}
-				margin={"2px"}
-				index={index}
-				photo={photo}
-				left={left}
-				top={top}
-				onClick={onClick}
-			/>
+			return (
+				<Image
+					key={key}
+					margin={"2px"}
+					index={index}
+					photo={photo}
+					left={left}
+					top={top}
+					onClick={onClick}
+				/>
 			)
-		},
-	);
+		}
+	)
 
 	return (
 		<Layout>
-			<SEO title="Portfolio"/>
-			<Helmet bodyAttributes={{ class: headerStyles.others }} />
-			<section className="othersSection">
-				<div>
-					<h1>Portfolio</h1>
-					<p className={portfolioStyles.projectDescription}>
-						<strong><FormattedMessage id="portfolio.subtitle" /></strong>
-					</p>
-				</div>
-				<div className={portfolioStyles.timeline}>
-					<ul>
-						<li className={portfolioStyles.timelineElement}>
-							<div className={portfolioStyles.timelineDate}>
-								<time className={portfolioStyles.timelineDateText}><FormattedMessage id="portfolio.now.title" /></time>
-							</div>
-							<div className={portfolioStyles.timelineContent}>
-								<h4><FormattedMessage id="portfolio.now.subtitle" /></h4>
-							</div>
-						</li>
-						<li className={portfolioStyles.timelineElement}>
-							<div className={portfolioStyles.timelineDate}>
-								<span className={portfolioStyles.timelineDateText}>2019</span>
-							</div>
-							<div className={portfolioStyles.timelineContent}>
-								<h2><FormattedMessage id="portfolio.project1.title" /></h2>
-								<p className={portfolioStyles.projectDescription}>
-									<strong><FormattedMessage id="portfolio.project1.subtitle" /></strong>
-								</p>
-								<p className={portfolioStyles.projectDescription}>
-									<FormattedMessage id="portfolio.project1.paragraph" />
-								</p>
-								<Gallery photos={gesinterventi} renderImage={imageRenderer} />
-								{/* <ModalGateway>
-									{viewerIsOpen ? (
-										<Modal onClose={closeLightbox}>
-											<Carousel
-												currentIndex={currentImage}
-												views={gesinterventi.map(x => ({
-													...x,
-													srcset: x.srcSet,
-													caption: x.title
-												}))}
-											/>
-										</Modal>
-									) : null}
-								</ModalGateway> */}
-								<div>
-									<h3><FormattedMessage id="type" /></h3>
-									<ul className="tagsContainer">
-										<li className="typeTag">#Mobile</li>
-										<li className="typeTag">#IOS</li>
-										<li className="typeTag">#Backend</li>
-									</ul>
+			<div className="container">
+				<SEO title="Portfolio" />
+				<Helmet bodyAttributes={{ class: headerStyles.others }} />
+				<section className="othersSection">
+					<div>
+						<h1>Portfolio</h1>
+						<p className={portfolioStyles.projectDescription}>
+							<strong>
+								<FormattedMessage id="portfolio.subtitle" />
+							</strong>
+						</p>
+					</div>
+					<div className={portfolioStyles.timeline}>
+						<ul>
+							<li className={portfolioStyles.timelineElement}>
+								<div className={portfolioStyles.timelineDate}>
+									<time className={portfolioStyles.timelineDateText}>
+										<FormattedMessage id="portfolio.now.title" />
+									</time>
 								</div>
-								<div>
-									<h3><FormattedMessage id="technologies" /></h3>
-									<ul className="tagsContainer">
-										<li className="techTag">#Laravel</li>
-										<li className="techTag">#Mysql</li>
-										<li className="techTag">#React Native</li>
-									</ul>
+								<div className={portfolioStyles.timelineContent}>
+									<h4>
+										<FormattedMessage id="portfolio.now.subtitle" />
+									</h4>
 								</div>
-								<div>
-									<h3><FormattedMessage id="website" /></h3>
-									<a href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>GesInterventi</a>
+							</li>
+							<li className={portfolioStyles.timelineElement}>
+								<div className={portfolioStyles.timelineDate}>
+									<span className={portfolioStyles.timelineDateText}>2019</span>
 								</div>
-							</div>
-						</li>
-						<li className={portfolioStyles.timelineElement}>
-							<div className={portfolioStyles.timelineDate}>
-								<time className={portfolioStyles.timelineDateText}>2018</time>
-							</div>
-							<div className={portfolioStyles.timelineContent}>
-								<h2>Blue</h2>
-								<p className={portfolioStyles.projectDescription}>
-									<strong><FormattedMessage id="portfolio.project2.subtitle" /></strong>
-								</p>
-								<p className={portfolioStyles.projectDescription}>
-									<FormattedMessage id="portfolio.project2.paragraph" />
-								</p>
-								<Gallery photos={photos} renderImage={imageRenderer} />
-								{/* <ModalGateway>
-									{viewerIsOpenBlue ? (
-										<Modal onClose={closeLightboxBlue}>
-											<Carousel
-												currentIndex={currentImageBlue}
-												views={photos.map(x => ({
-													...x,
-													srcset: x.srcSet,
-													caption: x.title
-												}))}
-											/>
-										</Modal>
-									) : null}
-								</ModalGateway> */}
-								<div>
-									<h3><FormattedMessage id="type" /></h3>
-									<ul className="tagsContainer">
-										<li className="typeTag">#Web</li>
-										<li className="typeTag">#Mobile</li>
-										<li className="typeTag">#Backend</li>
-									</ul>
+								<div className={portfolioStyles.timelineContent}>
+									<h2>Gestione Interventi</h2>
+									<h3>
+										<FormattedMessage id="company" />
+									</h3>
+									
+									<p>
+									<FormattedMessage
+											id="portfolio.project1.company"
+											defaultMessage="<company>Cucine Borz</company> è un'azienda che realizza impianti di cucine industriali, sistemi di lavaggio, refrigerazione aspirazione e lavorazione acciaio fornendo servizi di assistenza tecnica specializzata."
+											values={{
+												company: msg => <strong>{msg}</strong>
+											}}
+										/>
+									</p>
+									<h3>
+										<FormattedMessage id="request" />
+									</h3>
+									<p>
+										<FormattedMessage id="portfolio.project1.request" />
+									</p>
+									<h3>
+										<FormattedMessage id="solution" />
+									</h3>
+									<p>
+										<FormattedMessage id="portfolio.project1.solution" />
+									</p>
+									<h3>Screeshots</h3>
+									<Gallery photos={gesinterventi} renderImage={imageRenderer} />
+									<div>
+										<h3>
+											<FormattedMessage id="type" />
+										</h3>
+										<ul className="tagsContainer">
+											<li className="typeTag">#Mobile Dev</li>
+											<li className="typeTag">#IOS</li>
+											<li className="typeTag">#Backend</li>
+										</ul>
+									</div>
+									<div>
+										<h3>
+											<FormattedMessage id="technologies" />
+										</h3>
+										<ul className="tagsContainer">
+											<li className="techTag">#Laravel</li>
+											<li className="techTag">#Mysql</li>
+											<li className="techTag">#React Native</li>
+										</ul>
+									</div>
+									<div>
+										<h3>
+											<FormattedMessage id="website" />
+										</h3>
+										<a
+											href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en"
+											style={{
+												padding: 6,
+												backgroundColor: "#3A53A4",
+												color: "white",
+												borderRadius: 10,
+												fontWeight: 500,
+												display: "inline-block",
+											}}
+										>
+											GesInterventi
+                    					</a>
+									</div>
 								</div>
-								<div>
-									<h3><FormattedMessage id="technologies" /></h3>
-									<ul className="tagsContainer">
-										<li className="techTag">#Django</li>
-										<li className="techTag">#Mysql</li>
-										<li className="techTag">#AngularJs</li>
-										<li className="techTag">#Android</li>
-										<li className="techTag">#Kubernetes</li>
-									</ul>
+							</li>
+							<li className={portfolioStyles.timelineElement}>
+								<div className={portfolioStyles.timelineDate}>
+									<time className={portfolioStyles.timelineDateText}>2018</time>
 								</div>
-								<div>
-									<h3><FormattedMessage id="website" /></h3>
-									<a href="http://tabletautismo.it" style={{ padding: 11, backgroundColor: '#2a6592', color: 'white', borderRadius: 10, fontWeight: 500, display: 'inline-block' }}>Tablet Autismo</a>
+								<div className={portfolioStyles.timelineContent}>
+									<h2>Blu(e)</h2>
+									<h3>
+										<FormattedMessage id="company" />
+									</h3>
+									<p>
+										<FormattedMessage
+											id="portfolio.project2.company"
+											defaultMessage="<company>Needius</company> è una giovane società di Rovereto in provincia di Trento con la missione di trovare soluzioni per migliorare la qualità della vita delle persone. Specializzati nella realizzazione di software per disabilità il loro prodotto di punta è Blu(e), un comunicatore per tablets Samsung basato sulla comunicazione aumentativa alternativa che aiuta le persone con difficoltà di linguaggio a comunicare."
+											values={{
+												company: msg => <strong>{msg}</strong>
+											}}
+										/>
+									</p>
+									<h3>
+										<FormattedMessage id="request" />
+									</h3>
+									<p>
+										<FormattedMessage id="portfolio.project2.request" />
+									</p>
+									<h3>
+										<FormattedMessage id="solution" />
+									</h3>
+									<p>
+										<FormattedMessage id="portfolio.project2.solution" />
+									</p>
+									<h3>Screeshots</h3>
+
+									<Gallery photos={photos} renderImage={imageRenderer} />
+									<div>
+										<h3>
+											<FormattedMessage id="type" />
+										</h3>
+										<ul className="tagsContainer">
+											<li className="typeTag">#Migration</li>
+											<li className="typeTag">#Web</li>
+											<li className="typeTag">#Mobile</li>
+											<li className="typeTag">#Backend</li>
+										</ul>
+									</div>
+									<div>
+										<h3>
+											<FormattedMessage id="technologies" />
+										</h3>
+										<ul className="tagsContainer">
+											<li className="techTag">#Django</li>
+											<li className="techTag">#Mysql</li>
+											<li className="techTag">#AngularJs</li>
+											<li className="techTag">#Android</li>
+											<li className="techTag">#Kubernetes</li>
+										</ul>
+									</div>
+									<div>
+										<h3>
+											<FormattedMessage id="website" />
+										</h3>
+										<a
+											href="http://tabletautismo.it"
+											style={{
+												padding: 6,
+												backgroundColor: "#3A53A4",
+												color: "white",
+												borderRadius: 10,
+												fontWeight: 500,
+												display: "inline-block",
+											}}
+										>
+											Tablet Autismo
+                    </a>
+									</div>
 								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
 		</Layout>
 	)
 }

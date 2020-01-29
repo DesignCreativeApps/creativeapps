@@ -12,5 +12,4 @@ exports.onRouteUpdate = ({ location, prevLocation }) => {
     if(isHome &&  window.pageYOffset > 50){
         nav[0].classList.add("header-module--headerScrolled--2I3xA");
     }
-
-  }
+}

@@ -2,14 +2,15 @@
     "nav": {
         "about": "About",
         "portfolio": "Portfolio",
-        "contact": "Contact us"
+        "contact": "Contact us",
+        "how": "How we work"
     },
     "home": {
         "headline": "We create hand-crafted software for your business from the initial prototype to completion",
         "learn": "Learn more",
         "description": {
             "title": "Software development for web and mobile",
-            "paragraph": "At <company>CREATIVE APPS</company> we bring ideas to life. We are focused on collaboration and understanding your project's <needs>needs</needs>. We create <custom>custom software</custom>, apps and websites that add <value>real value</value> to your business. We can also general <consultancy>IT consultancy</consultancy> for agencies and startups for the creation of their digital <product>products.</product>"
+            "paragraph": "At <company>CREATIVE APPS</company> we bring ideas to life. We are focused on collaboration and understanding your project's <needs>needs</needs>. We create <custom>custom software</custom>, apps and websites that add <value>real value</value> to your business. We can also do general <consultancy>IT consultancy</consultancy> for agencies and startups for the creation of their digital <product>products.</product>"
         },
         "web": {
             "title": "Web Development",
@@ -69,17 +70,22 @@
         },
         "project1":{
             "title":"Gestione interventi",
-            "subtitle": "Project management application that allows to plan and organise maintenance and consultancy activities keeping a complete history.",
-            "paragraph": "From the mobile application the user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report with a summary of the performed activities and the client can sign it on the app. The app has full offline capabilities."
+            "company": "<company>Cucine Borz</company> is a company manufacturing industrial kitchens, industrial cleaning machines and refrigerators. They also provide highly specialized technical support.",
+            "request": "The company requested a custom mobile application to manage and plan maintenance and consultancy activities keeping a complete history with full offline capabilities. Trello was not an optimal solution for them due to its limited searching  and billing capabilities.",
+            "solution": "We developed a custom mobile application. The user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report with a summary of the performed activities and the client can sign it on the app. The app has full offline capabilities."
         },
         "project2":{
             "title":"Blue",
-            "subtitle": "Blue 2 is an Android application for Samsung tablets designed to facilitate the learning process for kids with special needs like autism.",
-            "paragraph": "Responsible for the migration of the backend from Red Hat Openshift v.2 to v.3 and the release of the Android application. Platform maintenance and bug fixing."
+            "company":"<company>Needius</company> is a young startup based in Trento with the mission to improve people’s quality of living. They are focused on the development of software for kids with special needs. Their main product is Blu(e)  is an Android application for Samsung tablets with the aim to facilitate the learning process and communication for kids affected by autism.",
+            "request": "Due to the release of Openshift v.3 (Redhat Platform as a Service) the company had to migrate their platform Blu(e) from Openshift v.2 to v.3. Since it was a legacy system we had to fully understand the solution on our own with no support from the platform developers. The documentation was fairly limited and we had strict deadlines.",
+            "solution": "As a result we managed to migrate the entire platform making a complete data backup (database and media files) and upgrading the Android application releasing a new version. We also provided support for bug fixing activities."
         }
     },
     "skills": "Skills",
     "technologies": "Technologies",
     "type": "Type",
-    "website": "Website"
+    "website": "Website",
+    "company":"Company",
+    "request":"Request",
+    "solution": "Solution"
 }

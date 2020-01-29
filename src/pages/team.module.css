@@ -1,23 +1,29 @@
 .mediaFigure {
-  padding: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .mediaBody {
   flex-grow: 3;
-  margin-left: 1.5rem;
+  margin: 0;
+}
+
+.mediaContainer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 0.5rem;
 }
 
 .media {
   display: flex;
   align-items: flex-start;
-  padding: 1.5rem;
-  border: 2px solid #e7e7e7;
-  border-radius: 5px;
-  margin-bottom: 50px;
-}
-
-.media p {
-  line-height: 30px;
+  padding-top: 1.5rem;
+  flex-direction: column;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: 2px solid #e7e7e7;
+  grid-column: 2 / 10;
 }
 
 .mediaBody,
@@ -27,15 +33,17 @@
 
 .mediaTitleContainer {
   display: flex; 
-  align-items: center;
   justify-content: space-between; 
   margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .contactContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  justify-content: center;
+  margin-bottom: 30px; 
 }
 
 .contactImage {
@@ -44,7 +52,7 @@
 }
 
 .mediaTitle {
-  margin: 0 0 0;
+  margin-bottom: 10px;
 }
 
 .mediaCenter {
@@ -52,7 +60,9 @@
 }
 
 .mediaFigureContainer {
-  width: 85%;
+  align-self: center;
+  margin-bottom: 1rem;
+  width: 20%;
 }
 
 .mediaFigureImage {
@@ -63,9 +73,9 @@
 
 .slidesLink {
   display: inline-block;
-  padding: 11px;
+  padding: 6px;
   border-radius: 10px;
-  background: #0099ff;
+  background: #32A9DB;
   color: white;
   font-weight: 500;
 }
@@ -81,57 +91,19 @@
 }
 
 .companyMission {
-  line-height: 25px;
   margin-bottom: 30px;
 }
-
-@media (max-width: 720px) {
-  .mediaFigure {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  .mediaBody {
-    margin: 0;
-  }
-  .media {
-    flex-direction: column;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 0px;
-    padding-top: 1.5rem;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .bioContainer {
-    border-top: 2px solid #e7e7e7;
-  }
-
-  .mediaFigureContainer {
-    align-self: center;
-    margin-bottom: 1rem;
-    width: 30%;
-  }
-
-  .mediaTitleContainer{
-    flex-direction: column;
-    align-items: center; 
-  }
-  .contactContainer {
-    justify-content: center;
-    margin-bottom: 30px; 
-  }
-  .mediaTitle {
-    margin-bottom: 10px;
-  }
-  .contactImage {
-    width: 25px;
-  }  
+.bioContainer {
+  border-top: 2px solid #e7e7e7;
 }
 
-@media only screen and (max-width: 640px) {
-  .media p {
-    line-height: 25px;
+#card1 {
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 720px) {
+  .media{
+    grid-column: 1 / 11;
   }
 }

@@ -29,16 +29,29 @@ class Header extends React.Component {
 	}
 
 	render() {
-		const isHome = globalHistory.location.pathname ==='/en/' || globalHistory.location.pathname ==='/it/'
-		let headerClasses = this.state.hasScrolled && 
-		isHome ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
-		return (	
+		const isHome = globalHistory.location.pathname === '/en/' || globalHistory.location.pathname === '/it/'
+		let headerClasses = this.state.hasScrolled && isHome ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
+		return (
 			<nav className={headerClasses}>
-				<div className={headerStyles.headerGroup}>
-					<Link to="/"><img alt="logo" className={headerStyles.headerLogo} src='/images/logo.svg'/></Link>
-					<Link to="/team"><FormattedMessage id="nav.about"/></Link>
-					<Link to="/portfolio"><FormattedMessage id="nav.portfolio"/></Link>
-					<button className="button" onClick={this.openForm}><FormattedMessage id="nav.contact"/></button>
+				<div className={headerStyles.headerContainer}>
+					<div className={headerStyles.headerGroup}>
+						<Link to="/"><img alt="logo" className={headerStyles.headerLogo} src='/images/logo.svg' /></Link>
+						<ul className={headerStyles.navLinks}>
+							<li>
+								<Link to="/team"><FormattedMessage id="nav.about" /></Link>
+							</li>
+							<li>
+								<Link to="/team"><FormattedMessage id="nav.how" /></Link>
+							</li>
+							<li>
+								<Link to="/portfolio"><FormattedMessage id="nav.portfolio" /></Link>
+							</li>
+							<li>
+								<button className="button" onClick={this.openForm}><FormattedMessage id="nav.contact" /></button>
+							</li>
+						</ul>
+
+					</div>
 				</div>
 				<ReactTypeformEmbed
 					popup
