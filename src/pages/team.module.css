@@ -23,7 +23,7 @@
   border-right: none;
   border-bottom: none;
   border-top: 2px solid #e7e7e7;
-  grid-column: 2 / 10;
+  grid-column: 3 / 9;
 }
 
 .mediaBody,
@@ -104,6 +104,13 @@
 
 @media (max-width: 720px) {
   .media{
-    grid-column: 1 / 11;
+    grid-column: 2 / 10;
   }
 }
+
+@media (max-width: 640px) {
+  .media{
+    grid-column: 1 / 11;
+  }
+      
+  }
