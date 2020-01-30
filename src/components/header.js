@@ -41,7 +41,7 @@ class Header extends React.Component {
 								<Link to="/team"><FormattedMessage id="nav.about" /></Link>
 							</li>
 							<li>
-								<Link to="/team"><FormattedMessage id="nav.how" /></Link>
+								<Link to="/how"><FormattedMessage id="nav.how" /></Link>
 							</li>
 							<li>
 								<Link to="/portfolio"><FormattedMessage id="nav.portfolio" /></Link>

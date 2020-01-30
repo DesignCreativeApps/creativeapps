@@ -138,7 +138,7 @@ const PortfolioPage = () => {
 									<span className={portfolioStyles.timelineDateText}>2019</span>
 								</div>
 								<div className={portfolioStyles.timelineContent}>
-									<h2>Gestione Interventi</h2>
+									<h2>GesInterventi</h2>
 									<h3>
 										<FormattedMessage id="company" />
 									</h3>
@@ -165,7 +165,7 @@ const PortfolioPage = () => {
 										<FormattedMessage id="portfolio.project1.solution" />
 									</p>
 									<h3>Screeshots</h3>
-									<Gallery style={{zIndex: 100}} onClick={openLightbox} photos={gesinterventi} />
+									<Gallery onClick={openLightbox} photos={gesinterventi} />
 									<ModalGateway>
 										{viewerIsOpen ? (
 											<Modal onClose={closeLightbox}>

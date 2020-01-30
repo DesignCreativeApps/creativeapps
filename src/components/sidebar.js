@@ -30,7 +30,7 @@ class SideBar extends React.Component {
                         <FormattedMessage id="nav.about" />
                     </Link>
 
-                    <Link className="menu-item" to="/team">
+                    <Link className="menu-item" to="/how">
                         <FormattedMessage id="nav.how" />
                     </Link>
 
