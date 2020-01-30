@@ -1,17 +1,12 @@
 import React, {  useState, useCallback }  from "react"
-import Img from 'gatsby-image';
-import { graphql } from 'gatsby';
+
 import Layout from "../components/layout"
-import { FormattedMessage } from "gatsby-plugin-intl"
 import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
 import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images";
-import teamStyles from "./team.module.css"
 import headerStyles from "../components/header.module.css"
 import howStyles from './how.module.css';
-import 'rc-steps/assets/index.css';
-import 'rc-steps/assets/iconfont.css';
 import portfolioStyles from "./portfolio.module.css"
 
 
@@ -57,7 +52,6 @@ const lowphotos = [
     }
 
 ]
-
 
 const TeamPage = (props) => {
     const closeBurger = () => {
