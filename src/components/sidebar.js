@@ -23,6 +23,9 @@ class SideBar extends React.Component {
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}
                 >
+                    <Link className="menu-item" to="/">
+                        Home
+                    </Link>
                     <Link className="menu-item" to="/team">
                         <FormattedMessage id="nav.about" />
                     </Link>
