@@ -1,6 +1,6 @@
-import React, { useCallback } from "react"
+import React, {  useState, useCallback } from "react"
 import Gallery from "react-photo-gallery"
-// import Carousel, { Modal, ModalGateway } from "react-images";
+import Carousel, { Modal, ModalGateway } from "react-images";
 import Image from "../components/image"
 import Layout from "../components/layout"
 import { FormattedMessage } from "gatsby-plugin-intl"
@@ -11,25 +11,25 @@ import headerStyles from "../components/header.module.css"
 
 const photos = [
 	{
-		src: "/images/blue1.jpg",
+		src: "/images/blue1.svg",
 		alt: "blue1",
 		width: 5,
 		height: 3,
 	},
 	{
-		src: "/images/blue2.jpg",
+		src: "/images/blue2.svg",
 		alt: "blue2",
 		width: 5,
 		height: 3,
 	},
 	{
-		src: "/images/blue3.jpg",
+		src: "/images/blue3.svg",
 		alt: "blue3",
 		width: 5,
 		height: 3,
 	},
 	{
-		src: "/images/blue4.jpg",
+		src: "/images/blue4.svg",
 		alt: "blue4",
 		width: 5,
 		height: 3,
@@ -38,25 +38,25 @@ const photos = [
 
 const gesinterventi = [
 	{
-		src: "/images/iphone1.jpg",
+		src: "/images/iphone1.svg",
 		alt: "iphone1",
 		width: 150,
 		height: 326,
 	},
 	{
-		src: "/images/iphone2.jpg",
+		src: "/images/iphone2.svg",
 		alt: "iphone1",
 		width: 1,
 		height: 2.17,
 	},
 	{
-		src: "/images/iphone3.jpg",
+		src: "/images/iphone3.svg",
 		alt: "iphone1",
 		width: 1,
 		height: 2.17,
 	},
 	{
-		src: "/images/iphone4.jpg",
+		src: "/images/iphone4.svg",
 		alt: "iphone1",
 		width: 1,
 		height: 2.17,
@@ -64,37 +64,37 @@ const gesinterventi = [
 ]
 
 const PortfolioPage = () => {
-	// const [currentImage, setCurrentImage] = useState(0);
-	// const [viewerIsOpen, setViewerIsOpen] = useState(false);
+	const [currentImage, setCurrentImage] = useState(0);
+	const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-	// const openLightbox = useCallback((event, { photo, index }) => {
-	// 	setCurrentImage(index);
-	// 	setViewerIsOpen(true);
-	// }, []);
+	const openLightbox = useCallback((event, { photo, index }) => {
+		setCurrentImage(index);
+		setViewerIsOpen(true);
+	}, []);
 
-	// const closeLightbox = () => {
-	// 	setCurrentImage(0);
-	// 	setViewerIsOpen(false);
-	// };
+	const closeLightbox = () => {
+		setCurrentImage(0);
+		setViewerIsOpen(false);
+	};
 
-	// const [currentImageBlue, setCurrentImageBlue] = useState(0);
-	// const [viewerIsOpenBlue, setViewerIsOpenBlue] = useState(false);
+	const [currentImageBlue, setCurrentImageBlue] = useState(0);
+	const [viewerIsOpenBlue, setViewerIsOpenBlue] = useState(false);
 
-	// const openLightboxBlue = useCallback((event, { photo, index }) => {
-	// 	setCurrentImageBlue(index);
-	// 	setViewerIsOpenBlue(true);
-	// }, []);
+	const openLightboxBlue = useCallback((event, { photo, index }) => {
+		setCurrentImageBlue(index);
+		setViewerIsOpenBlue(true);
+	}, []);
 
-	// const closeLightboxBlue = () => {
-	// 	setCurrentImageBlue(0);
-	// 	setViewerIsOpenBlue(false);
-	// };
+	const closeLightboxBlue = () => {
+		setCurrentImageBlue(0);
+		setViewerIsOpenBlue(false);
+	};
 
-	// const [selectAll, setSelectAll] = useState(false);
+	const [selectAll, setSelectAll] = useState(false);
 
-	// const toggleSelectAll = () => {
-	// 	setSelectAll(!selectAll);
-	// };
+	const toggleSelectAll = () => {
+		setSelectAll(!selectAll);
+	};
 
 	const imageRenderer = useCallback(
 		({ index, left, top, key, photo, onClick }) => {
@@ -149,9 +149,9 @@ const PortfolioPage = () => {
 									<h3>
 										<FormattedMessage id="company" />
 									</h3>
-									
+
 									<p>
-									<FormattedMessage
+										<FormattedMessage
 											id="portfolio.project1.company"
 											defaultMessage="<company>Cucine Borz</company> è un'azienda che realizza impianti di cucine industriali, sistemi di lavaggio, refrigerazione aspirazione e lavorazione acciaio fornendo servizi di assistenza tecnica specializzata."
 											values={{
@@ -172,7 +172,21 @@ const PortfolioPage = () => {
 										<FormattedMessage id="portfolio.project1.solution" />
 									</p>
 									<h3>Screeshots</h3>
-									<Gallery photos={gesinterventi} renderImage={imageRenderer} />
+									<Gallery onClick={openLightbox} photos={gesinterventi} />
+									<ModalGateway>
+										{viewerIsOpen ? (
+											<Modal onClose={closeLightbox}>
+												<Carousel
+													currentIndex={currentImage}
+													views={gesinterventi.map(x => ({
+														...x,
+														srcset: x.srcSet,
+														caption: x.title
+													}))}
+												/>
+											</Modal>
+										) : null}
+									</ModalGateway>
 									<div>
 										<h3>
 											<FormattedMessage id="type" />
@@ -244,8 +258,21 @@ const PortfolioPage = () => {
 										<FormattedMessage id="portfolio.project2.solution" />
 									</p>
 									<h3>Screeshots</h3>
-
-									<Gallery photos={photos} renderImage={imageRenderer} />
+									<Gallery photos={photos} onClick={openLightboxBlue} />
+									<ModalGateway>
+										{viewerIsOpenBlue ? (
+											<Modal onClose={closeLightboxBlue}>
+												<Carousel
+													currentIndex={currentImage}
+													views={photos.map(x => ({
+														...x,
+														srcset: x.srcSet,
+														caption: x.title
+													}))}
+												/>
+											</Modal>
+										) : null}
+									</ModalGateway>
 									<div>
 										<h3>
 											<FormattedMessage id="type" />
