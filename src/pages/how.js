@@ -118,9 +118,9 @@ const TeamPage = (props) => {
                                 </time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>
+                                    <h3>
                                         Gathering requirements
-                                </h2>
+                                    </h3>
                                     <p>
                                         We work closely with our customers to gather their <strong>project requirements.</strong> We go through several iterations in order to make sure we fully understand their <strong>needs.</strong>. We can visit them directly the on their premises but we can also do this via <strong>Hangouts or Skype.</strong>
                                 </p>
@@ -131,7 +131,7 @@ const TeamPage = (props) => {
                                     <span className={howStyles.numberCircle}>2</span>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>Low fidelity prototyping</h2>
+                                    <h3>Low fidelity prototyping</h3>
                                     <p>
                                         <strong>Low-fidelity prototyping</strong> is a quick and easy way to translate <strong>high-level design </strong> concepts into tangible and testable artifacts.
                                         We use paper prototyping that allows us to prototype a digital product interface without using digital software.
@@ -159,7 +159,7 @@ const TeamPage = (props) => {
                                     <time className={howStyles.numberCircle}>3</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>High fidelity prototyping</h2>
+                                    <h3>High fidelity prototyping</h3>
                                     <p>
                                         <strong>High-fidelity prototypes</strong> appear and function as similar as possible to the actual product that we will ship. 
                                         We usually create high-fidelity prototypes when they have a solid understanding of what we are going to build. We use tools like <strong>Figma or Sketch.</strong>
@@ -186,7 +186,7 @@ const TeamPage = (props) => {
                                     <time className={howStyles.numberCircle}>4</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>Sprint planning</h2>
+                                    <h3>Sprint planning</h3>
                                     <p>
                                         We use <strong>agile methodologies</strong> and we plan our work in short development cycles of <strong>1-2 weeks.</strong> We estimate the complexity of the work that we need to perform and we assign tasks accordingly.
                                     </p>
@@ -197,7 +197,7 @@ const TeamPage = (props) => {
                                     <time className={howStyles.numberCircle}>5</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>Development iterations</h2>
+                                    <h3>Development iterations</h3>
                                     <p>
                                     During the development lifecycle we do <strong>continuous deployment</strong> on platfotms like <strong>Heroku and Netlify</strong> to keep the customers up to date with the progress.
                                     </p>

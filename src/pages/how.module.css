@@ -15,13 +15,12 @@
 
 @media (max-width: 640px) {
    .numberCircle {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     margin-top: 5px;
     margin-bottom:5px;
-    border-radius: 50%;
-    border: 2px solid black;
+    border: none;
     display: block;
-    font: 20px;
+    font: 16px
    }
 }  
