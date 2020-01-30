@@ -113,7 +113,7 @@ const TeamPage = (props) => {
                         <ul>
                             <li className={portfolioStyles.timelineElement}>
                                 <div className={portfolioStyles.timelineDate}>
-                                    <time className={portfolioStyles.timelineDateText}>
+                                    <time className={howStyles.numberCircle}>
                                         1
                                 </time>
                                 </div>
@@ -128,14 +128,14 @@ const TeamPage = (props) => {
                             </li>
                             <li className={portfolioStyles.timelineElement}>
                                 <div className={portfolioStyles.timelineDate}>
-                                    <span className={portfolioStyles.timelineDateText}>2</span>
+                                    <span className={howStyles.numberCircle}>2</span>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2>Low fidelity prototyping</h2>
                                     <p>
                                         <strong>Low-fidelity prototyping</strong> is a quick and easy way to translate <strong>high-level design </strong> concepts into tangible and testable artifacts.
                                         We use paper prototyping that allows us to prototype a digital product interface without using digital software.
-                                        We do wireframing as well using tools like <strong>Balsamiq</strong>, a visual representation of a product page that the designer can use to arrange page elements. 
+                                        We do wireframing as well, a visual representation of a product page that the designer can use to arrange page elements. We use tools like <strong>Balsamiq.</strong>
                                 </p>
                                 <Gallery onClick={openLightbox} photos={photos} />
 									<ModalGateway>
@@ -156,7 +156,7 @@ const TeamPage = (props) => {
                             </li>
                             <li className={portfolioStyles.timelineElement}>
                                 <div className={portfolioStyles.timelineDate}>
-                                    <time className={portfolioStyles.timelineDateText}>3</time>
+                                    <time className={howStyles.numberCircle}>3</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2>High fidelity prototyping</h2>
@@ -183,7 +183,7 @@ const TeamPage = (props) => {
                             </li>
                             <li className={portfolioStyles.timelineElement}>
                                 <div className={portfolioStyles.timelineDate}>
-                                    <time className={portfolioStyles.timelineDateText}>4</time>
+                                    <time className={howStyles.numberCircle}>4</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2>Sprint planning</h2>
@@ -194,12 +194,12 @@ const TeamPage = (props) => {
                             </li>
                             <li className={portfolioStyles.timelineElement}>
                                 <div className={portfolioStyles.timelineDate}>
-                                    <time className={portfolioStyles.timelineDateText}>5</time>
+                                    <time className={howStyles.numberCircle}>5</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2>Development iterations</h2>
                                     <p>
-                                    During the development we do <strong>continuous deployment</strong> on platfotms like <strong>Heroku and Netlify</strong> to keep the customers up to date with the progress.
+                                    During the development lifecycle we do <strong>continuous deployment</strong> on platfotms like <strong>Heroku and Netlify</strong> to keep the customers up to date with the progress.
                                     </p>
                                 </div>
                             </li>
