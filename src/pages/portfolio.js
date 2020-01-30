@@ -63,38 +63,46 @@ const gesinterventi = [
 ]
 
 const PortfolioPage = () => {
+	const closeBurger = () => {
+		const burger = document.getElementsByClassName("bm-burger-button");
+		burger[0].style.display='none';	
+	}
+	const openBurger = () => {
+		const burger = document.getElementsByClassName("bm-burger-button");
+		burger[0].style.display='block';	
+	}
 	const [currentImage, setCurrentImage] = useState(0);
 	const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
 	const openLightbox = useCallback((event, { photo, index }) => {
-		const burger = document.getElementsByClassName("bm-burger-button");
-		burger[0].style.display='none';
 		setCurrentImage(index);
 		setViewerIsOpen(true);
+		closeBurger();
 	}, []);
 
 	const closeLightbox = () => {
-		const burger = document.getElementsByClassName("bm-burger-button");
-		burger[0].style.display='block';
 		setCurrentImage(0);
 		setViewerIsOpen(false);
+		if(window.innerWidth <= 720) {
+			openBurger();
+		}
 	};
 
 	const [currentImageBlue, setCurrentImageBlue] = useState(0);
 	const [viewerIsOpenBlue, setViewerIsOpenBlue] = useState(false);
 
 	const openLightboxBlue = useCallback((event, { photo, index }) => {
-		const burger = document.getElementsByClassName("bm-burger-button");
-		burger[0].style.display='none';
 		setCurrentImageBlue(index);
 		setViewerIsOpenBlue(true);
+		closeBurger();
 	}, []);
 
 	const closeLightboxBlue = () => {
 		setCurrentImageBlue(0);
 		setViewerIsOpenBlue(false);
-		const burger = document.getElementsByClassName("bm-burger-button");
-		burger[0].style.display='block';
+		if(window.innerWidth <= 720) {
+			openBurger();
+		}
 	};
 
 	return (
