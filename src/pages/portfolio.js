@@ -1,7 +1,6 @@
 import React, {  useState, useCallback } from "react"
 import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images";
-import Image from "../components/image"
 import Layout from "../components/layout"
 import { FormattedMessage } from "gatsby-plugin-intl"
 import { Helmet } from "react-helmet"
@@ -68,11 +67,15 @@ const PortfolioPage = () => {
 	const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
 	const openLightbox = useCallback((event, { photo, index }) => {
+		const burger = document.getElementsByClassName("bm-burger-button");
+		burger[0].style.display='none';
 		setCurrentImage(index);
 		setViewerIsOpen(true);
 	}, []);
 
 	const closeLightbox = () => {
+		const burger = document.getElementsByClassName("bm-burger-button");
+		burger[0].style.display='block';
 		setCurrentImage(0);
 		setViewerIsOpen(false);
 	};
@@ -81,6 +84,8 @@ const PortfolioPage = () => {
 	const [viewerIsOpenBlue, setViewerIsOpenBlue] = useState(false);
 
 	const openLightboxBlue = useCallback((event, { photo, index }) => {
+		const burger = document.getElementsByClassName("bm-burger-button");
+		burger[0].style.display='none';
 		setCurrentImageBlue(index);
 		setViewerIsOpenBlue(true);
 	}, []);
@@ -88,29 +93,9 @@ const PortfolioPage = () => {
 	const closeLightboxBlue = () => {
 		setCurrentImageBlue(0);
 		setViewerIsOpenBlue(false);
+		const burger = document.getElementsByClassName("bm-burger-button");
+		burger[0].style.display='block';
 	};
-
-	const [selectAll, setSelectAll] = useState(false);
-
-	const toggleSelectAll = () => {
-		setSelectAll(!selectAll);
-	};
-
-	const imageRenderer = useCallback(
-		({ index, left, top, key, photo, onClick }) => {
-			return (
-				<Image
-					key={key}
-					margin={"2px"}
-					index={index}
-					photo={photo}
-					left={left}
-					top={top}
-					onClick={onClick}
-				/>
-			)
-		}
-	)
 
 	return (
 		<Layout>
@@ -172,12 +157,12 @@ const PortfolioPage = () => {
 										<FormattedMessage id="portfolio.project1.solution" />
 									</p>
 									<h3>Screeshots</h3>
-									<Gallery onClick={openLightbox} photos={gesinterventi} />
+									<Gallery style={{zIndex: 100}} onClick={openLightbox} photos={gesinterventi} />
 									<ModalGateway>
 										{viewerIsOpen ? (
 											<Modal onClose={closeLightbox}>
 												<Carousel
-													currentIndex={currentImage}
+													currentIndex={currentImageBlue}
 													views={gesinterventi.map(x => ({
 														...x,
 														srcset: x.srcSet,
@@ -312,7 +297,7 @@ const PortfolioPage = () => {
 											}}
 										>
 											Tablet Autismo
-                    </a>
+                    					</a>
 									</div>
 								</div>
 							</li>
