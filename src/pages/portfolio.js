@@ -170,7 +170,7 @@ const PortfolioPage = () => {
 										{viewerIsOpen ? (
 											<Modal onClose={closeLightbox}>
 												<Carousel
-													currentIndex={currentImageBlue}
+													currentIndex={currentImage}
 													views={gesinterventi.map(x => ({
 														...x,
 														srcset: x.srcSet,
@@ -256,7 +256,7 @@ const PortfolioPage = () => {
 										{viewerIsOpenBlue ? (
 											<Modal onClose={closeLightboxBlue}>
 												<Carousel
-													currentIndex={currentImage}
+													currentIndex={currentImageBlue}
 													views={photos.map(x => ({
 														...x,
 														srcset: x.srcSet,
