@@ -114,4 +114,7 @@
   .media{
     grid-column: 1 / 11;
   }
+  .companyMissionContainer {
+    margin-bottom: 0;
+  }
 }
