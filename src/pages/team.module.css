@@ -1,3 +1,4 @@
+
 .mediaFigure {
   padding-left: 0;
   padding-right: 0;
@@ -75,7 +76,7 @@
   display: inline-block;
   padding: 6px;
   border-radius: 10px;
-  background: rgb(23, 77, 100);
+  background: #32A9DB;
   color: white;
   font-weight: 500;
 }
