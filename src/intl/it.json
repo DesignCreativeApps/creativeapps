@@ -91,11 +91,11 @@
         },
         "high":{
             "title":"Progettazione ad alto livello",
-            "paragraph":"Uno schizzo con carta e penna è un metodo semplice, ma efficace di tradurre una progettazione ad alto livello in un primo prototipo testabile. Utilizziamo anche una tecnica denominata wireframing, una rappresentazione visuale per costruire il modello iniziale di un’ applicazione o sito web."
+            "paragraph":"Uno schizzo con carta e penna è un metodo semplice, ma efficace di tradurre una progettazione ad alto livello in un primo prototipo testabile. Utilizziamo anche una tecnica denominata wireframing, una rappresentazione visuale per costruire il modello iniziale di un’applicazione o sito web."
         },  
         "low":{
             "title":"Progettazione a basso livello",
-            "paragraph":"Il passo successivo nel processo di progettazione e quello di tradurre il prototipo definito nel passo precedente in un modello che assomiglia il più possibile al risultato finale. Creiamo prototipi ad alta fedeltà quando abbiamo una conoscenza completa del prodotto finale che andremo a costruire."
+            "paragraph":"Il passo successivo nel processo di progettazione è quello di tradurre il prototipo definito nel passo precedente in un modello che assomiglia il più possibile al risultato finale. Creiamo prototipi ad alta fedeltà quando abbiamo una conoscenza completa del prodotto finale che andremo a costruire."
         },  
         "planning":{
             "title":"Pianificazione",
