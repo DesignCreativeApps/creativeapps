@@ -208,7 +208,7 @@ const PortfolioPage = () => {
 											href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en"
 											style={{
 												padding: 6,
-												backgroundColor: "#3A53A4",
+												backgroundColor: "#3AB285",
 												color: "white",
 												borderRadius: 10,
 												fontWeight: 500,
@@ -297,7 +297,7 @@ const PortfolioPage = () => {
 											href="http://tabletautismo.it"
 											style={{
 												padding: 6,
-												backgroundColor: "#3A53A4",
+												backgroundColor: "#3AB285",
 												color: "white",
 												borderRadius: 10,
 												fontWeight: 500,
