@@ -97,11 +97,11 @@ section {
 }
 
 .skillTag {
-  background: rgb(33, 72, 109);
+  background: #488CCA;
 }
 
 .typeTag {
-  background:rgb(30, 83, 53);
+  background:#3FB171;
 }
 
 .toolsTag{
@@ -109,7 +109,7 @@ section {
 }
 
 .methodTag {
-  background: #1261a0;
+  background: #9bccfd;
 }
 
 @keyframes HeroAnimation {
