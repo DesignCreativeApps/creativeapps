@@ -1,7 +1,8 @@
 import React from "react";
 import { FormattedMessage, Link } from 'gatsby-plugin-intl';
+import Language from './language';
 import { ReactTypeformEmbed } from 'react-typeform-embed';
-import { slide as Menu } from "react-burger-menu";
+import { fallDown as Menu } from "react-burger-menu";
 
 class SideBar extends React.Component {
     state = {
@@ -22,6 +23,7 @@ class SideBar extends React.Component {
                 <Menu
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}
+                    width="100%"
                 >
                     <Link className="menu-item" to="/">
                         Home
@@ -40,6 +42,9 @@ class SideBar extends React.Component {
                     <a onClick={this.openForm}>
                         <FormattedMessage id="nav.contact" />
                     </a>
+                    <div>
+                        <Language/>
+                    </div>
                 </Menu>
                 <ReactTypeformEmbed
                     popup

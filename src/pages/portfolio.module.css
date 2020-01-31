@@ -8,6 +8,7 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 30px;
+
 }
 
 .timelineDate {
@@ -17,7 +18,6 @@
     left: 0;
     padding: 30px 15px;
     width: 50px;
-    color: #999;
     text-align: right;
     font-style: italic;
     border-right: 1px solid #ddd;
@@ -32,7 +32,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color:#6BB1F1;
+    background: linear-gradient(55.07deg, #64CEC7 -18.38%, #488CCA 28.24%, #488CCA 34.09%, #3A53A4 82.27%);
 }
 
 .timelineDateText {
@@ -43,7 +43,6 @@
 .timelineContent {
     margin-left: 150px;
     overflow: hidden;
-    border-top: 1px solid #ddd;
 }
 
 .projectDescription {
@@ -78,5 +77,9 @@
     }
     .timelineContent {
         margin-left: 0;
+        border-top: 1px solid #ddd;
+    }
+    .timeline li:last-child {
+        padding-bottom: 0;
     } 
 }

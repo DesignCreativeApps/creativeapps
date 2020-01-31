@@ -80,6 +80,31 @@
             "request": "A causa della release di Openshift v.3 (Platform as a Service di Redhat) l’azienda doveva migrare la loro piattaforma Blue da Openshift v.2 a v.3. Trattandosi di un prodotto non creato da noi ci siamo trovati a dover comprendere la soluzione interamente da soli senza supporto degli sviluppatori, con documentazione scarna e con tempistiche particolarmente era particolarmente strette.",
             "solution": "Abbiamo migrato l’intera piattaforma alla nuova versione di Openshift effettuando il backup dei dati (database e media files) e aggiornato l’applicazione Android rilasciandone una nuova versione. Ci siamo occupati inoltre di fornire supporto e assistenza per la risoluzione di eventuali bugs."
         }
+        
+    },
+    "how":{
+        "title": "Come lavoriamo",
+        "subtitle": "Qui un breve riassunto dei nostri processi.",
+        "requirements":{
+            "title":"Requisiti",
+            "paragraph":"Lavoriamo a stretto contatto con i nostri clienti per capire i requisiti dei loro progetti. Eseguiamo diverse iterazioni allo scopo di essere sicuri di capire completamente le loro necessità. Il tutto presso le loro essedi oppure comodamente via Hangouts o Skype."
+        },
+        "high":{
+            "title":"Progettazione ad alto livello",
+            "paragraph":"Uno schizzo con carta e penna è un metodo semplice, ma efficace di tradurre una progettazione ad alto livello in un primo prototipo testabile. Utilizziamo anche una tecnica denominata wireframing, una rappresentazione visuale per costruire il modello iniziale di un’ applicazione o sito web."
+        },  
+        "low":{
+            "title":"Progettazione a basso livello",
+            "paragraph":"Il passo successivo nel processo di progettazione e quello di tradurre il prototipo definito nel passo precedente in un modello che assomiglia il più possibile al risultato finale. Creiamo prototipi ad alta fedeltà quando abbiamo una conoscenza completa del prodotto finale che andremo a costruire."
+        },  
+        "planning":{
+            "title":"Pianificazione",
+            "paragraph":"Utilizziamo metodologie agile e pianifichiamo le nostre fasi di sviluppo in clicli di 1-2 settimane. Eseguiamo una stima il più accurata possibile della complessità e delle tempistiche del lavoro."
+        },  
+        "development":{
+            "title":"Sviluppo",
+            "paragraph":"Durante tutta la fase di sviluppo effettuiamo deployments continui su piattaforme come Heroku e Netlify allo scopo di tenere il cliente sempre aggiornato sui progressi dello sviluppo."
+        }
     },
     "skills": "Competenze",
     "technologies": "Tecnologie",
@@ -87,5 +112,7 @@
     "website": "Sito Web",
     "company":"Azienda",
     "request":"Richiesta",
-    "solution": "Soluzione"
+    "solution": "Soluzione",
+    "methodologies": "Metodologie",
+    "tools": "Strumenti"
 }

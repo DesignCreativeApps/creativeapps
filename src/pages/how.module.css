@@ -1,26 +1,80 @@
+.timelineContent {
+  margin-left: 150px;
+  overflow: hidden;
+}
 .numberCircle {
-        margin-top: -10px;
-        font-size: 24px;
-        display: block;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        padding: 8px;
-        background: #fff;
-        border: 2px solid black;
-        color: black;
-        text-align: center;
-        font: 22px Arial, sans-serif;
+  margin-top: -8px;
+  margin-left: 2.4rem;
+  font-size: 24px;
+  display: block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  background: linear-gradient(
+    55.07deg,
+    #64cec7 -18.38%,
+    #488cca 28.24%,
+    #488cca 34.09%,
+    #3a53a4 82.27%
+  );
+  color: white;
+  text-align: center;
+  font: 22px Arial, sans-serif;
+}
+
+.timelineDate {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px 15px;
+  width: 50px;
+  color: #999;
+  text-align: right;
+  font-style: italic;
+  border-right: 1px solid #ddd;
+}
+
+.timelineDate:after {
+  content: " ";
+  position: absolute;
+  top: 40px;
+  right: -5px;
+  display: block;
+}
+
+@media only screen and (max-width: 1025px) {
+  .numberCircle {
+    margin-top: 15px;
+    margin-left: 1.5rem;
+  }
+  .timelineDate {
+    padding: 10px 5px;
+  }
+  .timelineDate {
+    width: 40px;
+  }
 }
 
 @media (max-width: 640px) {
-   .numberCircle {
-    width: 16px;
-    height: 16px;
+  .numberCircle {
     margin-top: 5px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
+    margin-left: 0;
     border: none;
-    display: block;
-    font: 16px
-   }
-}  
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    color: black;
+  }
+  .timelineDate {
+    position: relative;
+    border-right: none;
+    padding: 0;
+    width: 0;
+  }
+  .timelineDate::after {
+    display: none;
+  }
+}

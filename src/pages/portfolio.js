@@ -143,7 +143,7 @@ const PortfolioPage = () => {
 										<FormattedMessage id="company" />
 									</h3>
 
-									<p>
+									<div>
 										<FormattedMessage
 											id="portfolio.project1.company"
 											defaultMessage="<company>Cucine Borz</company> è un'azienda che realizza impianti di cucine industriali, sistemi di lavaggio, refrigerazione aspirazione e lavorazione acciaio fornendo servizi di assistenza tecnica specializzata."
@@ -151,7 +151,7 @@ const PortfolioPage = () => {
 												company: msg => <strong>{msg}</strong>
 											}}
 										/>
-									</p>
+									</div>
 									<h3>
 										<FormattedMessage id="request" />
 									</h3>

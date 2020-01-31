@@ -1,10 +1,11 @@
-import React, {  useState, useCallback }  from "react"
+import React, { useState, useCallback } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Helmet } from "react-helmet"
 import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images";
+import { FormattedMessage } from "gatsby-plugin-intl"
 import headerStyles from "../components/header.module.css"
 import howStyles from './how.module.css';
 import portfolioStyles from "./portfolio.module.css"
@@ -55,152 +56,204 @@ const lowphotos = [
 
 const TeamPage = (props) => {
     const closeBurger = () => {
-		const burger = document.getElementsByClassName("bm-burger-button");
-		burger[0].style.display='none';	
-	}
-	const openBurger = () => {
-		const burger = document.getElementsByClassName("bm-burger-button");
-		burger[0].style.display='block';	
-	}
-	const [currentImage, setCurrentImage] = useState(0);
-	const [viewerIsOpen, setViewerIsOpen] = useState(false);
+        const burger = document.getElementsByClassName("bm-burger-button");
+        burger[0].style.display = 'none';
+    }
+    const openBurger = () => {
+        const burger = document.getElementsByClassName("bm-burger-button");
+        burger[0].style.display = 'block';
+    }
+    const [currentImage, setCurrentImage] = useState(0);
+    const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-	const openLightbox = useCallback((event, { photo, index }) => {
-		setCurrentImage(index);
-		setViewerIsOpen(true);
-		closeBurger();
-	}, []);
+    const openLightbox = useCallback((event, { photo, index }) => {
+        setCurrentImage(index);
+        setViewerIsOpen(true);
+        closeBurger();
+    }, []);
 
-	const closeLightbox = () => {
-		setCurrentImage(0);
-		setViewerIsOpen(false);
-		if(window.innerWidth <= 720) {
-			openBurger();
-		}
+    const closeLightbox = () => {
+        setCurrentImage(0);
+        setViewerIsOpen(false);
+        if (window.innerWidth <= 720) {
+            openBurger();
+        }
     };
-    
+
     const [currentImageLow, setCurrentImageLow] = useState(0);
-	const [viewerIsOpenLow, setViewerIsOpenLow] = useState(false);
+    const [viewerIsOpenLow, setViewerIsOpenLow] = useState(false);
 
-	const openLightboxLow = useCallback((event, { photo, index }) => {
-		setCurrentImageLow(index);
-		setViewerIsOpenLow(true);
-		closeBurger();
-	}, []);
+    const openLightboxLow = useCallback((event, { photo, index }) => {
+        setCurrentImageLow(index);
+        setViewerIsOpenLow(true);
+        closeBurger();
+    }, []);
 
-	const closeLightboxLow = () => {
-		setCurrentImageLow(0);
-		setViewerIsOpenLow(false);
-		if(window.innerWidth <= 720) {
-			openBurger();
-		}
-	};
+    const closeLightboxLow = () => {
+        setCurrentImageLow(0);
+        setViewerIsOpenLow(false);
+        if (window.innerWidth <= 720) {
+            openBurger();
+        }
+    };
     return (
         <Layout>
             <div className="container">
-                <SEO title="Portfolio" />
+                <SEO title="How we work" />
                 <Helmet bodyAttributes={{ class: headerStyles.others }} />
                 <section className="othersSection">
                     <div>
-                        <h1>How we work</h1>
+                        <h1><FormattedMessage id="how.title" /></h1>
                         <p className={portfolioStyles.projectDescription}>
                             <strong>
-                                Here a summary of our process.
+                            <FormattedMessage id="how.subtitle" />
                         </strong>
                         </p>
                     </div>
                     <div className={portfolioStyles.timeline}>
                         <ul>
                             <li className={portfolioStyles.timelineElement}>
-                                <div className={portfolioStyles.timelineDate}>
+                                <div className={howStyles.timelineDate}>
                                     <time className={howStyles.numberCircle}>
                                         1
-                                </time>
+                                    </time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2>
-                                        Gathering requirements
+                                    <FormattedMessage id="how.requirements.title" />
                                 </h2>
                                     <p>
-                                        We work closely with our customers to gather their <strong>project requirements.</strong> We go through several iterations in order to make sure we fully understand their <strong>needs.</strong>. We can visit them directly the on their premises but we can also do this via <strong>Hangouts or Skype.</strong>
-                                </p>
+                                    <FormattedMessage id="how.requirements.paragraph" />
+                                    </p>
+                                    <h3> <FormattedMessage id="methodologies" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="methodTag">#Agile</li>
+                                        <li className="methodTag">#Scrum</li>
+                                    </ul>
+                                    <h3> <FormattedMessage id="tools" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="toolsTag">#GoogleDrive</li>
+                                        <li className="toolsTag">#Hanghouts</li>
+                                        <li className="toolsTag">#Skype</li>
+                                    </ul>
                                 </div>
+
                             </li>
                             <li className={portfolioStyles.timelineElement}>
-                                <div className={portfolioStyles.timelineDate}>
+                                <div className={howStyles.timelineDate}>
                                     <span className={howStyles.numberCircle}>2</span>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>Low fidelity prototyping</h2>
+                                    <h2> <FormattedMessage id="how.high.title" /></h2>
                                     <p>
-                                        <strong>Low-fidelity prototyping</strong> is a quick and easy way to translate <strong>high-level design </strong> concepts into tangible and testable artifacts.
-                                        We use paper prototyping that allows us to prototype a digital product interface without using digital software.
-                                        We do wireframing as well, a visual representation of a product page that the designer can use to arrange page elements. We use tools like <strong>Balsamiq.</strong>
-                                </p>
-                                <Gallery onClick={openLightbox} photos={photos} />
-									<ModalGateway>
-										{viewerIsOpen ? (
-											<Modal onClose={closeLightbox}>
-												<Carousel
-													currentIndex={currentImage}
-													views={photos.map(x => ({
-														...x,
-														srcset: x.srcSet,
-														caption: x.title
-													}))}
-												/>
-											</Modal>
-										) : null}
-									</ModalGateway>
+                                    <FormattedMessage id="how.high.paragraph"/>
+                                    </p>
+                                    <Gallery onClick={openLightbox} photos={photos} />
+                                    <ModalGateway>
+                                        {viewerIsOpen ? (
+                                            <Modal onClose={closeLightbox}>
+                                                <Carousel
+                                                    currentIndex={currentImage}
+                                                    views={photos.map(x => ({
+                                                        ...x,
+                                                        srcset: x.srcSet,
+                                                        caption: x.title
+                                                    }))}
+                                                />
+                                            </Modal>
+                                        ) : null}
+                                    </ModalGateway>
+                                    <h3> <FormattedMessage id="methodologies" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="methodTag">#Prototyping</li>
+                                        <li className="methodTag">#Low Fidelity</li>
+                                    </ul>
+                                    <h3><FormattedMessage id="tools" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="toolsTag">#Balsmiq</li>
+                                        <li className="toolsTag">#Figma</li>
+                                    </ul>
                                 </div>
                             </li>
                             <li className={portfolioStyles.timelineElement}>
-                                <div className={portfolioStyles.timelineDate}>
+                                <div className={howStyles.timelineDate}>
                                     <time className={howStyles.numberCircle}>3</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>High fidelity prototyping</h2>
+                                    <h2> <FormattedMessage id="how.low.title" /></h2>
                                     <p>
-                                        <strong>High-fidelity prototypes</strong> appear and function as similar as possible to the actual product that we will ship. 
-                                        We usually create high-fidelity prototypes when they have a solid understanding of what we are going to build. We use tools like <strong>Figma or Sketch.</strong>
+                                    <FormattedMessage id="how.low.paragraph" />
                                     </p>
                                     <Gallery onClick={openLightboxLow} photos={lowphotos} />
-									<ModalGateway>
-										{viewerIsOpenLow ? (
-											<Modal onClose={closeLightboxLow}>
-												<Carousel
-													currentIndex={currentImageLow}
-													views={lowphotos.map(x => ({
-														...x,
-														srcset: x.srcSet,
-														caption: x.title
-													}))}
-												/>
-											</Modal>
-										) : null}
-									</ModalGateway>
+                                    <ModalGateway>
+                                        {viewerIsOpenLow ? (
+                                            <Modal onClose={closeLightboxLow}>
+                                                <Carousel
+                                                    currentIndex={currentImageLow}
+                                                    views={lowphotos.map(x => ({
+                                                        ...x,
+                                                        srcset: x.srcSet,
+                                                        caption: x.title
+                                                    }))}
+                                                />
+                                            </Modal>
+                                        ) : null}
+                                    </ModalGateway>
+                                    <h3><FormattedMessage id="methodologies" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="methodTag">#Prototyping</li>
+                                        <li className="methodTag">#High Fidelity</li>
+                                    </ul>
+                                    <h3> <FormattedMessage id="tools" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="toolsTag">#Sketch</li>
+                                        <li className="toolsTag">#Figma</li>
+                                        <li className="toolsTag">#Webflow</li>
+                                    </ul>
                                 </div>
                             </li>
                             <li className={portfolioStyles.timelineElement}>
-                                <div className={portfolioStyles.timelineDate}>
+                                <div className={howStyles.timelineDate}>
                                     <time className={howStyles.numberCircle}>4</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>Sprint planning</h2>
+                                    <h2> <FormattedMessage id="how.planning.title" /></h2>
                                     <p>
-                                        We use <strong>agile methodologies</strong> and we plan our work in short development cycles of <strong>1-2 weeks.</strong> We estimate the complexity of the work that we need to perform and we assign tasks accordingly.
+                                    <FormattedMessage id="how.planning.paragraph" />
                                     </p>
+                                    <h3> <FormattedMessage id="methodologies" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="methodTag">#Agile</li>
+                                        <li className="methodTag">#Scrum</li>
+                                    </ul>
+                                    <h3> <FormattedMessage id="tools" /></h3>
+                                    <ul className="tagsContainer">
+                                        <li className="toolsTag">#Trello</li>
+                                        <li className="toolsTag">#Jira</li>
+                                    </ul>
                                 </div>
                             </li>
                             <li className={portfolioStyles.timelineElement}>
-                                <div className={portfolioStyles.timelineDate}>
+                                <div className={howStyles.timelineDate}>
                                     <time className={howStyles.numberCircle}>5</time>
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
-                                    <h2>Development iterations</h2>
+                                    <h2><FormattedMessage id="how.development.title" /></h2>
                                     <p>
-                                    During the development lifecycle we do <strong>continuous deployment</strong> on platfotms like <strong>Heroku and Netlify</strong> to keep the customers up to date with the progress.
+                                    <FormattedMessage id="how.development.paragraph" />
                                     </p>
+                                    <h3>Methodologies</h3>
+                                    <ul className="tagsContainer">
+                                        <li className="methodTag">#Agile</li>
+                                        <li className="methodTag">#Scrum</li>
+                                    </ul>
+                                    <h3>Tools</h3>
+                                    <ul className="tagsContainer">
+                                        <li className="toolsTag">#Bugsnug</li>
+                                        <li className="toolsTag">#Heroku</li>
+                                        <li className="toolsTag">#Netlify</li>
+                                        <li className="toolsTag">#Swagger</li>
+                                    </ul>
                                 </div>
                             </li>
                         </ul>

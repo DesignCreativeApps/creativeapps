@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .container {
@@ -84,7 +84,7 @@ section {
   margin-bottom: 5px;
 }
 
-.tag, .techTag, .skillTag, .typeTag {
+.tag, .techTag, .skillTag, .typeTag, .toolsTag, .methodTag  {
   color: white; 
   border-radius: 10px;
   padding: 5px 5px;
@@ -102,6 +102,14 @@ section {
 
 .typeTag {
   background:#3FB171;
+}
+
+.toolsTag{
+  background: #81599f;
+}
+
+.methodTag {
+  background: #1261a0;
 }
 
 @keyframes HeroAnimation {

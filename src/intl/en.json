@@ -81,11 +81,37 @@
             "solution": "As a result we managed to migrate the entire platform making a complete data backup (database and media files) and upgrading the Android application releasing a new version. We also provided support for bug fixing activities."
         }
     },
+    "how":{
+        "title": "How we work",
+        "subtitle": "Here a quick summary of our process.",
+        "requirements":{
+            "title":"Requirements",
+            "paragraph":"We work closely with our customers to gather their project requirements. We go through several iterations in order to make sure we fully understand their needs. We can visit them directly the on their premises but we can also do this via Hangouts or Skype."
+        },
+        "high":{
+            "title":"High Level Design",
+            "paragraph":"Low-fidelity prototyping is a quick and easy way to translate high-level design concepts into tangible and testable artifacts. We use paper prototyping that allows us to prototype a digital product interface without using digital software. We do wireframing as well, a visual representation of a product page that the designer can use to arrange page elements. We use tools like Balsamiq."
+        },  
+        "low":{
+            "title":"Low Level Design",
+            "paragraph":"High-fidelity prototypes appear and function as similar as possible to the actual product that we will ship. We usually create high-fidelity prototypes when they have a solid understanding of what we are going to build. We use tools like Figma or Sketch."
+        },  
+        "planning":{
+            "title":"Planning",
+            "paragraph":"We use agile methodologies and we plan our work in short development cycles of 1-2 weeks. We estimate the complexity of the work that we need to perform and we assign tasks accordingly."
+        },  
+        "development":{
+            "title":"Development",
+            "paragraph":"During the development lifecycle we do continuous deployment on platfotms like Heroku and Netlify to keep the customers up to date with the progress."
+        }
+    },
     "skills": "Skills",
     "technologies": "Technologies",
     "type": "Type",
     "website": "Website",
     "company":"Company",
     "request":"Request",
-    "solution": "Solution"
+    "solution": "Solution",
+    "methodologies": "Methodologies",
+    "tools": "Tools"
 }
