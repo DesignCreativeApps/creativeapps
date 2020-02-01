@@ -60,7 +60,7 @@
 @media (max-width: 640px) {
   .numberCircle {
     margin-top: 5px;
-    padding: 5;
+    padding: 3px;
     margin-bottom: 5px;
     margin-left: 0;
     font-size: 20px;
