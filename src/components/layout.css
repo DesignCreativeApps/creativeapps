@@ -83,7 +83,7 @@ section {
 }
 
 .tag, .techTag, .skillTag, .typeTag, .toolsTag, .methodTag  {
-  color: black;
+  color: rgba(var(--fe0,0,53,105),1);
   border-radius: 10px;
   padding: 5px 5px;
   margin-right: 10px;
