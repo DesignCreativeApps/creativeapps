@@ -99,7 +99,7 @@ const TeamPage = (props) => (
                                             className={teamStyles.slidesLink}
                                             href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa"
                                         >
-                                            #Slides
+                                            Slides
                                         </a>
                                     </li>
                                 </ul>
@@ -169,7 +169,7 @@ const TeamPage = (props) => (
                                             “-AWS DeepRacer - A workshop about ReInforcement Learning.”
                                         </p>
                                         <a href="https://drive.google.com/open?id=1HJLFA5NfnRw-i2Vb_0m4xoabCtuOs83H" className={teamStyles.slidesLink}>
-                                            #Slides
+                                            Slides
                                         </a>
                                     </li>
                                     <li>
@@ -177,7 +177,7 @@ const TeamPage = (props) => (
                                             “-Image Recognition with TensorFlow using Deep Learning”
                                         </p>
                                         <a href="https://drive.google.com/open?id=1HbnMWIpNuG5TLNDd-UmTnaDRMDhZhxZy" className={teamStyles.slidesLink}>
-                                            #Slides
+                                            Slides
                                         </a>
                                     </li>
                                 </ul>
