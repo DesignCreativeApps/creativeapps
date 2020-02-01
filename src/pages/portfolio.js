@@ -208,7 +208,7 @@ const PortfolioPage = () => {
 											href="https://apps.apple.com/fr/app/gesinterventi/id1474807559?l=en"
 											style={{
 												padding: 6,
-												background: 'linear-gradient(298.21deg, #0170B4 30.02%, #07485E 167.25%)',
+												background: 'linear-gradient(55.07deg, #64CEC7 -18.38%, #488CCA 28.24%, #488CCA 34.09%, #3A53A4 82.27%)',
 												color: "white",
 												borderRadius: 10,
 												display: "inline-block",
@@ -296,7 +296,7 @@ const PortfolioPage = () => {
 											href="http://tabletautismo.it"
 											style={{
 												padding: 6,
-												background: 'linear-gradient(298.21deg, #0170B4 30.02%, #07485E 167.25%)',
+												background: 'linear-gradient(55.07deg, #64CEC7 -18.38%, #488CCA 28.24%, #488CCA 34.09%, #3A53A4 82.27%)',
 												color: "white",
 												borderRadius: 10,
 												display: "inline-block",
