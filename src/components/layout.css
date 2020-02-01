@@ -88,9 +88,10 @@ section {
   padding: 5px 5px;
   margin-right: 10px;
   margin-bottom: 5px;
+  background: #488CCA;
 }
 
-.techTag {
+/* .techTag {
   background:  #392A88;
 }
 
@@ -99,16 +100,16 @@ section {
 }
 
 .typeTag {
-  background:#34A5CF
+background: #0081CF;
 }
 
 .toolsTag{
-  background: #1F5C56;
+background: #0089BA;
 }
 
 .methodTag {
-  background: #285B7B;
-}
+  background: #008E9B
+} */
 
 @keyframes HeroAnimation {
   0% {
