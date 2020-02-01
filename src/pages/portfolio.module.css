@@ -26,7 +26,7 @@
 .timelineDate:after {
     content: " ";
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: -5px;
     display: block;
     width: 10px;
