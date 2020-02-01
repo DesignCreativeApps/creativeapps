@@ -211,7 +211,6 @@ const PortfolioPage = () => {
 												backgroundColor: "#391A6E",
 												color: "white",
 												borderRadius: 10,
-												fontWeight: 500,
 												display: "inline-block",
 											}}
 										>
@@ -300,7 +299,6 @@ const PortfolioPage = () => {
 												backgroundColor: "#391A6E",
 												color: "white",
 												borderRadius: 10,
-												fontWeight: 500,
 												display: "inline-block",
 											}}
 										>
