@@ -71,7 +71,7 @@
         "project1":{
             "title":"Gestione interventi",
             "company": "<company>Cucine Borz</company> is a company manufacturing industrial kitchens, industrial cleaning machines and refrigerators. They also provide highly specialized technical support to their clients.",
-            "request": "Since Trello was not an optimal solution to manage the company maintenance activities due to its limited searching and reporting  capabilities they requested a custom mobile application with extra functionalities able to fill the gap.",
+            "request": "Since Trello was not an optimal solution to manage the company's maintenance activities due to its limited searching and reporting  capabilities they requested a custom mobile application with extra functionalities able to fill the gap.",
             "solution": "We developed a custom solution that allows the user to create new activities, add trips, goods delivered to the client, log executed tasks and add attachments. The user can generate a pdf report with a summary of the performed activities and the client can sign it on the app. The app has full offline capabilities."
         },
         "project2":{
