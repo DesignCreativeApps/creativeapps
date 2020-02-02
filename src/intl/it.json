@@ -10,11 +10,11 @@
         "headline": "Creiamo software personalizzato per la tua attività dall’idea iniziale fino al prodotto finale",
         "description": {
             "title": "Sviluppo software per il web e mobile",
-            "paragraph": "A <company>CREATIVE APPS</company> diamo vita alle tue idee. Il nostro obiettivo è quello di capire le <needs>esigenze</needs> del cliente attraverso una collaborazione una diretta. Creiamo software <custom>personalizzato</custom>, applicazioni e siti web che aggiungono <value>vero valore</value> al business dei nostri clienti. Forniamo anche attività di <consultancy>consulenza</consultancy> per agenzie e startup per la creazione dei loro <product>prodotti digitali.</product>"
+            "paragraph": "A <company>CREATIVE APPS</company> diamo vita alle tue idee. Il nostro obiettivo è quello di capire le <needs>esigenze</needs> del cliente attraverso una collaborazione diretta. Creiamo software <custom>personalizzato</custom>, applicazioni e siti web che aggiungono <value>vero valore</value> al business dei nostri clienti. Forniamo anche attività di <consultancy>consulenza</consultancy> per agenzie e startup per la creazione dei loro <product>prodotti digitali.</product>"
         },
         "web": {
             "title": "Sviluppo Web",
-            "paragraph": "Sia nel caso il cliente abbia già un’idea di massima, oppure dei requisiti specifici mettiamo a disposizione le nostre competenze tecniche per dare vita all’idea."
+            "paragraph": "Sia nel caso il cliente abbia già un’idea di massima di cosa voglia realizzare, oppure dei requisiti specifici mettiamo a disposizione le nostre competenze tecniche per dare vita all’idea."
         },
         "mobile": {
             "title": "Sviluppo Mobile",
@@ -45,21 +45,21 @@
         "title": "Chi siamo",
         "dedicated": {
             "title": "Attività dedicata.",
-            "paragraph": "Siamo una piccola azienda e puntiamo alla qualità. Ci concentreremo esclusivamente sul tuo progetto."
+            "paragraph": "Siamo una piccola squadra, ma puntiamo alla qualità. Ci concentreremo esclusivamente sul tuo progetto."
         },
         "client": {
             "title": "Cliente al centro del progetto.",
-            "paragraph": "Il cliente diventa parte del nostro team seguendo passo passo tutta l’attività di sviluppo."
+            "paragraph": "Il cliente diventa parte della nostra squadra seguendo passo passo tutta l’attività di sviluppo."
         },
         "process": {
             "title": "Processi di sviluppo.",
-            "paragraph": "Abbiamo processi di sviluppo ben organizzati, collaudati nel tempo e utilizziamo metodologie agile."
+            "paragraph": "Abbiamo processi ben organizzati e collaudati nel tempo. Utilizziamo metodologie agile."
         },
         "development": {
             "title": "Mobile e Web.",
             "paragraph": "Sviluppiamo software personalizzato per il web, mobile e sistemi di backend. Le nostre soluzioni sono fatte su misura per soddisfare i bisogni di ogni cliente."
         },
-        "luca": "Sviluppatore con 8+ anni di esperienza nella progettazione, sviluppo e testing di software. Ho una particolare attenzione alla qualità e ai dettagli sia nelle attività di sviluppo che nella gestione del progetto. Sono in continuo aggiornamento attraverso studio personale con lo scopo di rimanere al passo con i tempi con le ultime tecnologie nell’ambito web e mobile.",
+        "luca": "Sviluppatore con 8+ anni di esperienza nella progettazione, sviluppo e testing di software su diverse piattaforme. Ho una particolare attenzione alla qualità e ai dettagli sia nelle attività di sviluppo che nella gestione del progetto. Sono in continuo aggiornamento attraverso studio personale con lo scopo di rimanere al passo con i tempi con le ultime tecnologie nell’ambito web e mobile.",
         "elia": "Nato nel 1994 da sempre interessato all’ambito IT fin da bambino. Al momento frequento l’ultimo anno di Ingegneria Informatica all’università di Trento. Nel 2011 ho creato la mia attività e dal 2017 al 2019 ho collaborato come ricercatore alla fondazione Bruno Kessler nella divisione Sistemi Embedded."
     },
     "portfolio": {
@@ -70,15 +70,15 @@
         },
         "project1": {
             "title": "Gestione interventi",
-            "company": "<company>Cucine Borz</company> è un'azienda che realizza impianti di cucine industriali, sistemi di lavaggio, refrigerazione aspirazione e lavorazione acciaio fornendo servizi di assistenza tecnica specializzata.",
-            "request": "L’azienda aveva bisogno di un’applicazione ad hoc per la gestione dei loro progetti con use case tipico quello della gestione di interventi di assistenza e manutenzione presso i loro clienti. Trello si e rivelato non essere era la soluzione ottimale perche non presentava alcune caratteristiche peculiari come ricerche mirate degli interventi.",
-            "solution": "Abbiamo sviluppato una soluzione personalizzata che permette di creare creare interventi, inserire viaggi, materiali consegnati, ore di lavoro dei tecnici, attività eseguite, file allegati e foto. Inoltre dall'applicazione mobile e possibile generare un rapportino di lavoro con firma del cliente. Il tutto funzionante anche quando il device è offline."
+            "company": "<company>Cucine Borz</company> è un'azienda che realizza impianti di cucine industriali, sistemi di lavaggio, refrigerazione, aspirazione e lavorazione acciaio fornendo servizi di assistenza tecnica specializzata.",
+            "request": "Trello non si era rivelato la soluzione ottimale per la gestione degli interventi di manutenzione e consulenza dei loro tecnici a causa della manca di alcune caratteristiche peculiari come la ricerca mirata degli interventi e la possibilità di generare dei rapportini di lavoro. L’azienda aveva bisogno quindi di una soluzione personalizzata per ovviare alla mancanza di queste funzionalità.",
+            "solution": "Abbiamo sviluppato una soluzione personalizzata che permettesse di creare interventi, inserire viaggi, materiali consegnati, ore di lavoro dei tecnici, attività eseguite, file allegati e foto. Inoltre dall'applicazione è possibile generare un rapportino di lavoro con firma del cliente. Il tutto funzionante anche quando il device è offline."
         },
         "project2": {
             "title": "Blue",
             "company": "<company>Needius</company> è una giovane società di Rovereto in provincia di Trento con la missione di trovare soluzioni per migliorare la qualità della vita delle persone. Specializzati nella realizzazione di software per disabilità il loro prodotto di punta è Blu(e), un comunicatore per tablets Samsung basato sulla comunicazione aumentativa alternativa che aiuta le persone con difficoltà di linguaggio a comunicare.",
-            "request": "A causa della release di Openshift v.3 (Platform as a Service di Redhat) l’azienda doveva migrare la loro piattaforma Blue da Openshift v.2 a v.3. Trattandosi di un prodotto non creato da noi ci siamo trovati a dover comprendere la soluzione interamente da soli senza supporto degli sviluppatori, con documentazione scarna e con tempistiche particolarmente era particolarmente strette.",
-            "solution": "Abbiamo migrato l’intera piattaforma alla nuova versione di Openshift effettuando il backup dei dati (database e media files) e aggiornato l’applicazione Android rilasciandone una nuova versione. Ci siamo occupati inoltre di fornire supporto e assistenza per la risoluzione di eventuali bugs."
+            "request": "A causa del rilascio di Openshift v.3 (soluzione cloud di Redhat) l’azienda aveva bisogno migrare la loro piattaforma Blu(e) da Openshift v.2 a v.3. Trattandosi di un prodotto non creato da noi ci siamo trovati a dover comprendere la soluzione interamente da soli senza supporto degli sviluppatori della piattaforma, con documentazione scarna e con tempistiche particolarmente ristrette.",
+            "solution": "Abbiamo migrato con successo l’intera piattaforma alla nuova versione di Openshift effettuando il backup dei dati (database e media files) e aggiornato l’applicazione Android rilasciandone una nuova versione. Ci siamo occupati anche di fornire attività di supporto e assistenza per la risoluzione di eventuali bugs."
         }
         
     },
@@ -87,23 +87,23 @@
         "subtitle": "Qui un breve riassunto dei nostri processi.",
         "requirements":{
             "title":"Requisiti",
-            "paragraph":"Lavoriamo a stretto contatto con i nostri clienti per capire i requisiti dei loro progetti. Eseguiamo diverse iterazioni allo scopo di essere sicuri di capire completamente le loro necessità. Il tutto presso le loro sedi oppure comodamente via Hangouts o Skype."
+            "paragraph":"Lavoriamo a stretto contatto con i nostri clienti per capire i requisiti dei loro progetti. Eseguiamo diverse iterazioni allo scopo di essere sicuri di capire completamente le loro necessità ed esigenze. Il tutto presso le loro sedi oppure comodamente via Hangouts o Skype."
         },
         "high":{
             "title":"Progettazione ad alto livello",
-            "paragraph":"Uno schizzo con carta e penna è un metodo semplice, ma efficace di tradurre una progettazione ad alto livello in un primo prototipo testabile. Utilizziamo anche una tecnica denominata wireframing, una rappresentazione visuale per costruire il modello iniziale di un’applicazione o sito web."
+            "paragraph":"Uno schizzo con carta e penna è un metodo semplice, ma efficace di tradurre una progettazione ad alto livello in un primo prototipo testabile. Il wireframing è una rappresentazione visuale per costruire il modello iniziale di un’applicazione o sito web."
         },  
         "low":{
             "title":"Progettazione a basso livello",
-            "paragraph":"Il passo successivo nel processo di progettazione è quello di tradurre il prototipo definito nel passo precedente in un modello che assomiglia il più possibile al risultato finale. Creiamo prototipi ad alta fedeltà quando abbiamo una conoscenza completa del prodotto finale che andremo a costruire."
+            "paragraph":"In questa fase di progettazione il prototipo definito tramite la tecnica del wireframing viene tradotto in un modello più ad alta definizione che assomigli il più possibile al risultato finale. Creiamo prototipi ad alta fedeltà quando abbiamo una conoscenza completa del prodotto finale che andremo a costruire."
         },  
         "planning":{
             "title":"Pianificazione",
-            "paragraph":"Utilizziamo metodologie agile e pianifichiamo le nostre fasi di sviluppo in clicli di 1-2 settimane. Eseguiamo una stima il più accurata possibile della complessità e delle tempistiche del lavoro."
+            "paragraph":"Pianifichiamo le nostre fasi di sviluppo in clicli di 1-2 settimane utilizzando metologie agile. Eseguiamo una stima il più accurata possibile della complessità e delle tempistiche del lavoro definendo degli obiettivi a breve termine per la singola fase di sviluppo."
         },  
         "development":{
             "title":"Sviluppo",
-            "paragraph":"Durante tutta la fase di sviluppo effettuiamo deployments continui su piattaforme come Heroku e Netlify allo scopo di tenere il cliente sempre aggiornato sui progressi dello sviluppo."
+            "paragraph":"Durante questa fase effettuiamo deployments continui delle nostre applicazioni su piattaforme come Heroku e Netlify allo scopo di mostrare al cliente i progressi dello sviluppo in tempo quasi reale."
         }
     },
     "skills": "Competenze",

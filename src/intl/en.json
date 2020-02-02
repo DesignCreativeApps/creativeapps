@@ -70,15 +70,15 @@
         },
         "project1":{
             "title":"Gestione interventi",
-            "company": "<company>Cucine Borz</company> is a company manufacturing industrial kitchens, industrial cleaning machines and refrigerators. They also provide highly specialized technical support.",
-            "request": "The company requested a custom mobile application to manage and plan maintenance and consultancy activities keeping a complete history with full offline capabilities. Trello was not an optimal solution for them due to its limited searching  and billing capabilities.",
-            "solution": "We developed a custom mobile application. The user can create new activities, add trips, goods delivered to the client, log executed tasks and eventually add attachments. The user can generate a pdf report with a summary of the performed activities and the client can sign it on the app. The app has full offline capabilities."
+            "company": "<company>Cucine Borz</company> is a company manufacturing industrial kitchens, industrial cleaning machines and refrigerators. They also provide highly specialized technical support to their clients.",
+            "request": "Since Trello was not an optimal solution to manage the company maintenance activities due to its limited searching and reporting  capabilities they requested a custom mobile application with extra functionalities able to fill the gap.",
+            "solution": "We developed a custom solution that allows the user to create new activities, add trips, goods delivered to the client, log executed tasks and add attachments. The user can generate a pdf report with a summary of the performed activities and the client can sign it on the app. The app has full offline capabilities."
         },
         "project2":{
             "title":"Blue",
-            "company":"<company>Needius</company> is a young startup based in Trento with the mission to improve people’s quality of living. They are focused on the development of software for kids with special needs. Their main product is Blu(e)  is an Android application for Samsung tablets with the aim to facilitate the learning process and communication for kids affected by autism.",
+            "company":"<company>Needius</company> is a young startup based in Trento with the mission to improve people’s quality of living. They are focused on the development of software for kids with special needs. Their main product is Blu(e), it's Android application for Samsung tablets with the aim to facilitate the learning process and communication for kids affected by autism.",
             "request": "Due to the release of Openshift v.3 (Redhat Platform as a Service) the company had to migrate their platform Blu(e) from Openshift v.2 to v.3. Since it was a legacy system we had to fully understand the solution on our own with no support from the platform developers. The documentation was fairly limited and we had strict deadlines.",
-            "solution": "As a result we managed to migrate the entire platform making a complete data backup (database and media files) and upgrading the Android application releasing a new version. We also provided support for bug fixing activities."
+            "solution": "As a result we managed to migrate successfully the entire platform making a complete data backup (database and media files) and upgrading the Android application releasing a new version. We also provided support for bug fixing activities."
         }
     },
     "how":{
@@ -86,23 +86,23 @@
         "subtitle": "Here a quick summary of our process.",
         "requirements":{
             "title":"Requirements",
-            "paragraph":"We work closely with our customers to gather their project requirements. We go through several iterations in order to make sure we fully understand their needs. We can visit them directly the on their premises but we can also do this via Hangouts or Skype."
+            "paragraph":"We work closely with our customers to gather their project requirements. We go through several iterations in order to make sure we fully understand their needs. We can visit them directly at their premises but we can also do this via Hangouts or Skype."
         },
         "high":{
             "title":"High Level Design",
-            "paragraph":"Low-fidelity prototyping is a quick and easy way to translate high-level design concepts into tangible and testable artifacts. We use paper prototyping that allows us to prototype a digital product interface without using digital software. We do wireframing as well, a visual representation of a product page that the designer can use to arrange page elements. We use tools like Balsamiq."
+            "paragraph":"Pen and paper prototyping (low-fidelity) is a quick and easy way to translate high-level design concepts into tangible and testable artifacts. Wireframing is a visual representation of a product page used to arrange page elements."
         },  
         "low":{
             "title":"Low Level Design",
-            "paragraph":"High-fidelity prototypes appear and function as similar as possible to the actual product that we will ship. We usually create high-fidelity prototypes when they have a solid understanding of what we are going to build. We use tools like Figma or Sketch."
+            "paragraph":"In this design step we turn the wireframes into high-fidelity prototypes that appear and function as similar as possible to the actual product that we will ship. We usually create high-fidelity prototypes when we have a solid understanding of the product we are going to build."
         },  
         "planning":{
             "title":"Planning",
-            "paragraph":"We use agile methodologies and we plan our work in short development cycles of 1-2 weeks. We estimate the complexity of the work that we need to perform and we assign tasks accordingly."
+            "paragraph":"We plan our work in short development cycles of 1-2 weeks using agile methodologies. We estimate the complexity of the work that we need to perform and we assign tasks accordingly. We define short term deliverables to showcase to our clients."
         },  
         "development":{
             "title":"Development",
-            "paragraph":"During the development lifecycle we do continuous deployment on platfotms like Heroku and Netlify to keep the customers up to date with the progress."
+            "paragraph":"During the development lifecycle we do continuous deployment on platfotms like Heroku and Netlify to keep the customers up to date with the progress almost on real time."
         }
     },
     "skills": "Skills",

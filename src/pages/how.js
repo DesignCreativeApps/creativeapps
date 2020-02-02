@@ -166,7 +166,7 @@ const TeamPage = (props) => {
                                     <h3> <FormattedMessage id="methodologies" /></h3>
                                     <ul className="tagsContainer">
                                         <li className="methodTag">#Prototyping</li>
-                                        <li className="methodTag">#Low Fidelity</li>
+                                        <li className="methodTag">#Wireframing</li>
                                     </ul>
                                     <h3><FormattedMessage id="tools" /></h3>
                                     <ul className="tagsContainer">
@@ -202,7 +202,7 @@ const TeamPage = (props) => {
                                     <h3><FormattedMessage id="methodologies" /></h3>
                                     <ul className="tagsContainer">
                                         <li className="methodTag">#Prototyping</li>
-                                        <li className="methodTag">#High Fidelity</li>
+                                        <li className="methodTag">#Mockups Design</li>
                                     </ul>
                                     <h3> <FormattedMessage id="tools" /></h3>
                                     <ul className="tagsContainer">
