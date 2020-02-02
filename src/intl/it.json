@@ -71,7 +71,7 @@
         "project1": {
             "title": "Gestione interventi",
             "company": "<company>Cucine Borz</company> è un'azienda che realizza impianti di cucine industriali, sistemi di lavaggio, refrigerazione, aspirazione e lavorazione acciaio fornendo servizi di assistenza tecnica specializzata.",
-            "request": "Trello non si era rivelato la soluzione ottimale per la gestione degli interventi di manutenzione e consulenza dei loro tecnici a causa della manca di alcune caratteristiche peculiari come la ricerca mirata degli interventi e la possibilità di generare dei rapportini di lavoro. L’azienda aveva bisogno quindi di una soluzione personalizzata per ovviare alla mancanza di queste funzionalità.",
+            "request": "Trello non si era rivelato la soluzione ottimale per la gestione degli interventi di manutenzione e consulenza dei loro tecnici a causa della mancanza di alcune caratteristiche peculiari come la ricerca mirata degli interventi e la possibilità di generare dei rapportini di lavoro. L’azienda aveva bisogno quindi di una soluzione personalizzata per ovviare alla mancanza di queste funzionalità.",
             "solution": "Abbiamo sviluppato una soluzione personalizzata che permettesse di creare interventi, inserire viaggi, materiali consegnati, ore di lavoro dei tecnici, attività eseguite, file allegati e foto. Inoltre dall'applicazione è possibile generare un rapportino di lavoro con firma del cliente. Il tutto funzionante anche quando il device è offline."
         },
         "project2": {
