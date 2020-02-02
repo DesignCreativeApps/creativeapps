@@ -33,7 +33,7 @@ class Header extends React.Component {
 		let headerClasses = this.state.hasScrolled && isHome ? `${headerStyles.header} ${headerStyles.headerScrolled}` : headerStyles.header;
 		return (
 			<nav className={headerClasses}>
-				<div className={headerStyles.headerContainer}>
+				{/* <div className={headerStyles.headerContainer}> */}
 					<div className={headerStyles.headerGroup}>
 						<Link to="/"><img alt="logo" className={headerStyles.headerLogo} src='/images/logo.svg' /></Link>
 						<ul className={headerStyles.navLinks}>
@@ -52,7 +52,7 @@ class Header extends React.Component {
 						</ul>
 
 					</div>
-				</div>
+				{/* </div> */}
 				<ReactTypeformEmbed
 					popup
 					autoOpen={false}

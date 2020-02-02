@@ -72,10 +72,11 @@ const IndexPage = props => {
 				</section>
 				<section>
 					<div ref={myRef} className={homeStyles.cards}>
+				
 						<div className={homeStyles.card}>
-							<div className={homeStyles.cardIcon} style={{ color: "#66CD93" }}>
+						<div className={homeStyles.cardIcon} style={{ color: "#66CD93" }}>
 								W
-            			</div>
+            				</div>
 							<h3>
 								<FormattedMessage id="home.web.title" />
 							</h3>
@@ -141,7 +142,7 @@ const IndexPage = props => {
 					</div>
 				</section>
 				<section>
-					<h2 style={{ textAlign: "center", margin:0}}>
+					<h2 style={{ textAlign: "center", margin: 0 }}>
 						<FormattedMessage id="home.whattheysay.title" />
 					</h2>
 					<Slider {...settings}>

@@ -1,4 +1,7 @@
 .home .header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0.5rem;
   position: fixed;
   width: 100%;
   padding: 50px 0;
@@ -13,22 +16,18 @@
 }
 
 .others .header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0.5rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   background:  #373a47;
-  padding: 15px 0;
+  padding: 0.9375rem 0;
   backdrop-filter: blur(20px);
   z-index: 1;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.headerContainer {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 0.5rem;
-  align-items: center;
 }
 
 .headerGroup {
@@ -50,24 +49,23 @@
 .header a {
   margin-right: 2.5rem;
   padding-bottom: 5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
   font-weight: 600;
 }
 
 .navLinks a:hover{
     border-bottom: 2px solid  #488CCA;
-    margin-bottom: -2px;
 }
 
 .headerLogo {
-  width: 40px;
+  height: 2.5rem;
 }
 
 
 @media (max-width: 720px) {
   .home .header {
-    padding-top: 15px;
+    padding-top: 0.9375rem;
   }
   .navLinks {
     display: none;
