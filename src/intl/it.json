@@ -99,7 +99,7 @@
         },  
         "planning":{
             "title":"Pianificazione",
-            "paragraph":"Pianifichiamo le nostre fasi di sviluppo in cicli di 1-2 settimane utilizzando metologie agile. Eseguiamo una stima il più accurata possibile della complessità e delle tempistiche del lavoro definendo degli obiettivi a breve termine per la singola fase di sviluppo."
+            "paragraph":"Pianifichiamo le nostre fasi di sviluppo in cicli di 1-2 settimane utilizzando metodologie agile. Eseguiamo una stima il più accurata possibile della complessità e delle tempistiche del lavoro definendo degli obiettivi a breve termine per la singola fase di sviluppo."
         },  
         "development":{
             "title":"Sviluppo",
