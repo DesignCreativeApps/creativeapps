@@ -33,8 +33,8 @@ const TeamPage = (props) => (
                     </div>
                 </div>
             </section>
-            <section className="otherSection">
-                <div className={teamStyles.mediaContainer}>
+            <section className="othersSection">
+                <div className="othersContainer">
                     <div className={teamStyles.media} id={teamStyles.card1}>
                         <div className={teamStyles.mediaFigureContainer}>
                             <Img className={teamStyles.mediaFigureImage} fluid={props.data.luca.childImageSharp.fluid} />
