@@ -94,7 +94,7 @@
         },  
         "low":{
             "title":"Low Level Design",
-            "paragraph":"In this design step we turn the wireframes into high-fidelity prototypes that appear and function as similar as possible to the actual product that we will ship. We usually create high-fidelity prototypes when we have a solid understanding of the product we are going to build."
+            "paragraph":"In this design step we turn wireframes into high-fidelity prototypes that appear and function as similar as possible to the actual product that we will ship. We usually create high-fidelity prototypes when we have a solid understanding of the product we are going to build."
         },  
         "planning":{
             "title":"Planning",
