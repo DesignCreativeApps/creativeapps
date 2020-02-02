@@ -102,7 +102,7 @@
         },  
         "development":{
             "title":"Development",
-            "paragraph":"During the development lifecycle we do continuous deployment on platfotms like Heroku and Netlify to keep the customers up to date with the progress almost on real time."
+            "paragraph":"During the development lifecycle we do continuous deployment on platfotms like Heroku and Netlify to keep the customers up to date with the progress almost in real time."
         }
     },
     "skills": "Skills",
