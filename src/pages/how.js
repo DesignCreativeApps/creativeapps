@@ -49,18 +49,6 @@ const devphotos = [
         height: 2.78,
     },
     {
-        src: "/images/netlify.svg",
-        alt: "low2",
-        width: 5,
-        height: 2.78,
-    },
-    {
-        src: "/images/bugsnug.svg",
-        alt: "low2",
-        width: 5,
-        height: 2.78,
-    },
-    {
         src: "/images/swagger.svg",
         alt: "low2",
         width: 5,
@@ -150,7 +138,7 @@ const TeamPage = (props) => {
     }, []);
 
     const closeLightboxPlan = () => {
-        setCurrentImagePlan(0);
+        setCurrentImagePlan(0);c
         setViewerIsOpenPlan(false);
         if (window.innerWidth <= 720) {
             openBurger();
