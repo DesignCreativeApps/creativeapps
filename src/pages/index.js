@@ -100,7 +100,7 @@ const IndexPage = props => {
 								D
             			</div>
 							<h3>
-								<FormattedMessage id="home.design.title" />
+								Design
 							</h3>
 							<p>
 								<FormattedMessage id="home.design.paragraph" />
