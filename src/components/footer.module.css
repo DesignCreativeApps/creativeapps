@@ -80,5 +80,8 @@
         align-self: center;
         margin-bottom: 5px;
         margin-left: 10px;
+    }
+    .languageContainer {
+        align-self: center;
     }  
 }

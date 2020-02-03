@@ -17,9 +17,9 @@ const Footer = () => (
                         </a>
                     </div>
                     <div className={footerStyles.footerItem}>
-                        <a href="https://bitbucket.org">
-                            <img alt="bitbucket" src='/images/bitbucket.svg' width="20" className={footerStyles.image} />
-                            <span>Bitbucket</span>
+                        <a href="mailto:info@creativeapps.design">
+                            <img alt="envelope" src='/images/envelope.svg' width="20" className={footerStyles.image} />
+                            <span>info@creativeapps.design</span>
                         </a>
                     </div>
                 </div>
@@ -27,12 +27,6 @@ const Footer = () => (
                     <div className={footerStyles.footerItem}>
                         <img alt="logo" src='/images/logo.svg' className={footerStyles.image} />
                         <span>CREATIVE APPS</span>
-                    </div>
-                    <div className={footerStyles.footerItem}>
-                        <a href="mailto:info@creativeapps.design">
-                            <img alt="envelope" src='/images/envelope.svg' width="20" className={footerStyles.image} />
-                            <span>info@creativeapps.design</span>
-                        </a>
                     </div>
                     <div className={footerStyles.footerItem}>
                         <span>Trento (TN), Italy</span>
