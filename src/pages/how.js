@@ -138,7 +138,7 @@ const TeamPage = (props) => {
     }, []);
 
     const closeLightboxPlan = () => {
-        setCurrentImagePlan(0);c
+        setCurrentImagePlan(0);
         setViewerIsOpenPlan(false);
         if (window.innerWidth <= 720) {
             openBurger();
