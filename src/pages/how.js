@@ -26,28 +26,71 @@ const photos = [
     }
 ]
 
+const planphotos = [
+    {
+        src: "/images/trello1.svg",
+        alt: "low1",
+        width: 5,
+        height: 2.78,
+    },
+    {
+        src: "/images/trello2.svg",
+        alt: "low2",
+        width: 5,
+        height: 2.78,
+    }
+]
+
+const devphotos = [
+    {
+        src: "/images/heroku.svg",
+        alt: "low1",
+        width: 5,
+        height: 2.78,
+    },
+    {
+        src: "/images/netlify.svg",
+        alt: "low2",
+        width: 5,
+        height: 2.78,
+    },
+    {
+        src: "/images/bugsnug.svg",
+        alt: "low2",
+        width: 5,
+        height: 2.78,
+    },
+    {
+        src: "/images/swagger.svg",
+        alt: "low2",
+        width: 5,
+        height: 2.78,
+    }
+]
+
+
 const lowphotos = [
     {
         src: "/images/high1.svg",
-        alt: "low1",
+        alt: "high1",
         width: 1,
         height: 1.78,
     },
     {
         src: "/images/high2.svg",
-        alt: "low2",
+        alt: "high2",
         width: 1,
         height: 1.78,
     },
     {
         src: "/images/high3.svg",
-        alt: "low2",
+        alt: "high3",
         width: 1,
         height: 1.78,
     },
     {
         src: "/images/high4.svg",
-        alt: "low2",
+        alt: "high4",
         width: 1,
         height: 1.78,
     }
@@ -96,6 +139,41 @@ const TeamPage = (props) => {
             openBurger();
         }
     };
+
+    const [currentImagePlan, setCurrentImagePlan] = useState(0);
+    const [viewerIsOpenPlan, setViewerIsOpenPlan] = useState(false);
+
+    const openLightboxPlan = useCallback((event, { photo, index }) => {
+        setCurrentImagePlan(index);
+        setViewerIsOpenPlan(true);
+        closeBurger();
+    }, []);
+
+    const closeLightboxPlan = () => {
+        setCurrentImagePlan(0);
+        setViewerIsOpenPlan(false);
+        if (window.innerWidth <= 720) {
+            openBurger();
+        }
+    };
+
+    const [currentImageDev, setCurrentImageDev] = useState(0);
+    const [viewerIsOpenDev, setViewerIsOpenDev] = useState(false);
+
+    const openLightboxDev = useCallback((event, { photo, index }) => {
+        setCurrentImageDev(index);
+        setViewerIsOpenDev(true);
+        closeBurger();
+    }, []);
+
+    const closeLightboxDev = () => {
+        setCurrentImageDev(0);
+        setViewerIsOpenDev(false);
+        if (window.innerWidth <= 720) {
+            openBurger();
+        }
+    };
+
     return (
         <Layout>
             <div className="container">
@@ -221,6 +299,21 @@ const TeamPage = (props) => {
                                     <p>
                                     <FormattedMessage id="how.planning.paragraph" />
                                     </p>
+                                    <Gallery onClick={openLightboxPlan} photos={planphotos} />
+                                    <ModalGateway>
+                                        {viewerIsOpenPlan ? (
+                                            <Modal onClose={closeLightboxPlan}>
+                                                <Carousel
+                                                    currentIndex={currentImagePlan}
+                                                    views={planphotos.map(x => ({
+                                                        ...x,
+                                                        srcset: x.srcSet,
+                                                        caption: x.title
+                                                    }))}
+                                                />
+                                            </Modal>
+                                        ) : null}
+                                    </ModalGateway>
                                     <h3> <FormattedMessage id="methodologies" /></h3>
                                     <ul className="tagsContainer">
                                         <li className="methodTag">#Agile</li>
@@ -242,6 +335,21 @@ const TeamPage = (props) => {
                                     <p>
                                     <FormattedMessage id="how.development.paragraph" />
                                     </p>
+                                    <Gallery onClick={openLightboxDev} photos={devphotos} />
+                                    <ModalGateway>
+                                        {viewerIsOpenDev ? (
+                                            <Modal onClose={closeLightboxDev}>
+                                                <Carousel
+                                                    currentIndex={currentImageDev}
+                                                    views={devphotos.map(x => ({
+                                                        ...x,
+                                                        srcset: x.srcSet,
+                                                        caption: x.title
+                                                    }))}
+                                                />
+                                            </Modal>
+                                        ) : null}
+                                    </ModalGateway>
                                     <h3>Methodologies</h3>
                                     <ul className="tagsContainer">
                                         <li className="methodTag">#Agile</li>
