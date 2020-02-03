@@ -77,7 +77,7 @@
         "project2": {
             "title": "Blue",
             "company": "<company>Needius</company> è una giovane società di Rovereto in provincia di Trento con la missione di trovare soluzioni per migliorare la qualità della vita delle persone. Specializzati nella realizzazione di software per disabilità il loro prodotto di punta è Blu(e), un comunicatore per tablets Samsung basato sulla comunicazione aumentativa alternativa che aiuta le persone con difficoltà di linguaggio a comunicare.",
-            "request": "A causa del rilascio di Openshift v.3 (soluzione cloud di Redhat) l’azienda aveva bisogno migrare la loro piattaforma Blu(e) da Openshift v.2 a v.3. Trattandosi di un prodotto non creato da noi ci siamo trovati a dover comprendere la soluzione interamente da soli senza supporto degli sviluppatori della piattaforma, con documentazione scarna e con tempistiche particolarmente ristrette.",
+            "request": "A causa del rilascio di Openshift v.3 (soluzione cloud di Redhat) l’azienda aveva bisogno di migrare la loro piattaforma Blu(e) da Openshift v.2 a v.3. Trattandosi di un prodotto non creato da noi ci siamo trovati a dover comprendere la soluzione interamente da soli senza supporto degli sviluppatori della piattaforma, con documentazione scarna e con tempistiche particolarmente ristrette.",
             "solution": "Abbiamo migrato con successo l’intera piattaforma alla nuova versione di Openshift effettuando il backup dei dati (database e media files) e aggiornato l’applicazione Android rilasciandone una nuova versione. Ci siamo occupati anche di fornire attività di supporto e assistenza per la risoluzione di eventuali bugs."
         }
         
