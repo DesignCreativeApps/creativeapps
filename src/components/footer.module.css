@@ -76,6 +76,9 @@
         margin-bottom: 5px;
         margin-left: 10px;
     }
+    .languageContainer {
+        margin-bottom: 24px;
+    }
 }
 
 @media (max-width: 720px) {

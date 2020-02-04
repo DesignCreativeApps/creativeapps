@@ -10,19 +10,29 @@ import PropTypes from "prop-types"
 import SideBar from './sidebar'
 import Header from "./header"
 import Footer from "./footer"
+import CookieConsent from 'react-cookie-consent';
+import { FormattedMessage } from "gatsby-plugin-intl";
 import "./layout.css"
 import './styles.css'
 
 
-  
+
 
 const Layout = ({ children }) => {
 	return (
 		<>
 			<div id="outer-container">
 				<Header />
-				<SideBar/>
+				<SideBar />
 				<main id="page-wrap">{children}</main>
+				<CookieConsent
+					location="bottom"
+					buttonText={<FormattedMessage id="accept"/>}
+					enableDeclineButton
+					declineButtonText={<FormattedMessage id="decline"/>}
+					cookieName="gatsby-gdpr-google-analytics">
+						{<FormattedMessage id="cookies"/>}
+				</CookieConsent>
 			</div>
 			<Footer />
 		</>
