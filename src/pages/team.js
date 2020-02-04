@@ -97,7 +97,7 @@ const TeamPage = (props) => (
                                         <p style={{ marginTop: 0 }}>“-When Tech Meets Culture: Perpectives from Africa.”</p>
                                         <a
                                             className={teamStyles.slidesLink}
-                                            href="https://www.slideshare.net/LucaCimonetti/when-tech-meets-cuture-perspectives-from-africa"
+                                            href="https://www.slideshare.net/speckandtech/when-tech-meets-culture-perspectives-from-africa"
                                         >
                                             Slides
                                         </a>
