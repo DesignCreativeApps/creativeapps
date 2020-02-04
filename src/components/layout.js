@@ -25,15 +25,15 @@ const Layout = ({ children }) => {
 				<Header />
 				<SideBar />
 				<main id="page-wrap">{children}</main>
-				<CookieConsent
+				{/* <CookieConsent
 					location="bottom"
-					style={{ background: "#373a47" }}
+					style={{ background: "#373a47", opacity: 0.8 }}
 					buttonText={<FormattedMessage id="accept"/>}
 					enableDeclineButton
 					declineButtonText={<FormattedMessage id="decline"/>}
 					cookieName="gatsby-gdpr-google-analytics">
 						{<FormattedMessage id="cookies"/>}
-				</CookieConsent>
+				</CookieConsent> */}
 			</div>
 			<Footer />
 		</>
