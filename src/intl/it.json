@@ -53,7 +53,7 @@
         },
         "process": {
             "title": "Processi di sviluppo.",
-            "paragraph": "Abbiamo processi ben organizzati e collaudati nel tempo. Utilizziamo metodologie agile."
+            "paragraph": "Abbiamo processi ben organizzati e collaudati nel tempo. Utilizziamo la metodologia agile."
         },
         "development": {
             "title": "Mobile e Web.",
@@ -99,7 +99,7 @@
         },  
         "planning":{
             "title":"Pianificazione",
-            "paragraph":"Pianifichiamo le nostre fasi di sviluppo in cicli di 1-2 settimane utilizzando metodologie agile. Eseguiamo una stima il più accurata possibile della complessità e delle tempistiche del lavoro definendo degli obiettivi a breve termine per la singola fase di sviluppo."
+            "paragraph":"Pianifichiamo le nostre fasi di sviluppo in cicli di 1-2 settimane utilizzando la metodologia agile. Eseguiamo una stima il più accurata possibile della complessità e delle tempistiche del lavoro definendo degli obiettivi a breve termine per la singola fase di sviluppo."
         },  
         "development":{
             "title":"Sviluppo",
@@ -114,5 +114,6 @@
     "request":"Richiesta",
     "solution": "Soluzione",
     "methodologies": "Metodologie",
-    "tools": "Strumenti"
+    "tools": "Strumenti",
+    "call": "Hai un progetto interessante da proporci? Contattaci!"
 }

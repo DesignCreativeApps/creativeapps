@@ -1,42 +1,43 @@
 import React from 'react';
 import Language from '../components/language';
+import { FormattedMessage } from "gatsby-plugin-intl";
 import footerStyles from "./footer.module.css"
 
 const Footer = () => (
-    <div className={footerStyles.footer}>
-        <div className={footerStyles.container}>
-            <div className={footerStyles.footerContainer}>
-                <div className={footerStyles.infoContainer}>
-                    <div className={footerStyles.languageContainer}>
-                        <Language />
-                    </div>
-                    <div className={footerStyles.footerItem}>
-                        <a href="https://github.com">
-                            <img alt="github" src='/images/github.svg' width="20" className={footerStyles.image} />
-                            <span>Github</span>
-                        </a>
-                    </div>
-                    <div className={footerStyles.footerItem}>
-                        <a href="mailto:info@creativeapps.design">
-                            <img alt="envelope" src='/images/envelope.svg' width="20" className={footerStyles.image} />
-                            <span>info@creativeapps.design</span>
-                        </a>
-                    </div>
+    <div className={footerStyles.container}>
+          <div className={footerStyles.languageContainer}>
+            <Language />
+        </div>
+        <div className={footerStyles.footerContainer}>
+            <div className={footerStyles.infoContainer}>
+                <div className={footerStyles.footerItem}>
+                    <div style={{ textAlign: 'center' }}> <strong><FormattedMessage id="call" /></strong></div>
                 </div>
-                <div className={footerStyles.infoContainer}>
-                    <div className={footerStyles.footerItem}>
-                        <img alt="logo" src='/images/logo.svg' className={footerStyles.image} />
+                <div className={footerStyles.footerItem}>
+                    <a href="mailto:info@creativeapps.design">
+                        <img alt="envelope" src='/images/envelope.svg' width="20" className={footerStyles.image} />
+                        <span>info@creativeapps.design</span>
+                    </a>
+                </div>
+            </div>
+            <div className={footerStyles.infoContainer}>
+                <div className={footerStyles.footerItem}>
+                    <a href="https://creativeapps.design">
+                        <img alt="github" src='/images/logo.svg' className={footerStyles.image} />
                         <span>CREATIVE APPS</span>
-                    </div>
-                    <div className={footerStyles.footerItem}>
-                        <span>Trento (TN), Italy</span>
-                    </div>
+                    </a>
+                </div>
+                <div className={footerStyles.footerItem}>
+                    <a href="https://github.com/DesignCreativeApps">
+                        <img alt="github" src='/images/github.svg' width="20" className={footerStyles.image} />
+                        <span>Github</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <p className={footerStyles.copyright}>
-            <span>© 2019 Creative Apps</span>
-        </p>
+        <div className={footerStyles.copyright}>
+            © 2020 Creative Apps
+        </div>
     </div>
 )
 

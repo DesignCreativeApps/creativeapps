@@ -12,6 +12,7 @@
     "gatsby": "^2.18.12",
     "gatsby-background-image": "^0.9.12",
     "gatsby-image": "^2.2.34",
+    "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-intl": "^0.3.2",
     "gatsby-plugin-manifest": "^2.2.31",
     "gatsby-plugin-nprogress": "^2.1.18",
