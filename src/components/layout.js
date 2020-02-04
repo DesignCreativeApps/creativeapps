@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
 				<main id="page-wrap">{children}</main>
 				<CookieConsent
 					location="bottom"
+					style={{ background: "#373a47" }}
 					buttonText={<FormattedMessage id="accept"/>}
 					enableDeclineButton
 					declineButtonText={<FormattedMessage id="decline"/>}
