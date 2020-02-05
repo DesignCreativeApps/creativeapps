@@ -173,7 +173,6 @@ const IndexPage = props => {
 					</Slider>
 				</section>
 			</div>
-
 		</Layout>
 	)
 }
