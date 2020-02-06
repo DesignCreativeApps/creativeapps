@@ -103,6 +103,10 @@
         "development":{
             "title":"Development",
             "paragraph":"During the development lifecycle we do continuous deployment on platfotms like Heroku and Netlify to keep the customers up to date with the progress almost in real time."
+        },
+        "postrelease": {
+            "title": "Post-release Support",
+            "paragraph": "We also offer post-release support services available for a period determined by the client. Supporting and maintaining a product after launch makes it possible for you to constantly improve the product’s quality to meet the needs of end users."
         }
     },
     "skills": "Skills",

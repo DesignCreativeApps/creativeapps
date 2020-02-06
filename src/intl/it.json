@@ -104,6 +104,10 @@
         "development":{
             "title":"Sviluppo",
             "paragraph":"Durante questa fase effettuiamo deployments continui delle nostre applicazioni su piattaforme come Heroku e Netlify allo scopo di mostrare al cliente i progressi dello sviluppo in tempo quasi reale."
+        },
+        "postrelease": {
+            "title": "Supporto Post Vendita",
+            "paragraph": "Offriamo servizi post-vendita, assistenza e manutenzione per un periodo di tempo concordato con il cliente. Supporto e manutenzione di un prodotto dopo il suo lancio sono fondamentali per migliorare la qualità del prodotto e soddifare le esigenze degli utenti."
         }
     },
     "skills": "Competenze",

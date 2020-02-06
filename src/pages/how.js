@@ -352,6 +352,23 @@ const TeamPage = (props) => {
                                     </ul>
                                 </div>
                             </li>
+                            <li className={portfolioStyles.timelineElement}>
+                                <div className={howStyles.timelineDate}>
+                                    <time className={howStyles.numberCircle}>6</time>
+                                </div>
+                                <div className={portfolioStyles.timelineContent}>
+                                    <h2><FormattedMessage id="how.postrelease.title" /></h2>
+                                    <p>
+                                    <FormattedMessage id="how.postrelease.paragraph" />
+                                
+                                    </p>
+                                    <h3>Methodologies</h3>
+                                    <ul className="tagsContainer">
+                                        <li className="methodTag">#Support</li>
+                                        <li className="methodTag">#Maintenance</li>
+                                    </ul>
+                                </div>
+                            </li>      
                         </ul>
                     </div>
                 </section>
