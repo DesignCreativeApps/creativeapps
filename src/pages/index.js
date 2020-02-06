@@ -72,9 +72,9 @@ const IndexPage = props => {
 				</section>
 				<section>
 					<div ref={myRef} className={homeStyles.cards}>
-				
+
 						<div className={homeStyles.card}>
-						<div className={homeStyles.cardIcon} style={{ color: "#66CD93" }}>
+							<div className={homeStyles.cardIcon} style={{ color: "#66CD93" }}>
 								W
             				</div>
 							<h3>
@@ -141,8 +141,32 @@ const IndexPage = props => {
 						</div>
 					</div>
 				</section>
+				{/* <section>
+					<h2 style={{ textAlign: 'center'}}>Pick your domain</h2>
+					<p style={{ textAlign: 'center', marginBottom: 25 }}>
+						<strong>We can provide high-quality design and development services for market segments with strong demand for digital products. Explore the opportunities of web and mobile development for your business.</strong>
+					</p>
+					<div className={homeStyles.sectors}>
+						<div className={homeStyles.sector}>
+							<img src="/images/truck.svg" />
+							<h3>Logistics</h3>
+						</div>
+						<div className={homeStyles.sector}>
+							<img src="/images/heart.svg" />
+							<h3>Healthcare</h3>
+						</div>
+						<div className={homeStyles.sector}>
+							<img src="/images/urban.svg" />
+							<h3>Real Estate</h3>
+						</div>
+						<div className={homeStyles.sector}>
+							<img src="/images/tourism.svg" />
+							<h3>Tourism</h3>
+						</div>
+					</div>
+				</section> */}
 				<section>
-					<h2 style={{ textAlign: "center", margin: 0 }}>
+					<h2 style={{ textAlign: "center"}}>
 						<FormattedMessage id="home.whattheysay.title" />
 					</h2>
 					<Slider {...settings}>
@@ -173,6 +197,7 @@ const IndexPage = props => {
 					</Slider>
 				</section>
 			</div>
+
 		</Layout>
 	)
 }
