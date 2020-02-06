@@ -12,7 +12,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 0.5rem;
-  padding-top: 15vh;
+  padding-top: 10vh;
 }
 
 a {
