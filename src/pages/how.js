@@ -172,8 +172,8 @@ const TeamPage = (props) => {
                         <h1><FormattedMessage id="how.title" /></h1>
                         <p className={portfolioStyles.projectDescription}>
                             <strong>
-                            <FormattedMessage id="how.subtitle" />
-                        </strong>
+                                <FormattedMessage id="how.subtitle" />
+                            </strong>
                         </p>
                     </div>
                     <div className={portfolioStyles.timeline}>
@@ -186,10 +186,10 @@ const TeamPage = (props) => {
                                 </div>
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2>
-                                    <FormattedMessage id="how.requirements.title" />
-                                </h2>
+                                        <FormattedMessage id="how.requirements.title" />
+                                    </h2>
                                     <p>
-                                    <FormattedMessage id="how.requirements.paragraph" />
+                                        <FormattedMessage id="how.requirements.paragraph" />
                                     </p>
                                     <h3> <FormattedMessage id="methodologies" /></h3>
                                     <ul className="tagsContainer">
@@ -212,7 +212,7 @@ const TeamPage = (props) => {
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2> <FormattedMessage id="how.high.title" /></h2>
                                     <p>
-                                    <FormattedMessage id="how.high.paragraph"/>
+                                        <FormattedMessage id="how.high.paragraph" />
                                     </p>
                                     <Gallery onClick={openLightbox} photos={photos} />
                                     <ModalGateway>
@@ -248,7 +248,7 @@ const TeamPage = (props) => {
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2> <FormattedMessage id="how.low.title" /></h2>
                                     <p>
-                                    <FormattedMessage id="how.low.paragraph" />
+                                        <FormattedMessage id="how.low.paragraph" />
                                     </p>
                                     <Gallery onClick={openLightboxLow} photos={lowphotos} />
                                     <ModalGateway>
@@ -285,7 +285,7 @@ const TeamPage = (props) => {
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2> <FormattedMessage id="how.planning.title" /></h2>
                                     <p>
-                                    <FormattedMessage id="how.planning.paragraph" />
+                                        <FormattedMessage id="how.planning.paragraph" />
                                     </p>
                                     <Gallery onClick={openLightboxPlan} photos={planphotos} />
                                     <ModalGateway>
@@ -321,7 +321,7 @@ const TeamPage = (props) => {
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2><FormattedMessage id="how.development.title" /></h2>
                                     <p>
-                                    <FormattedMessage id="how.development.paragraph" />
+                                        <FormattedMessage id="how.development.paragraph" />
                                     </p>
                                     <Gallery onClick={openLightboxDev} photos={devphotos} />
                                     <ModalGateway>
@@ -359,8 +359,8 @@ const TeamPage = (props) => {
                                 <div className={portfolioStyles.timelineContent}>
                                     <h2><FormattedMessage id="how.postrelease.title" /></h2>
                                     <p>
-                                    <FormattedMessage id="how.postrelease.paragraph" />
-                                
+                                        <FormattedMessage id="how.postrelease.paragraph" />
+
                                     </p>
                                     <h3>Methodologies</h3>
                                     <ul className="tagsContainer">
@@ -368,7 +368,7 @@ const TeamPage = (props) => {
                                         <li className="methodTag">#Maintenance</li>
                                     </ul>
                                 </div>
-                            </li>      
+                            </li>
                         </ul>
                     </div>
                 </section>

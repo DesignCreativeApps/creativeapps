@@ -123,7 +123,9 @@
     border: 2px solid;
     opacity: 0.8;
     border-radius: 6px;
-    padding: 6px 4px 2px;
+    width: 1.5rem;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
     display: inline-block;
   }
   
@@ -218,6 +220,7 @@
       padding: 1rem;
     }
     .cardIcon {
+      font-size: 22px;
       margin-bottom: 5px;
     }
     .card h3{
