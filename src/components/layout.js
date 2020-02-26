@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
 					declineButtonText={<FormattedMessage id="decline"/>}
 					cookieName="gatsby-gdpr-google-analytics">
 						{<FormattedMessage id="cookies"/>}
+						<a href="https://www.iubenda.com/privacy-policy/58493826" class="privacy" title="Privacy Policy ">Privacy Policy</a>
 				</CookieConsent>
 			</div>
 			<Footer />

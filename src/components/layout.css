@@ -91,6 +91,12 @@ section {
   background-color: #f6f7f9;
 }
 
+.privacy {
+  color: white;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
 @keyframes HeroAnimation {
   0% {
     opacity: 0;
